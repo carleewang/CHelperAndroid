@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_play_item_h2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/order_img_wh"
+            android:layout_height="@dimen/order_img_wh"
+            android:layout_gravity="center_vertical"
+            tools:src="@mipmap/wxpay" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:textColor="@color/color_262626"
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/order_title_size"
+            tools:text="微信支付" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/ic_info_r" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/view_fgx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/view_dividerline_h4" />
+    </LinearLayout>
+
+
+</LinearLayout>

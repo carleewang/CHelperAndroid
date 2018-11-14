@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_head_url"> CHAPI/V1/</string>
+    <string name="api_head_cpapi_url"> CPAPI/V1/</string>
+    <string name="api_public_head_url">/GAPI/V1/</string>
+
+
+    <string name="api_user_agreement">/APP/Protocol?type=gxt</string>
+    <string name="api_user_help">/APP/Help?type=gxt</string>
+    <string name="api_user_pay">/APP/Protocol?type=pay</string>
+
+    <string name="api_user_info">GetGXT_UserInfo</string>
+
+
+    <string name="api_common_massage_list">GXT_DXMBLB</string>
+    <string name="api_common_massage_add">GXT_TJDXMB</string>
+    <string name="api_common_massage_modify">GXT_XGDXMB</string>
+    <string name="api_common_massage_delete">GXT_SCDXMB</string>
+
+    <string name="api_contact_group">GXT_HMFZ</string>
+    <string name="api_contact_group_add">GXT_TJFZ</string>
+
+    <string name="api_contact_add">GXT_TJSJHM</string>
+
+    <string name="api_message_history_list">GXT_FSJL</string>
+
+    <string name="api_input_number_of_phone">GXT_BatchTJSJHM</string>
+
+    <string name="api_get_contacts_in_group">GXT_HMFZSJHM</string>
+
+    <string name="api_set_user_agreement">GetGXT_TYXY</string>
+
+    <string name="api_send_message">GXT_DXTJ</string>
+
+    <string name="api_modify_sign">GXT_XGQMXX</string>
+
+    <string name="api_person_info">GXT_GRXX</string>
+
+    <string name="api_sign_info">GXT_QMXX</string>
+
+    <string name="api_modify_contacts_group_name">GXT_XGFZ</string>
+    <string name="api_delete_contacts_group">GXT_SCFZ</string>
+    <string name="api_delete_contacts_in_group">GXT_SCSJHM</string>
+
+    <string name="api_creat_order">CreateServiceOrder</string>
+
+    <string name="api_get_open_GXT_order">CreateServicOrderByGXTKT</string>
+
+    <string name="api_pay_order_by_balance">OrderPayByBalance</string>
+
+    <string name="api_user_balance_info">MyInfo</string>
+
+    <string name="api_get_wx_order">GetWXPrePayOrderBySXF</string>
+    
+    <string name="api_get_match_race_report">RaceReport</string>
+    <string name="api_get_JG_message">GetJGSJ</string>
+
+    <string name="api_get_GXT_message_price">GetServicOrderByGXTCZ</string>
+
+    <string name="api_create_GXT_message_order">CreateServicOrderByGXTCZ</string>
+    <string name="api_GXT_message_order_history">GXT_CZMX</string>
+
+    <string name="api_SGT_empower_photo">SGT_SQLB</string>
+    <string name="api_search_user_by_phone">QueryUserByPhone</string>
+    <string name="api_add_phone_empower">SGT_TJSQ</string>
+    <string name="api_get_phone_empower_list">SGT_SQLB</string>
+    <string name="api_cancel_empower_photo">SGT_QXSQ</string>
+    <string name="api_cancel_all_empower_photo">SGT_YJQXSQ</string>
+
+    <string name="api_get_change_photo_info">SGT_BuPaiSaiGeInfo</string>
+
+
+    <string name="api_tool_get_gong_peng_info">Tool_GetGongPengInfo</string>
+    <string name="api_tool_get_sfd_info">Tool_GetSiFangDi</string>
+    <string name="api_get_kongju">GetKongJu</string>
+
+    <string name="api_get_user_sign_info">UserSignInfo</string>
+    <string name="api_get_gift_bag">GetGiftBag</string>
+    <string name="api_get_sign_gui_ze">SignGuiZe</string>
+    <string name="api_get_user_sign_in">UserSignIn</string>
+    <!--获取协会列表-->
+    <string name="api_XH_GetUsersList">XH_GetUsersList</string>
+
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item1_z_ll"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+
+        <TextView
+            android:id="@+id/it_tv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/item_tv_size1" />
+
+        <TextView
+            android:id="@+id/it_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/item_tv_size2" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/info_r_mlr"
+            android:layout_marginRight="@dimen/info_r_mlr"
+            app:srcCompat="@mipmap/arrow_right" />
+
+    </LinearLayout>
+
+
+    <!--横向分割线-->
+    <View
+        android:id="@+id/view_div_line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividingline_h"
+        android:background="@color/dividingline" />
+
+</LinearLayout>

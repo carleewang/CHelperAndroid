@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_order_info_head_layout" />
+
+    <!--支付倒计时-->
+
+    <!--我要发票-->
+    <LinearLayout
+        android:id="@+id/ll_wyfp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <CheckBox
+            android:clickable="false"
+            android:id="@+id/cb_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/selector_check_box"
+            android:gravity="center_vertical"
+            android:paddingLeft="7dp"
+            android:paddingRight="@dimen/check_box_plr"
+            android:text="我要发票"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_14" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_default_bg">
+
+        <include layout="@layout/layout_countdown" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_default_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <CheckBox
+            android:id="@+id/cb_order_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_check_box"
+            android:paddingLeft="@dimen/dp_5"
+            android:text="我已阅读并同意"
+            android:textSize="@dimen/order_title_size" />
+
+        <TextView
+            android:id="@+id/tv_order_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:text="《中鸽网支付协议》"
+            android:textColor="@color/color_theme"
+            android:textSize="@dimen/order_title_size" />
+    </LinearLayout>
+
+
+</LinearLayout>

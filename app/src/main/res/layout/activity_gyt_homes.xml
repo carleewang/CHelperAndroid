@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <!--    android:background="@color/color_gyt_bg"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--头部-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/gyt_top"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+            </LinearLayout>
+
+            <!--android:layout_height="@dimen/gyt_head_ll_h"-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/gyt_head_ll_m"
+                android:background="@drawable/bg_gyt_head"
+                android:orientation="vertical"
+                android:padding="@dimen/gyt_head_ll_p">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/gyt_head_ll_img_wh"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/gyt_head_ll_img_mb"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        android:id="@+id/img_vip"
+                        android:layout_width="@dimen/gyt_head_ll_img_wh"
+                        android:layout_height="@dimen/gyt_head_ll_img_wh"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/grade_gebi" />
+
+                    <TextView
+                        android:id="@+id/tv_gb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#c98a25" />
+
+                </RelativeLayout>
+
+
+                <!--分割线-->
+                <!--<include layout="@layout/view_dividerline_h" />-->
+
+                <!-- android:layout_height="@dimen/gyt_head_ll_ll_h"-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/gyt_head_ll_ll_mt"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <!--  -->
+                        <ImageButton
+                            android:src="@mipmap/geyuntong_text2x"
+                            android:id="@+id/imgbtn_gyt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <!--  android:src="@mipmap/sifang_text2x"-->
+                        <ImageButton
+                            android:src="@mipmap/sifang_text2x"
+                            android:id="@+id/img_sifangdi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <!-- android:src="@mipmap/xufei_text2x"-->
+                        <ImageButton
+                            android:id="@+id/img_xufei"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/imgbtn_ll4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <!-- android:src="@mipmap/souquan_text2x" -->
+                        <ImageButton
+                            android:src="@mipmap/souquan_text2x"
+                            android:id="@+id/img_shouquan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <!--中部1-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/banner" />
+
+            <TextView
+                android:id="@+id/tv_center_miles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/string_acquiescence_miles"
+                android:textColor="@color/color_center_text"
+                android:textSize="@dimen/gyt_center_text_size" />
+
+        </RelativeLayout>
+
+
+        <!--底部1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/gyt_center2_ll_m"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <!--总时长-->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/string_gyt_times"
+                        android:textColor="@color/gyt_center2_ll_text_color_top"
+                        android:textSize="@dimen/gyt_center2_ll_text_size_top" />
+
+                    <TextView
+                        android:singleLine="true"
+                        android:id="@+id/tv_total_length"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/gyt_center2_ll_text2_t"
+                        android:text="@string/string_acquiescence_total_tims"
+                        android:textColor="@color/gyt_center2_ll_text_color_bt"
+                        android:textSize="@dimen/gyt_center2_ll_text_size_bt" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--总次数-->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/gyt_center2_ll_l"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/string_gyt_numbers"
+                        android:textColor="@color/gyt_center2_ll_text_color_top"
+                        android:textSize="@dimen/gyt_center2_ll_text_size_top" />
+
+                    <TextView
+                        android:id="@+id/tv_total_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/gyt_center2_ll_text2_t"
+                        android:text="@string/string_acquiescence_total_num"
+                        android:textColor="@color/gyt_center2_ll_text_color_bt"
+                        android:textSize="@dimen/gyt_center2_ll_text_size_bt" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+        <!--底部2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/gyt_center2_ll_m"
+            android:layout_marginRight="@dimen/gyt_center2_ll_m"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <!--开通时间-->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/string_gyt_open_times"
+                        android:textColor="@color/gyt_center2_ll_text_color_top"
+                        android:textSize="@dimen/gyt_center2_ll_text_size_top" />
+
+                    <TextView
+                        android:id="@+id/tv_open_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/gyt_center2_ll_text2_t"
+                        android:text="@string/string_acquiescence_open_duetims"
+                        android:textColor="@color/gyt_center2_ll_text_color_bt"
+                        android:textSize="@dimen/gyt_center2_ll_text_size_bt" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--到期时间-->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/gyt_center2_ll_l"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/string_gyt_due_times"
+                        android:textColor="@color/gyt_center2_ll_text_color_top"
+                        android:textSize="@dimen/gyt_center2_ll_text_size_top" />
+
+                    <TextView
+                        android:id="@+id/tv_come_due_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/gyt_center2_ll_text2_t"
+                        android:text="@string/string_acquiescence_open_duetims"
+                        android:textColor="@color/gyt_center2_ll_text_color_bt"
+                        android:textSize="@dimen/gyt_center2_ll_text_size_bt" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+        <!--底部-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            android:src="@mipmap/gyt_bottom2x" />
+    </LinearLayout>
+</LinearLayout>

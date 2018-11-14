@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item1_z_ll"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_height="match_parent">-->
+    <!---->
+    <!--</LinearLayout>-->
+
+    <include layout="@layout/view_dividerline_h1" />
+
+    <LinearLayout
+        android:id="@+id/ll_z"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="17dp">
+
+
+        <TextView
+            android:id="@+id/it_tv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+
+        <TextView
+            android:id="@+id/it_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="8dp" />
+
+
+        <!--  style="@style/RideoStyle"-->
+        <CheckBox
+            android:id="@+id/btn_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="17dp"
+            android:button="@drawable/selector_check_box"
+            android:clickable="false" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

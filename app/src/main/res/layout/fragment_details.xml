@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?><!--详情fragment-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.TextureMapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/pas_btn_confirm_mb"
+        android:layout_marginLeft="@dimen/pas_btn_confirm_mlf"
+        android:layout_marginRight="@dimen/pas_btn_confirm_mlf"
+        android:orientation="vertical">
+
+        <!--导航-->
+        <ImageButton
+            android:id="@+id/location_navigation"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/pas_btn_confirm_mb"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/jk_navigation"
+            android:visibility="gone" />
+
+        <!--位置信息-->
+        <ImageButton
+            android:id="@+id/location_information"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/pas_btn_confirm_mb"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/details" />
+
+        <!--结束，回放比赛selector_lay_end_monitor-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_btn_h"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_end_playback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_btn_h"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_btn_bg"
+                android:scaleType="fitXY"
+                android:text="@string/complete_play"
+                android:textColor="@color/color_btn_tv"
+                android:textSize="@dimen/btn_tv_size" />
+
+            <!--授权人查看-->
+            <LinearLayout
+                android:id="@+id/ll_sqrck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_sqrck_bg1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_sqrck_bg1"
+                    android:button="@null"
+                    android:text="转移授权"
+                    android:textColor="@color/color_srqck1" />
+
+                <Button
+                    android:id="@+id/btn_sqrck_bg2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_sqrck_bg2"
+                    android:button="@null"
+                    android:text="结束监控"
+                    android:textColor="@color/color_srqck2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

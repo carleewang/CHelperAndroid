@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/time_line_top"
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:src="@mipmap/time_zhou_btm" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="28dp"
+            tools:text="27" />
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="12dp"
+            tools:text="2017.16" />
+
+        <ImageView
+            android:id="@+id/time_line_btm"
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            tools:src="@mipmap/time_zhou_top" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="3"
+        app:cardElevation="@dimen/cardview_yy">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/image_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:gravity="center"
+                android:paddingBottom="@dimen/big_large_vertical_margin"
+                android:paddingLeft="@dimen/medium_horizontal_margin"
+                android:paddingRight="@dimen/big_large_vertical_margin"
+                android:paddingTop="@dimen/big_large_vertical_margin"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:text="12124123" />
+
+            <TextView
+                android:id="@+id/retaken_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/image"
+                android:gravity="left"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/big_large_vertical_margin"
+                android:paddingLeft="@dimen/medium_horizontal_margin"
+                android:paddingRight="@dimen/big_large_vertical_margin"
+                android:paddingTop="@dimen/big_large_vertical_margin"
+                android:text="重新拍照"
+                android:textColor="@color/color_1482c0"
+                android:textSize="11sp" />
+
+
+            <ImageView
+                android:id="@+id/change_tag"
+                android:layout_width="45dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/image"
+                android:scaleType="fitCenter"
+                android:layout_toRightOf="@+id/image_type"
+                android:paddingBottom="@dimen/big_large_vertical_margin"
+                android:paddingLeft="@dimen/medium_horizontal_margin"
+                android:paddingRight="@dimen/big_large_vertical_margin"
+                android:paddingTop="@dimen/big_large_vertical_margin"
+                android:text="重新拍照"
+                android:textColor="@color/color_1482c0"
+                android:src="@mipmap/ic_foot_image_change_tag" />
+
+            <com.cpigeon.cpigeonhelper.ui.MyTextView
+                android:id="@+id/remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_type"
+                android:layout_marginLeft="@dimen/medium_horizontal_margin"
+                android:layout_marginRight="@dimen/medium_horizontal_margin"
+                android:paddingBottom="@dimen/medium_vertical_margin"
+                android:textColor="@color/color_999999"
+                tools:text="123212412512342342342342342342342342234234234315412314131" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

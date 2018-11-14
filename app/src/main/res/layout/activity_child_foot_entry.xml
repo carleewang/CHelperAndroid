@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_foot_entry" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:alpha="0.8"
+                android:background="@drawable/background_line_weather5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="18dp"
+                android:textColor="#4d4d4d"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--号段录入-->
+                <LinearLayout
+                    android:id="@+id/ll_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_btn"
+                    android:layout_marginTop="25dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <!--号段录入 起始足环号码-->
+                    <EditText
+                        android:gravity="center_vertical"
+                        android:id="@+id/et_f1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/background_round_white_2"
+                        android:hint="请输入起始足环号码"
+                        android:paddingLeft="33dp"
+                        android:textColor="@color/color_262626"
+                        android:textColorHint="#b3b3b3"
+                        android:textSize="14sp" />
+
+                    <!--号段录入 终止足环号码-->
+                    <EditText
+                        android:gravity="center_vertical"
+                        android:id="@+id/et_f2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/background_round_white_2"
+                        android:hint="请输入终止足环号码"
+                        android:paddingLeft="33dp"
+                        android:textColor="@color/color_262626"
+                        android:textColorHint="#b3b3b3"
+                        android:textSize="14sp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_btn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/background_round_white_2"
+                        android:layout_marginTop="25dp"
+                        android:clickable="true">
+
+                        <TextView
+                            android:id="@+id/tv_foot_type"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="请选择足环类型"
+                            android:paddingLeft="33dp"
+                            android:textColor="@color/color_262626"
+                            android:textColorHint="#b3b3b3"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/img_foot_type"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@mipmap/foot_admin_triangle" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/background_round_white_2"
+                        android:layout_marginTop="25dp"
+                        android:clickable="true">
+
+                        <TextView
+                            android:id="@+id/tv_association"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="请选择协会"
+                            android:paddingLeft="33dp"
+                            android:textColor="@color/color_262626"
+                            android:textColorHint="#b3b3b3"
+                            android:textSize="14sp" />
+
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@mipmap/foot_admin_triangle" />
+                    </RelativeLayout>
+
+                    <!--总金额-->
+                    <TextView
+                        android:id="@+id/tv_money_z"
+                        android:layout_marginTop="10dp"
+                        android:gravity="right"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:text="总金额：0元"
+                        android:textSize="14sp"
+                        android:textColor="#ff3e3e"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <!--退出登录-->
+                    <Button
+                        android:id="@+id/btn_sure2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_btn_h"
+                        android:layout_below="@+id/ll_btn"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="50dp"
+                        android:alpha="1.8"
+                        android:background="@drawable/selector_btn_bg2"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:text="确定保存"
+                        android:textColor="@color/color_btn_tv"
+                        android:textSize="@dimen/btn_tv_size" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="18dp"
+                android:text="注：请先点击右上角“单价”进行设置，方可保存"
+                android:textColor="#4d4d4d"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

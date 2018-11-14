@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?><!--设置页-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ebebeb"
+    android:orientation="vertical">
+
+
+    <!--空距计算-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/ll_ullage_tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_rl_h"
+        android:background="@color/iten_bgColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/setting_rl_mlift"
+        android:paddingRight="@dimen/setting_rl_mright2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/setting_ullage_tool"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/item_tv_title_size1" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/gpsg_jt_r_wh"
+            android:layout_height="@dimen/gpsg_jt_r_wh"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/item_tv_pr1"
+            android:paddingRight="@dimen/item_tv_pr1"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/ic_info_r" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <include layout="@layout/view_dividerline_h" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--清除缓存-->
+    <RelativeLayout
+        android:id="@+id/ll_remove_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_rl_h"
+        android:background="@color/iten_bgColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/setting_rl_mlift"
+        android:paddingRight="@dimen/setting_rl_mright2">
+
+        <!--   android:textSize="@dimen/setting_text_size"-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/setting_remove_cache"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/item_tv_title_size1" />
+
+        <TextView
+            android:id="@+id/tv_remove_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/item_tv_pr1"
+            android:text="0KB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <include layout="@layout/view_dividerline_h" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--应用评价-->
+    <RelativeLayout
+        android:id="@+id/ll_appraise"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_rl_h"
+        android:background="@color/iten_bgColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/setting_rl_mlift"
+        android:paddingRight="@dimen/setting_rl_mright2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/setting_appraise"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/item_tv_title_size1" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/gpsg_jt_r_wh"
+            android:layout_height="@dimen/gpsg_jt_r_wh"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/item_tv_pr1"
+            android:paddingRight="@dimen/item_tv_pr1"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/ic_info_r" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <include layout="@layout/view_dividerline_h" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!--当前版本-->
+    <RelativeLayout
+        android:id="@+id/ll_edition"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_rl_h"
+        android:background="@color/iten_bgColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/setting_rl_mlift"
+        android:paddingRight="@dimen/setting_rl_mright2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/setting_edition"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/item_tv_title_size1" />
+
+        <TextView
+            android:id="@+id/app_edition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/item_tv_pr1"
+            android:text="v1.0" />
+
+    </RelativeLayout>
+
+    <!--退出登录-->
+    <Button
+        android:id="@+id/out_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_btn_h"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/pas_btn_confirm_mlf"
+        android:layout_marginRight="@dimen/pas_btn_confirm_mlf"
+        android:layout_marginTop="@dimen/setting_outlogin_ptop"
+        android:background="@drawable/selector_btn_bg"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:text="@string/btn_out_login"
+        android:textColor="@color/color_btn_tv"
+        android:textSize="@dimen/btn_tv_size" />
+
+</LinearLayout>

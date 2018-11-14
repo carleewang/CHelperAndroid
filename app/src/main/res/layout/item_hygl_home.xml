@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_itemZ"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/hygl_zc_it_ptb"
+        android:paddingLeft="@dimen/hygl_zc_it_plr"
+        android:paddingRight="@dimen/hygl_zc_it_plr"
+        android:paddingTop="@dimen/hygl_zc_it_ptb">
+
+        <!--头像-->
+        <RelativeLayout
+            android:layout_width="@dimen/hygl_list_item_userTx_wh"
+            android:layout_height="@dimen/hygl_list_item_userTx_wh">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/img_hygl_user_tx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/cpigeon_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:alpha="0.8"
+                android:background="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="除名"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sdjoafjsdpo"
+                        android:textColor="@color/color_262626"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:textColor="@color/color_262626"
+                        android:id="@+id/tv_gsmc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sdjoafjsdpo"
+                    android:textColor="@color/color_b3b3b3"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_lola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="经度：4324813242 纬度：12343241"
+                android:textColor="@color/color_b3b3b3"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_dividerline_h5" />
+
+</LinearLayout>

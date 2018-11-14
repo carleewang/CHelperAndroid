@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--发票抬头-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/org_item_h"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/org_item_ml"
+            android:paddingRight="@dimen/org_item_ml">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="发票抬头"
+                android:textColor="@color/color_userinfo_tx"
+                android:textSize="@dimen/userinfo_tx_size" />
+
+            <EditText
+                android:id="@+id/et_unit_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入单位名称"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/color_userinfo_ex"
+                android:textColorHint="@color/color_et_hint"
+                android:textSize="@dimen/userinfo_tx_size" />
+        </LinearLayout>
+
+        <!--分割线-->
+        <include layout="@layout/view_dividerline_h1" />
+
+
+        <!--企业税号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/org_item_h"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/org_item_ml"
+            android:paddingRight="@dimen/org_item_ml">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="企业税号"
+                android:textColor="@color/color_userinfo_tx"
+                android:textSize="@dimen/userinfo_tx_size" />
+
+            <EditText
+                android:id="@+id/et_ein_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入税号"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/color_userinfo_ex"
+                android:textColorHint="@color/color_et_hint"
+                android:textSize="@dimen/userinfo_tx_size" />
+        </LinearLayout>
+
+        <!--分割线-->
+        <include layout="@layout/view_dividerline_h1" />
+
+
+        <!--收件方式-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/org_item_h"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/org_item_ml"
+            android:paddingRight="@dimen/org_item_ml">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="收件方式"
+                android:textColor="@color/color_userinfo_tx"
+                android:textSize="@dimen/userinfo_tx_size" />
+
+            <Spinner
+                android:id="@+id/spinner_way"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <!--分割线-->
+        <include layout="@layout/view_dividerline_h1" />
+
+        <!--电子发票-->
+        <LinearLayout
+            android:id="@+id/ll_dzfp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--邮箱地址-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/org_item_ml"
+                android:paddingRight="@dimen/org_item_ml">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="邮箱地址"
+                    android:textColor="@color/color_userinfo_tx"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入邮箱地址"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_userinfo_ex"
+                    android:textColorHint="@color/color_et_hint"
+                    android:textSize="@dimen/userinfo_tx_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--纸质发票-->
+        <LinearLayout
+            android:id="@+id/ll_zzfp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <!--纸质发票   电话-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/org_item_ml"
+                android:paddingRight="@dimen/org_item_ml">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="收件人"
+                    android:textColor="@color/color_userinfo_tx"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+                <EditText
+                    android:id="@+id/et_paper_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入收件人姓名"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_userinfo_ex"
+                    android:textColorHint="@color/color_et_hint"
+                    android:textSize="@dimen/userinfo_tx_size" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h1" />
+
+            <!--纸质发票   电话-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/org_item_ml"
+                android:paddingRight="@dimen/org_item_ml">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="收件人电话"
+                    android:textColor="@color/color_userinfo_tx"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+                <EditText
+                    android:id="@+id/et_paper_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入收件人电话"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_userinfo_ex"
+                    android:textColorHint="@color/color_et_hint"
+                    android:textSize="@dimen/userinfo_tx_size" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h1" />
+
+            <!--纸质发票   所在区域-->
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/ll_paper_area"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/org_item_ml"
+                android:paddingRight="@dimen/org_item_ml">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="所在区域"
+                    android:textColor="@color/color_userinfo_tx"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+                <TextView
+                    android:id="@+id/et_paper_area"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:hint="请选择所在区域"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_userinfo_ex"
+                    android:textColorHint="@color/color_et_hint"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h1" />
+
+            <!--纸质发票   详细地址-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/org_item_ml"
+                android:paddingRight="@dimen/org_item_ml">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="详细地址"
+                    android:textColor="@color/color_userinfo_tx"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+                <EditText
+                    android:id="@+id/et_paper_address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入收件人地址"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_userinfo_ex"
+                    android:textColorHint="@color/color_et_hint"
+                    android:textSize="@dimen/userinfo_tx_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="@dimen/org_item_ml"
+            android:paddingRight="@dimen/org_item_ml"
+            android:text="温馨提示：发票信息必须正确吻合！否则开出发票后公司无法处理，个人无法开具发票！纸质发票邮费快递到付！" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setting_outlogin_ptop"
+            android:orientation="horizontal">
+            <!--取消-->
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_btn_h"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="@dimen/pas_btn_confirm_mlf"
+                android:layout_marginRight="@dimen/pas_btn_confirm_mlf"
+                android:layout_marginTop="@dimen/setting_outlogin_ptop"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_bg1"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="取消"
+                android:textColor="@color/color_btn_tv"
+                android:textSize="@dimen/btn_tv_size"
+                android:visibility="gone" />
+
+
+            <!--确定-->
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_btn_h"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="@dimen/pas_btn_confirm_mlf"
+                android:layout_marginRight="@dimen/pas_btn_confirm_mlf"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_bg"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="确定"
+                android:textColor="@color/color_btn_tv"
+                android:textSize="@dimen/btn_tv_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

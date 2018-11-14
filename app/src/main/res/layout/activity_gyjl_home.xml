@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_theme"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imbtn_r"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@null"
+            android:paddingLeft="22dp"
+            android:src="@drawable/ic_back" />
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/sliding_tabs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:paddingBottom="1dp"
+            android:paddingLeft="@dimen/gyt_monitor_tab_view_plr"
+            android:paddingRight="@dimen/gyt_monitor_tab_view_plr"
+            app:tl_indicator_color="@color/white"
+            app:tl_indicator_corner_radius="@dimen/gyt_monitor_tab_view_indicator_corner_radius"
+            app:tl_indicator_height="1dp"
+            app:tl_indicator_width="@dimen/gyt_monitor_tab_view_indicator_w"
+            app:tl_indicator_width_equal_title="true"
+            app:tl_tab_space_equal="true"
+            app:tl_textSelectColor="@color/white"
+            app:tl_textUnselectColor="#84f4fb"
+            app:tl_textsize="16sp" />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginRight="22dp"
+            android:background="@null"
+            android:src="@drawable/ic_back"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_999999"
+        android:layout_height="@dimen/size_0.5"/>
+
+    <!--<include layout="@layout/view_dividerline_h" />-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

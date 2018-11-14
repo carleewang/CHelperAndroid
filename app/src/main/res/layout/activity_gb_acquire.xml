@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_gebi_head" />
+
+    <!--签到送鸽币-->
+    <LinearLayout
+        android:id="@+id/ll_qd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/it_geren_mt"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingRight="7dp"-->
+        <!--android:src="@mipmap/info_my_balance" />-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="签到送鸽币"
+                android:textColor="@color/color_262626" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去签到"
+                android:textColor="@color/color_999999" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/gpsg_jt_r_wh"
+            android:layout_height="@dimen/gpsg_jt_r_wh"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/item_tv_pr1"
+            android:paddingRight="@dimen/item_tv_pr1"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@mipmap/ic_info_r" />
+    </LinearLayout>
+
+    <!--分享下载得鸽币-->
+    <LinearLayout
+        android:id="@+id/ll_fxxz"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/it_geren_mt"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingRight="7dp"-->
+        <!--android:src="@mipmap/info_my_balance" />-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="分享下载得鸽币"
+                android:textColor="@color/color_262626" />
+
+            <TextView
+                android:textColor="@color/color_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去分享" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatImageView
+
+            android:layout_width="@dimen/gpsg_jt_r_wh"
+            android:layout_height="@dimen/gpsg_jt_r_wh"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/item_tv_pr1"
+            android:paddingRight="@dimen/item_tv_pr1"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@mipmap/ic_info_r" />
+    </LinearLayout>
+
+    <!--鸽运通服务-->
+    <LinearLayout
+        android:id="@+id/ll_gytfw"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/it_geren_mt"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingRight="7dp"-->
+        <!--android:src="@mipmap/info_my_balance" />-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="鸽运通服务"
+                android:textColor="@color/color_262626" />
+
+            <TextView
+                android:textColor="@color/color_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去兑换" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/gpsg_jt_r_wh"
+            android:layout_height="@dimen/gpsg_jt_r_wh"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/item_tv_pr1"
+            android:paddingRight="@dimen/item_tv_pr1"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@mipmap/ic_info_r" />
+    </LinearLayout>
+
+
+    <!--训鸽通服务-->
+    <LinearLayout
+        android:id="@+id/ll_xgtfw"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/it_geren_mt"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingRight="7dp"-->
+        <!--android:src="@mipmap/info_my_balance" />-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="训鸽通服务"
+                android:textColor="@color/color_262626" />
+
+            <TextView
+                android:textColor="@color/color_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去兑换" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/gpsg_jt_r_wh"
+            android:layout_height="@dimen/gpsg_jt_r_wh"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/item_tv_pr1"
+            android:paddingRight="@dimen/item_tv_pr1"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@mipmap/ic_info_r" />
+    </LinearLayout>
+</LinearLayout>

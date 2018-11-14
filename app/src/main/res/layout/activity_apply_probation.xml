@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_err_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sgt_info_m"
+        android:textColor="@color/colorRed" />
+
+
+    <!--输入名字-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sgt_info_m"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请人姓名"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="请按身份证填写"
+            android:maxLines="1"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <ImageButton
+            android:id="@+id/id_card_z"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@mipmap/id_card_z" />
+
+        <ImageButton
+            android:id="@+id/id_card_f"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@mipmap/id_card_f" />
+
+    </LinearLayout>
+
+    <!--确定-->
+    <Button
+        android:id="@+id/imtbtn_determine"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_btn_h"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/pas_btn_confirm_mb"
+        android:layout_marginLeft="@dimen/pas_btn_confirm_mlf"
+        android:layout_marginRight="@dimen/pas_btn_confirm_mlf"
+        android:background="@drawable/selector_btn_bg"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:text="提交申请"
+        android:textColor="@color/color_btn_tv"
+        android:textSize="@dimen/btn_tv_size" />
+
+
+</LinearLayout>

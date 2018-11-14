@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 描述性文字item项的高 layout   fragemnt_pay-->
+    <dimen name="text_item_height">43dp</dimen>
+    <dimen name="input_method_spacing">2px</dimen>
+
+    <!-- 控件之间的距离 layout   fragemnt_pay-->
+    <dimen name="spacing_tiny">4dp</dimen>
+    <dimen name="spacing_large">20dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="font_normal">15sp</dimen>
+    <color name="gray_line">#ebebeb</color>
+
+
+    <!--公共的-->
+    <dimen name="dividingline_h">0.5dp</dimen>
+
+
+    <!--登录页用户头像宽高-->
+    <dimen name="image_width_headicon">70dp</dimen>
+    <dimen name="image_height_headicon">70dp</dimen>
+    <dimen name="log_hint_img_pr">8dp</dimen>
+
+
+    <!--菜单页-->
+    <dimen name="menu_img_text_wide">20dp</dimen>
+    <dimen name="menu_text_size">17dp</dimen>
+    <dimen name="menu_top_close_size">30dp</dimen>
+    <dimen name="menu_top_rl_margin">13dp</dimen>
+    <dimen name="menu_top_userimg_marginleft">8dp</dimen>
+    <dimen name="menu_top_userimg_margintop">8dp</dimen>
+    <dimen name="menu_top_phone_user_margintop">20dp</dimen>
+    <dimen name="menu_top_img_ll_marginleft">20dp</dimen>
+    <dimen name="menu_center_img_size">25dp</dimen>
+    <dimen name="menu_content_marginTop">25dp</dimen>
+
+    <!--首页Home-->
+    <dimen name="home_hint_text_addplay_ptop">30dp</dimen>
+    <dimen name="home_hint_text_addplay_pbottom">20dp</dimen>
+    <dimen name="home_Banner_h">175dp</dimen>
+    <dimen name="home_bottom_layout_h">188dp</dimen>
+    <dimen name="home_bottom_up_down_img_hw">28dp</dimen>
+    <dimen name="home_bottom_up_down_img_mtop">10dp</dimen>
+    <dimen name="home_bottom_up_down_img_mbottom">10dp</dimen>
+    <dimen name="home_open_into_hw">78dp</dimen>
+    <dimen name="home_bottom_menu_order_hw">48dp</dimen>
+
+
+    <!--设置页-->
+    <dimen name="setting_text_size">16sp</dimen>
+    <dimen name="setting_rl_h">56dp</dimen>
+    <dimen name="setting_rl_mlift">15dp</dimen>
+    <dimen name="setting_rl_mright">10dp</dimen>
+    <dimen name="setting_rl_mright2">15dp</dimen>
+    <dimen name="setting_outlogin_ptop">50dp</dimen>
+    <dimen name="setting_outlogin_ptop2">120dp</dimen>
+    <dimen name="setting_outlogin_magin_rl">25dp</dimen>
+
+    <!--第二个修改密码页-->
+    <dimen name="pas_hint_mr">20dp</dimen>
+    <dimen name="pas_hint_mt">15dp</dimen>
+    <dimen name="pas_hl1_mt">28dp</dimen>
+    <dimen name="pas_hl2_mt">20dp</dimen>
+    <dimen name="pas_hl_mlf">8dp</dimen>
+    <dimen name="pas_hl_h">40dp</dimen>
+    <dimen name="pas_et_pl">8dp</dimen>
+    <dimen name="pas_btn_confirm_mlf">15dp</dimen>
+    <dimen name="pas_btn_confirm_mb">20dp</dimen>
+
+
+    <!--组织信息页-->
+    <dimen name="org_item_h">60dp</dimen>
+    <dimen name="org_item_h1">50dp</dimen>
+    <dimen name="org_item_ml">17dp</dimen>
+
+    <!--用户信息-->
+    <dimen name="userinfo_tx_size">14sp</dimen>
+    <dimen name="userinfo_imgbtn_lf">20dp</dimen>
+    <dimen name="userinfo_imgbtn_b">30dp</dimen>
+
+    <!--变更名称-->
+    <dimen name="change_name_cause_item_h">105dp</dimen>
+    <dimen name="change_cause_ll_mt">10dp</dimen>
+    <dimen name="change_img_wh">90dp</dimen>
+
+
+    <!--鸽运通主页-->
+    <dimen name="gyt_head_bg_img">100dp</dimen>
+    <dimen name="gyt_head_ll_h">150dp</dimen>
+    <dimen name="gyt_head_ll_m">12dp</dimen>
+    <dimen name="gyt_head_ll_p">9dp</dimen>
+    <dimen name="gyt_head_ll_img_wh">75dp</dimen>
+    <dimen name="gyt_head_ll_img_mb">5dp</dimen>
+    <dimen name="gyt_head_ll_ll_mt">3dp</dimen>
+    <dimen name="gyt_head_ll_ll_h">60dp</dimen>
+
+    <dimen name="gyt_center_rl_h">115dp</dimen>
+    <dimen name="gyt_center_text_size">20sp</dimen>
+
+    <dimen name="gyt_center2_ll_h">80dp</dimen>
+    <dimen name="gyt_center2_ll_m">7dp</dimen>
+    <dimen name="gyt_center2_ll_l">5dp</dimen>
+    <dimen name="gyt_center2_ll_text_size_top">14sp</dimen>
+    <dimen name="gyt_center2_ll_text_size_bt">17sp</dimen>
+    <dimen name="gyt_center2_ll_text2_t">7dp</dimen>
+
+    <dimen name="gyt_btm_img_h">70dp</dimen>
+    <dimen name="play_list_item_tv_title_s">14sp</dimen>
+    <dimen name="play_list_item_tv_s">13sp</dimen>
+
+    <!--公告通知-->
+    <dimen name="item_text_size">20sp</dimen>
+    <dimen name="item_text_size1">17sp</dimen>
+    <dimen name="item_m_lp">35dp</dimen>
+    <dimen name="item_center_tv_mt">12dp</dimen>
+    <dimen name="item_title_tv_mt">26dp</dimen>
+    <dimen name="item_btn_v_h">7dp</dimen>
+
+
+    <!--授权主页item-->
+    <dimen name="item_auth_ll_mlr">7dp</dimen>
+    <dimen name="item_auth_center_ll_mlr">12dp</dimen>
+    <dimen name="item_auth_center_ll_h">80dp</dimen>
+    <dimen name="item_auth_center_name_size">16sp</dimen>
+    <dimen name="item_auth_center_phone_size">13sp</dimen>
+    <dimen name="item_auth_center_phone_ml">3dp</dimen>
+    <dimen name="item_auth_center_content_size">15sp</dimen>
+    <dimen name="item_auth_btn_ml">3dp</dimen>
+    <dimen name="item_auth_bottom_tv_h">3dp</dimen>
+
+    <!--司放地主页-->
+    <dimen name="item_it_fly_location_name_tv_size">16sp</dimen>
+    <dimen name="item_cardview_plr">8dp</dimen>
+    <dimen name="item_content_top_h">35dp</dimen>
+    <dimen name="item_content_center_h">25dp</dimen>
+    <dimen name="item_content_bottom_h">28dp</dimen>
+    <dimen name="item_ll_p">10dp</dimen>
+
+    <!--参考司放地-->
+    <dimen name="item_system_card_mltr">8dp</dimen>
+    <dimen name="item_system_card_h">80dp</dimen>
+    <dimen name="item_system_text_size">14sp</dimen>
+
+    <!--编辑司放地-->
+    <dimen name="ac_edit_flying_item_h">50dp</dimen>
+    <dimen name="ac_edit_flying_item_remark_h">78dp</dimen>
+    <dimen name="ac_edit_flying_bottom_h">38dp</dimen>
+    <dimen name="ac_tv_flying_remark_mt">13dp</dimen>
+
+
+    <!--自定义输入框-->
+    <dimen name="search_et_h">32dp</dimen>
+    <dimen name="search_et_h2">32dp</dimen>
+    <dimen name="search_et_m">9dp</dimen>
+    <dimen name="search_et_ml">19dp</dimen>
+    <dimen name="search_et_mr">19dp</dimen>
+    <dimen name="search_et_mt">9dp</dimen>
+    <dimen name="search_et_mb">9dp</dimen>
+    <dimen name="search_et_mlr">15dp</dimen>
+    <dimen name="search_et_dra_p">9dp</dimen>
+    <dimen name="search_et_size">13sp</dimen>
+    <dimen name="search_et_size2">15sp</dimen>
+
+    <!--鸽运通页面-->
+    <dimen name="ac_gyt_btn_img_mb">10dp</dimen>
+
+    <!--鸽运通添加比赛-->
+    <dimen name="ac_gyt_add_play_item_h">48dp</dimen>
+    <dimen name="ac_gyt_add_play_item_mt">5dp</dimen>
+    <dimen name="ac_gyt_add_play_hint_mt">13dp</dimen>
+    <dimen name="ac_gyt_add_play_hint_mr">20dp</dimen>
+    <dimen name="ac_gyt_add_play_et_hint_size">13sp</dimen>
+    <dimen name="ac_gyt_add_play_lo_ml">10dp</dimen>
+    <dimen name="ac_gyt_add_play_occupied_ml">5dp</dimen>
+
+    <dimen name="gty_list_del_h">54.5dp</dimen>
+    <!--鸽运通列表-->
+    <dimen name="gyt_list_img_wh">70sp</dimen>
+
+    <!--鸽车监控图片展示大小-->
+    <dimen name="gyt_monitor_img_wh">80sp</dimen>
+
+    <!--鸽车监控-->
+    <dimen name="gyt_monitor_img_list_wh">110dp</dimen>
+    <dimen name="gyt_monitor_img_list_m">5dp</dimen>
+    <dimen name="gyt_monitor_tv_m">10dp</dimen>
+    <dimen name="gyt_monitor_prompt_pt">100dp</dimen>
+    <dimen name="gyt_monitor_tab_h">56dp</dimen>
+    <dimen name="gyt_monitor_tab_view_h">50dp</dimen>
+    <dimen name="gyt_monitor_tab_view_mlf">20dp</dimen>
+    <dimen name="gyt_monitor_tab_view_plr">10dp</dimen>
+    <dimen name="gyt_monitor_tab_view_indicator_w">70dp</dimen>
+    <dimen name="gyt_monitor_tab_view_indicator_h">0dp</dimen>
+    <dimen name="gyt_monitor_tab_view_indicator_corner_radius">1dp</dimen>
+    <dimen name="gyt_monitor_prompt_img_mb">55dp</dimen>
+
+    <dimen name="monitor_dialog_m">7dp</dimen>
+    <dimen name="monitor_dialog_mt">5dp</dimen>
+    <dimen name="monitor_dialog_tv_size">13sp</dimen>
+
+
+    <!--添加图片-->
+    <dimen name="dimens_img_hw">90dp</dimen>
+    <dimen name="dimens_img_m">7dp</dimen>
+    <dimen name="ll_label_h">45dp</dimen>
+
+
+    <!--视频列表-->
+    <dimen name="it_video_h">160dp</dimen>
+    <dimen name="it_video_list_pm">8dp</dimen>
+
+    <!--续费升级-->
+    <dimen name="re_up_head_name_size">16sp</dimen>
+    <dimen name="re_up_head_name_ptb">10dp</dimen>
+    <dimen name="re_up_head_time_ll_pt">5dp</dimen>
+    <dimen name="re_up_head_time_ll_pb">3dp</dimen>
+    <dimen name="re_up_tab_divider_h">1dp</dimen>
+
+    <!--开通鸽运通-->
+    <dimen name="open_gyt_size_tb">16sp</dimen>
+    <dimen name="open_gyt_size_c">14sp</dimen>
+
+    <!--订单支付-->
+    <dimen name="order_play_item_h">50dp</dimen>
+    <dimen name="order_play_item_h2">60dp</dimen>
+    <dimen name="order_play_item_mlr">15dp</dimen>
+    <dimen name="order_play_item_cen_ml">7dp</dimen>
+    <dimen name="forget_play_pas_pt">10dp</dimen>
+    <dimen name="forget_play_pas_pr">20dp</dimen>
+    <dimen name="check_box_plr">6dp</dimen>
+
+    <!--订单详情-->
+    <dimen name="order_details_item_cen_h">35dp</dimen>
+
+    <!--关于-->
+    <dimen name="split_line_width">1px</dimen>
+    <dimen name="activity_about_copyright_textsize">14sp</dimen>
+    <dimen name="activity_about_copyright_margintop">5dp</dimen>
+    <dimen name="activity_about_copyright_layout_paddingbottom">10dp</dimen>
+    <dimen name="activity_about_clickitem_textsize">16sp</dimen>
+    <dimen name="activity_about_logo_layout_minheight">240dp</dimen>
+    <dimen name="activity_about_logo_height">65dp</dimen>
+    <dimen name="activity_about_logo_margintop">18dp</dimen>
+    <dimen name="activity_about_item_p">12dp</dimen>
+    <dimen name="activity_about_appname_matgintop">14dp</dimen>
+    <dimen name="activity_about_appname_textsize">20sp</dimen>
+    <dimen name="activity_about_versionname_margintop">8dp</dimen>
+    <dimen name="activity_about_versionname_textsize">20sp</dimen>
+    <dimen name="activity_about_company_intro_textsize">13sp</dimen>
+
+    <!--底部按钮-->
+    <dimen name="btn_tv_size">18sp</dimen>
+
+    <dimen name="water_img_tv_size">12sp</dimen>
+    <dimen name="water_img_sgt_tv_size">7sp</dimen>
+
+
+    <!--新的中鸽助手首页-->
+    <dimen name="fg_home_tv_mlr">10dp</dimen>
+    <dimen name="fg_home_tv_mlr1">15dp</dimen>
+    <dimen name="fg_home_tv_plr">15dp</dimen>
+    <dimen name="fg_home_tv_ptb1">10dp</dimen>
+
+    <dimen name="fg_standard_14">14sp</dimen>
+    <dimen name="fg_standard_15">15sp</dimen>
+
+
+    <!--赛格通列表-->
+    <dimen name="sgt_home_tv_size">13sp</dimen>
+    <dimen name="sgt_home_tv_cen_size">12sp</dimen>
+
+    <!--赛格通信息-->
+    <dimen name="sgt_info_m">12dp</dimen>
+    <dimen name="sgt_img_upload_m">10dp</dimen>
+
+    <!--赛事规程-->
+    <dimen name="add_ssgc_tv_size">14sp</dimen>
+    <dimen name="add_ssgc_et_size">12sp</dimen>
+
+
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_2.5">2.5dp</dimen>
+
+    <dimen name="add_img_hint_clo">80dp</dimen>
+
+    <!--比赛管理短信-->
+    <dimen name="it_t_b">10dp</dimen>
+    <dimen name="it_p_tb">10dp</dimen>
+    <dimen name="it_p_lr">14dp</dimen>
+    <dimen name="tb_w">40dp</dimen>
+    <dimen name="tb_h">20dp</dimen>
+    <dimen name="tb2_w">35dp</dimen>
+    <dimen name="tb2_h">18dp</dimen>
+    <dimen name="tb_m">6dp</dimen>
+
+
+    <!--个人信息-->
+    <dimen name="it_geren_mt">16dp</dimen>
+
+    <!--订单列表tv_size-->
+    <dimen name="it_or_list_tv_size">13sp</dimen>
+
+    <!--分享dialog-->
+    <dimen name="dialog_plr">10dp</dimen>
+    <dimen name="dialog_ptb">25dp</dimen>
+
+    <dimen name="cardview_yy">0dp</dimen>
+
+    <dimen name="info_r_mlr">15dp</dimen>
+    <dimen name="info_r_mlr2">10dp</dimen>
+    <dimen name="info_item_ml">7dp</dimen>
+
+    <dimen name="item_h">60dp</dimen>
+    <dimen name="item_tv_size1">13sp</dimen>
+    <dimen name="item_tv_size2">12sp</dimen>
+    <dimen name="item_tv_size3">14sp</dimen>
+    <dimen name="item_tv_pr1">4dp</dimen>
+
+    <dimen name="item_xs_detail_ml">17dp</dimen>
+
+    <dimen name="item_sgt_zh_detail_h">50dp</dimen>
+    <dimen name="item_sgt_zh_detail_ml">28dp</dimen>
+
+
+    <dimen name="item_btn_h">40dp</dimen>
+    <dimen name="home_btn_ptb">12dp</dimen>
+
+    <dimen name="info_img_wh">25dp</dimen>
+    <dimen name="info_img_pr">7dp</dimen>
+
+    <dimen name="gc_del_h">17dp</dimen>
+
+    <dimen name="sgt_list_img_h">20dp</dimen>
+    <dimen name="sgt_list_img_ml">10dp</dimen>
+    <dimen name="sgt_list_img_mr">10dp</dimen>
+
+    <dimen name="sgt_zh_num">11sp</dimen>
+
+    <!--列表删除底部-->
+    <dimen name="item_del_h">50dp</dimen>
+    <dimen name="item_del_t_mt">5dp</dimen>
+    <dimen name="item_del_b_m">5dp</dimen>
+    <dimen name="item_del_tv_size">13sp</dimen>
+
+    <!--订单-->
+    <dimen name="order_img_wh">18dp</dimen>
+
+
+    <!--安全距离-->
+    <dimen name="security_distance_pl">6dp</dimen>
+
+
+    <!--文本输入框-->
+    <dimen name="et_hint_size">13sp</dimen>
+
+    <!--订单-->
+    <dimen name="order_title_size">14sp</dimen>
+    <dimen name="order_content_size">13sp</dimen>
+
+    <!--赛鸽通信息-->
+    <dimen name="item_color_wh">10dp</dimen>
+    <dimen name="item_tv1_size">12sp</dimen>
+    <dimen name="item_tv1_pl">3dp</dimen>
+    <dimen name="item_cen_pt">7dp</dimen>
+    <dimen name="sgt_security_distance_pl">10dp</dimen>
+    <dimen name="sgt_corners_size">5dp</dimen>
+    <dimen name="sgt_info_pt">6dp</dimen>
+    <dimen name="sgt_info_pb">6dp</dimen>
+    <dimen name="sgt_pie_chart_wh">100dp</dimen>
+
+
+    <dimen name="item_tv_title_size1">14sp</dimen>
+    <dimen name="item_tv_title_size2">14sp</dimen>
+
+
+    <!--item高度-->
+    <dimen name="item_suoyou_h">55dp</dimen>
+
+
+    <!--测量小工具-->
+    <dimen name="ullage_tool_img_wh">16dp</dimen>
+    <dimen name="ullage_tool_img_wh2">12dp</dimen>
+    <dimen name="ullage_tool_lola_cen_img_mlr">10dp</dimen>
+    <dimen name="ullage_tool_lola_item_p">5dp</dimen>
+    <dimen name="ullage_tool_item_ptb">10dp</dimen>
+    <dimen name="ullage_tool_tv_size">14sp</dimen>
+
+    <dimen name="ullage_tool_tv_h1">30dp</dimen>
+    <dimen name="ullage_tool_tv_h2">50dp</dimen>
+    <dimen name="ullage_tool_tv_h3">40dp</dimen>
+
+
+    <dimen name="small_vertical_margin">5dp</dimen>
+    <dimen name="medium_vertical_margin">8dp</dimen>
+    <dimen name="large_vertical_margin">10dp</dimen>
+    <dimen name="big_large_vertical_margin">16dp</dimen>
+
+    <dimen name="small_horizontal_margin">5dp</dimen>
+    <dimen name="medium_horizontal_margin">8dp</dimen>
+    <dimen name="large_horizontal_margin">10dp</dimen>
+    <dimen name="large_horizontal_margin_15">15dp</dimen>
+    <dimen name="big_large_horizontal_margin">16dp</dimen>
+
+    <!--鸽信通字体大小-->
+    <dimen name="tv_size_gxt">14sp</dimen>
+    <dimen name="gxt_item_plr">10dp</dimen>
+
+    <!--首页-->
+    <dimen name="home_banner_h">190dp</dimen>
+    <dimen name="home_zw">5dp</dimen>
+    <dimen name="home_mc">45dp</dimen>
+    <dimen name="home_content_h">93dp</dimen>
+
+    <dimen name="size_0.5">0.5dp</dimen>
+
+    <dimen name="sgt_img_wh">25dp</dimen>
+    <dimen name="sgt_tv_size">10sp</dimen>
+
+    <!--公棚赛鸽标签搜索-->
+    <dimen name="gpsg_tv_size">16sp</dimen>
+    <dimen name="gpsg_tv_tag_ptb">5dp</dimen>
+    <dimen name="gpsg_bj_plr">15dp</dimen>
+    <dimen name="gpsg_img_pz">75dp</dimen>
+    <dimen name="gpsg_jt_r_wh">18dp</dimen>
+    <dimen name="gpsg_bg_yy">20dp</dimen>
+
+
+    <dimen name="medium_text_size">16sp</dimen>
+
+    <!--我的会员-->
+    <dimen name="wdhy_ll_item_h">160dp</dimen>
+    <dimen name="wdhy_ll_item_t">10dp</dimen>
+    <dimen name="wdhy_ll_item_mlr">15dp</dimen>
+    <dimen name="wdhy_ll_item_d_me">15dp</dimen>
+    <dimen name="wdhy_ll_item_p">15dp</dimen>
+    <dimen name="wdhy_ll_item_img_p">10dp</dimen>
+
+    <dimen name="wdhy_ll_item_d_tv_cen_mtb">6dp</dimen>
+
+
+    <dimen name="hygl_list_item_userTx_wh">40dp</dimen>
+
+
+    <dimen name="hygl_zc_it_tv_pr">10dp</dimen>
+    <dimen name="hygl_zc_it_tv_pr2">4dp</dimen>
+
+    <dimen name="hygl_zc_it_sfz_h">120dp</dimen>
+    <dimen name="hygl_zc_it_plr">15dp</dimen>
+    <dimen name="hygl_zc_it_ptb">5dp</dimen>
+
+    <!--我的会员-->
+    <dimen name="wdhy_item_title_size">14sp</dimen>
+    <dimen name="wdhy_item_cen_size">12sp</dimen>
+
+    <!--我的会员 会员注册-->
+    <dimen name="hygl_zc_it_h">40dp</dimen>
+    <dimen name="hygl_zc_it_h2">55dp</dimen>
+    <dimen name="hyzc_item_title_size">14sp</dimen>
+    <dimen name="hyzc_item_hint_size">14sp</dimen>
+
+
+    <dimen name="lola_cen_dialog_img_mlr">15dp</dimen>
+
+    <!--首页 dialog service hint-->
+    <dimen name="service_dialog_item_h">50dp</dimen>
+    <dimen name="service_dialog_item_ml">6dp</dimen>
+
+    <dimen name="item_lr">15dp</dimen>
+
+    <dimen name="dialog_foot_h">22dp</dimen>
+
+    <dimen name="item_layout_mtb">7.5dp</dimen>
+    <dimen name="line_weather_item_h">40dp</dimen>
+
+    <dimen name="line_weather_lr">20dp</dimen>
+    <dimen name="line_weather_lr2">30dp</dimen>
+    <dimen name="line_weather_tv_size">15dp</dimen>
+
+    <dimen name="disignated_set_item_h">45dp</dimen>
+
+
+    <dimen name="home_item_h1">40dp</dimen>
+    <dimen name="home_item_img_wh1">40dp</dimen>
+    <dimen name="home_item_tv_mt">5dp</dimen>
+    <dimen name="home_item_mlr">10dp</dimen>
+    <dimen name="home_item_img_mt">10dp</dimen>
+    <dimen name="home_item_tv_mb">15dp</dimen>
+
+
+
+    <dimen name="home_item_img_w1">40dp</dimen>
+
+
+    <dimen name="spacing_left_reight">20dp</dimen>
+
+    <dimen name="small_text_size_2">13sp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+
+</resources>

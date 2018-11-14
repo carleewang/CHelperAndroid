@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!--自定义的搜索文本框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.cpigeon.cpigeonhelper.ui.searchview.SearchEditText
+            android:id="@+id/search_edittext"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/search_et_h"
+            android:layout_margin="@dimen/search_et_m"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search_edit2"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="@dimen/search_et_dra_p"
+            android:gravity="center_vertical"
+            android:hint="搜索省、市"
+            android:imeOptions="actionSearch"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/et_hint_color"
+            android:textSize="@dimen/search_et_size"
+            app:drawableDel="@mipmap/close" />
+
+        <!--取消输入-->
+        <TextView
+            android:id="@+id/edit_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@null"
+            android:clickable="true"
+            android:text="取消" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/cen_location" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_weizhi"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/it_current"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="选择点位置:"
+            android:textColor="@color/color_262626" />
+
+
+        <TextView
+            android:id="@+id/it_current_lo_la"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="经度：00.00000   纬度：000.00000"
+            android:textColor="@color/color_262626" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="附近地点" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ac_select_place_recyview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/ac_se_pl_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_btn_h"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/pas_btn_confirm_mb"
+            android:layout_marginLeft="@dimen/pas_btn_confirm_mlf"
+            android:layout_marginRight="@dimen/pas_btn_confirm_mlf"
+            android:background="@drawable/selector_btn_bg"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/color_btn_tv"
+            android:textSize="@dimen/btn_tv_size"
+            android:visibility="gone" />
+
+        <!--确定-->
+        <Button
+            android:id="@+id/ac_se_pl_determine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_btn_h"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/pas_btn_confirm_mb"
+            android:layout_marginLeft="@dimen/pas_btn_confirm_mlf"
+            android:layout_marginRight="@dimen/pas_btn_confirm_mlf"
+            android:background="@drawable/selector_btn_bg"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="@string/btn_confirm"
+            android:textColor="@color/color_btn_tv"
+            android:textSize="@dimen/btn_tv_size" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

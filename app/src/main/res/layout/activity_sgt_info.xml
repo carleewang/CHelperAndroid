@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--入棚开始时间-->
+    <LinearLayout
+        android:id="@+id/ll_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/security_distance_pl"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+
+            <TextView
+                android:id="@+id/it_tv1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="本届比赛入棚开始时间"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/item_tv_size1" />
+
+
+            <TextView
+                android:id="@+id/tv_rp_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="8dp"
+                android:text="0000-00-00"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/item_tv_size2" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/info_r_mlr"
+                android:layout_marginRight="@dimen/info_r_mlr"
+                app:srcCompat="@mipmap/arrow_right" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/view_dividerline_h1" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--&lt;!&ndash;入棚开始时间&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="55dp"-->
+    <!--android:background="@color/colorWhite"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_margin="@dimen/security_distance_pl">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="入棚开始时间"-->
+    <!--android:textColor="@color/color_gray"-->
+    <!--android:textSize="@dimen/item_tv_size1" />-->
+
+    <!--<TextView-->
+
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginEnd="10dp"-->
+    <!--android:text="0000-00-00"-->
+    <!--android:textColor="@color/color_999999" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<android.support.v7.widget.AppCompatImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/info_r_mlr"-->
+    <!--android:layout_marginRight="@dimen/info_r_mlr"-->
+    <!--app:srcCompat="@mipmap/ic_info_r" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;分割线&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/white"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="10dp">-->
+
+    <!--<include layout="@layout/view_dividerline_h" />-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--可容羽数-->
+    <LinearLayout
+        android:id="@+id/ll_wddd"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/security_distance_pl"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="可容羽数"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/item_tv_size1" />
+
+
+            <TextView
+                android:id="@+id/tv_krys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/item_tv_size2" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/info_r_mlr"
+                android:layout_marginRight="@dimen/info_r_mlr"
+                app:srcCompat="@mipmap/arrow_right" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_wddd"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:clickable="true"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--&lt;!&ndash;可容羽数&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="55dp"-->
+    <!--android:layout_margin="@dimen/security_distance_pl"-->
+    <!--android:background="@color/colorWhite"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView4"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="可容羽数"-->
+    <!--android:textColor="@color/color_gray"-->
+    <!--android:textSize="@dimen/item_tv_size1" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_krys"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginEnd="10dp"-->
+    <!--android:textColor="@color/color_999999" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<android.support.v7.widget.AppCompatImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/info_r_mlr"-->
+    <!--android:layout_marginRight="@dimen/info_r_mlr"-->
+    <!--app:srcCompat="@mipmap/ic_info_r" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/color_gyt_item_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="13dp"
+        android:paddingTop="16dp"
+
+        >
+
+        <!--入棚拍照-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/item_tv1_pl"
+                android:text="入棚拍照"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/item_tv1_size" />
+
+            <TextView
+                android:id="@+id/sgt_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/sgt_info_pb"
+                android:paddingTop="@dimen/sgt_info_pt"
+                android:text="00000"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/item_tv1_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--日常拍照-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/item_tv1_pl"
+                android:text="日常拍照"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/item_tv1_size" />
+
+
+            <TextView
+                android:id="@+id/sgt_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/sgt_info_pb"
+                android:paddingTop="@dimen/sgt_info_pt"
+                android:text="00000"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/item_tv1_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--收费拍照-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/item_tv1_pl"
+                android:text="收费拍照"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/item_tv1_size" />
+
+            <TextView
+                android:id="@+id/sgt_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/sgt_info_pb"
+                android:paddingTop="@dimen/sgt_info_pt"
+                android:text="00000"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/item_tv1_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--比赛拍照-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/item_tv1_pl"
+                android:text="比赛拍照"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/item_tv1_size" />
+
+            <TextView
+                android:id="@+id/sgt_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/sgt_info_pb"
+                android:paddingTop="@dimen/sgt_info_pt"
+                android:text="00000"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/item_tv1_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--获奖荣誉-->
+        <LinearLayout
+            android:id="@+id/sgt_info_ll5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/item_tv1_pl"
+                android:text="获奖荣誉"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/item_tv1_size" />
+
+            <TextView
+                android:id="@+id/sgt_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/sgt_info_pb"
+                android:paddingTop="@dimen/sgt_info_pt"
+                android:text="00000"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/item_tv1_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_chart1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/sgt_info_ll5"
+            android:layout_centerInParent="true"
+            android:layerType="hardware" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/color_gyt_item_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <!--android:layout_width="@dimen/sgt_pie_chart_wh"-->
+            <!--android:layout_height="@dimen/sgt_pie_chart_wh"-->
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layerType="hardware"
+                android:padding="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空间使用"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layerType="hardware"
+                android:padding="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赛鸽入棚"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layerType="hardware"
+                android:padding="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到期时间"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

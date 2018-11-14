@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:alpha="0.4"
+        android:background="@drawable/black_bg"
+        android:id="@+id/watermark_llz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!--logo-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/water_lcon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中鸽助手"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--鸽主-->
+                <TextView
+                    android:id="@+id/watermark_tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="                                                                                                                                                                               "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/water_img_sgt_tv_size" />
+
+
+                <!--时间-->
+                <TextView
+                    android:id="@+id/watermark_tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="                                                                                                                             "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/water_img_sgt_tv_size" />
+
+                <!--地址-->
+                <TextView
+                    android:id="@+id/watermark_tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="                                                                                                                                                                          "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/water_img_sgt_tv_size" />
+
+                <TextView
+                    android:id="@+id/watermark_tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="                                                                                                                             "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/water_img_sgt_tv_size" />
+
+
+                <TextView
+                    android:id="@+id/watermark_tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="                                                                                                                             "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/water_img_sgt_tv_size" />
+
+                <TextView
+                    android:id="@+id/watermark_tv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="                                                                                                                             "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/water_img_sgt_tv_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_itemZ"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_layout_mtb"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/hygl_zc_it_plr"
+        android:paddingRight="@dimen/hygl_zc_it_plr">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第 "
+            android:textColor="@color/color_262626"
+            android:textSize="14sp" />
+
+        <!--名次-->
+        <TextView
+            android:id="@+id/tv_mc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111"
+            android:textColor="@color/color_262626"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 名 ["
+            android:textColor="@color/color_262626"
+            android:textSize="14sp" />
+
+        <!--足环号码-->
+        <TextView
+            android:id="@+id/tv_zuhm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23333-2321-1"
+            android:textColor="@color/color_262626"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="]"
+            android:textColor="@color/color_262626"
+            android:textSize="14sp" />
+
+        <!--参赛时间-->
+        <TextView
+            android:id="@+id/tv_cs_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1232-12-21"
+            android:textColor="@color/color_b3b3b3"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_xmmc_bsgm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/item_layout_mtb"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/hygl_zc_it_plr"
+        android:paddingRight="@dimen/hygl_zc_it_plr"
+        android:text="沙发斯蒂芬"
+        android:textColor="@color/color_b3b3b3"
+        android:textSize="12sp" />
+
+    <include layout="@layout/view_dividerline_h5" />
+
+</LinearLayout>

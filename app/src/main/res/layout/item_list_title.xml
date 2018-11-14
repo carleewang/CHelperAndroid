@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <ImageButton
+            android:id="@+id/it_sgt_z_l_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:clickable="false"
+            android:src="@mipmap/right_img" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/it_sgt_z_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="11"
+                android:text="信鸽老三"
+                android:textColor="#000000"
+                android:textSize="@dimen/sgt_home_tv_size" />
+
+            <TextView
+                android:id="@+id/it_sgt_z_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="25羽"
+                android:textColor="#000000"
+                android:textSize="@dimen/sgt_home_tv_size" />
+
+        </LinearLayout>
+
+        <!---->
+        <ImageButton
+            android:id="@+id/it_sgt_z_r_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sgt_list_img_h"
+            android:layout_marginLeft="@dimen/sgt_list_img_ml"
+            android:layout_marginRight="@dimen/sgt_list_img_mr"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@mipmap/photo_img" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_dividerline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="16dp">
+
+        <include layout="@layout/view_dividerline_h" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--项目名称-->
+    <LinearLayout
+        android:id="@+id/ll_xmmc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:src="@mipmap/org_black" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:paddingRight="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目名称"
+                android:textColor="@color/tv_bg_color" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/item_xs_detail_ml"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/tv_xmmc"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/view_dividerline_h1" />
+
+    <!--司放时间-->
+    <LinearLayout
+        android:id="@+id/ll_sfsj"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:src="@mipmap/fly_time" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:paddingRight="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="司放时间"
+                android:textColor="@color/tv_bg_color" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/item_xs_detail_ml"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/tv_sfsj"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/view_dividerline_h1" />
+
+    <!--司放地点-->
+    <LinearLayout
+        android:id="@+id/ll_sfdd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:src="@mipmap/fly_location" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:paddingRight="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="司放地点"
+                android:textColor="@color/tv_bg_color" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/item_xs_detail_ml"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/tv_sfdd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/view_dividerline_h1" />
+
+    <!--上笼羽数-->
+    <LinearLayout
+        android:id="@+id/ll_slys"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:src="@mipmap/cage_num" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:paddingRight="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上笼羽数"
+                android:textColor="@color/tv_bg_color" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/item_xs_detail_ml"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/tv_slys"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/view_dividerline_h1" />
+
+    <!--显示羽数-->
+    <LinearLayout
+        android:id="@+id/ll_xsys"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:src="@mipmap/according_num" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:paddingRight="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="显示羽数"
+                android:textColor="@color/tv_bg_color" />
+
+            <TextView
+               android:layout_marginLeft="@dimen/item_xs_detail_ml"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/tv_xsys"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

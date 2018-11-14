@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--水印布局-->
+        <include layout="@layout/layout_water_sgt" />
+
+    </LinearLayout>
+
+
+    <!--中间水印图片-->
+    <ImageView
+        android:id="@+id/watermark_center_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.4"
+        android:src="@mipmap/wartermark"
+        android:visibility="invisible" />
+
+
+    <!--水印  标签-->
+    <RelativeLayout
+        android:id="@+id/watermark_rl_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.4"
+            android:background="@color/black"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="设置标签"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/watermark_tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:id="@+id/upload_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/sgt_img_upload_m"
+                android:layout_marginRight="@dimen/sgt_img_upload_m"
+                android:layout_marginTop="@dimen/sgt_img_upload_m"
+                android:background="@drawable/sgt_img_radiu"
+                android:scaleType="fitXY" />
+
+            <!--视频展示-->
+            <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+                android:id="@+id/edit_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimens_img_m" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:visibility="invisible"
+            android:id="@+id/upload_ll_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="查看已选足环号码"
+                android:textColor="@color/color_262626" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/upload_tv_tag"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:background="@mipmap/sgt_tag_bg"-->
+            <!--android:clickable="true"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingLeft="17dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:text="选择标签"-->
+            <!--android:textColor="@color/white" />-->
+
+        </RelativeLayout>
+
+
+        <!--确定-->
+        <Button
+            android:id="@+id/imtbtn_determine"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_btn_h"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/pas_btn_confirm_mb"
+            android:layout_marginLeft="@dimen/pas_btn_confirm_mlf"
+            android:layout_marginRight="@dimen/pas_btn_confirm_mlf"
+            android:background="@drawable/selector_btn_bg"
+            android:scaleType="fitXY"
+            android:text="@string/btn_upload_photo"
+            android:textColor="@color/color_btn_tv"
+            android:textSize="@dimen/btn_tv_size" />
+    </LinearLayout>
+</RelativeLayout>

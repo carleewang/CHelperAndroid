@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><!--授权主页-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_ac_au_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorViewBackground">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+
+            <com.cpigeon.cpigeonhelper.ui.CustomEmptyView
+                android:id="@+id/empty_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <Button
+        android:id="@+id/ac_newRegAndPas_determine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_btn_h"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/pas_btn_confirm_mb"
+        android:layout_marginLeft="@dimen/pas_btn_confirm_mlf"
+        android:layout_marginRight="@dimen/pas_btn_confirm_mlf"
+        android:background="@drawable/selector_btn_bg"
+        android:scaleType="fitXY"
+        android:text="@string/btn_add_auth"
+        android:textColor="@color/color_btn_tv"
+        android:textSize="@dimen/btn_tv_size" />
+
+
+</LinearLayout>

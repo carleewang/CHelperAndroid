@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/item_cardview_plr"
+    android:layout_marginRight="@dimen/item_cardview_plr"
+    android:layout_marginTop="@dimen/item_cardview_plr"
+    android:background="@color/colorWhite"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="@dimen/cardview_yy">
+
+
+    <LinearLayout
+        android:id="@+id/ll_fly_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/item_ll_p"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_content_top_h">
+
+            <!--司放地名称-->
+            <com.cpigeon.cpigeonhelper.ui.AlwaysMarqueeTextView
+                android:id="@+id/it_fly_location_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="司放地名称"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_location_name_tv"
+                android:textSize="@dimen/item_it_fly_location_name_tv_size" />
+
+            <!--序号-->
+            <TextView
+                android:id="@+id/it_fly_faid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="序号：30"
+                android:textColor="@color/color_location_name_tv" />
+        </LinearLayout>
+
+        <!--地址-->
+        <TextView
+            android:id="@+id/it_tv_location_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_content_center_h"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="清江东路168号" />
+
+        <!--分割线-->
+        <include layout="@layout/view_dividerline_h" />
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_content_bottom_h">
+
+            <!--经纬度-->
+            <TextView
+                android:id="@+id/it_tv_lat_and_long"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="100.32/23.32" />
+
+
+            <!--编辑跳转-->
+            <LinearLayout
+                android:id="@+id/it_ll_edit_jump"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:src="@mipmap/set2x" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="编辑" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

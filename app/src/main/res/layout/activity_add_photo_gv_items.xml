@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cpigeon.cpigeonhelper.ui.imgupload.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/main_gridView_item_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:padding="5dp"
+        android:scaleType="fitXY" />
+
+    <CheckBox
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:id="@+id/main_gridView_item_cb"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+
+        android:background="@drawable/ic_delete"
+        android:button="@null"
+        android:clickable="true" />
+
+</com.cpigeon.cpigeonhelper.ui.imgupload.SquareRelativeLayout>

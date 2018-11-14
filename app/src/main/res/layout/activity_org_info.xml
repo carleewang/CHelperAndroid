@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?><!--组织详情页-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--修改协会名称-->
+            <LinearLayout
+                android:id="@+id/alterOrgName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/fg_home_tv_plr"
+                android:paddingRight="@dimen/fg_home_tv_plr">
+
+                <TextView
+                    android:id="@+id/tv_orinfo_names"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/string_org_name"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/item_tv_title_size1" />
+
+                <TextView
+                    android:id="@+id/tx_org_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/info_item_ml"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/item_tv_title_size2" />
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="@dimen/gpsg_jt_r_wh"
+                    android:layout_height="@dimen/gpsg_jt_r_wh"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/info_r_mlr"
+                    android:paddingLeft="@dimen/item_tv_pr1"
+                    android:paddingRight="@dimen/item_tv_pr1"
+                    app:srcCompat="@mipmap/ic_info_r" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h1" />
+
+            <!--修改二级域名-->
+            <LinearLayout
+                android:id="@+id/alterSLD"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/fg_home_tv_plr"
+                android:paddingRight="@dimen/fg_home_tv_plr">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/string_sld"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/item_tv_title_size1" />
+
+                <TextView
+                    android:id="@+id/tx_sld"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/info_item_ml"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/item_tv_title_size2" />
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="@dimen/gpsg_jt_r_wh"
+                    android:layout_height="@dimen/gpsg_jt_r_wh"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/info_r_mlr"
+                    android:paddingLeft="@dimen/item_tv_pr1"
+                    android:paddingRight="@dimen/item_tv_pr1"
+                    app:srcCompat="@mipmap/ic_info_r" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h2" />
+
+            <!--联系人-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/fg_home_tv_plr"
+                android:paddingRight="@dimen/fg_home_tv_plr">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/string_contact_name"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/item_tv_title_size1" />
+
+                <TextView
+                    android:id="@+id/tx_contact_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/info_item_ml"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/item_tv_title_size2" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h1" />
+
+            <!--联系电话-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/fg_home_tv_plr"
+                android:paddingRight="@dimen/fg_home_tv_plr">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/string_contact_phone"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/item_tv_title_size1" />
+
+                <TextView
+                    android:id="@+id/tx_contact_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/info_item_ml"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/item_tv_title_size2" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h1" />
+
+            <!--邮箱-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/fg_home_tv_plr"
+                android:paddingRight="@dimen/fg_home_tv_plr">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/string_contact_email"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/item_tv_title_size1" />
+
+                <TextView
+                    android:id="@+id/tx_contact_email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/info_item_ml"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/item_tv_title_size2" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h1" />
+
+            <!--详细地址-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/fg_home_tv_plr"
+                android:paddingRight="@dimen/fg_home_tv_plr">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/string_contact_address"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/item_tv_title_size1" />
+
+                <TextView
+                    android:id="@+id/tx_contact_address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/info_item_ml"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/item_tv_title_size2" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h1" />
+
+            <!--注册时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/fg_home_tv_plr"
+                android:paddingRight="@dimen/fg_home_tv_plr">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/string_contact_time_regis"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/item_tv_title_size1" />
+
+                <TextView
+                    android:id="@+id/tx_contact_time_regis"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/info_item_ml"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/item_tv_title_size2" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h1" />
+
+            <!--&lt;!&ndash;建立时间&ndash;&gt;-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/org_item_h"-->
+            <!--android:layout_marginLeft="@dimen/org_item_ml"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:textSize="@dimen/item_tv_title_size1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="3"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/string_contact_time_setup"-->
+            <!--android:textColor="@color/color_262626" />-->
+
+            <!--<TextView-->
+            <!--android:textSize="@dimen/item_tv_title_size2"-->
+            <!--android:id="@+id/tx_contact_time_setup"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="@dimen/info_item_ml"-->
+            <!--android:layout_weight="8"-->
+            <!--android:gravity="center_vertical" />-->
+            <!--</LinearLayout>-->
+
+            <!--&lt;!&ndash;分割线&ndash;&gt;-->
+            <!--<include layout="@layout/view_dividerline_h1" />-->
+
+            <!--到期时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/fg_home_tv_plr"
+                android:paddingRight="@dimen/fg_home_tv_plr">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/string_contact_time_dueto"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/item_tv_title_size1" />
+
+                <TextView
+                    android:id="@+id/tx_contact_time_dueto"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/info_item_ml"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/item_tv_title_size2" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

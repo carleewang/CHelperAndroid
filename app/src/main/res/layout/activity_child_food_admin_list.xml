@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ebebeb"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.cpigeon.cpigeonhelper.ui.searchview.SearchEditText
+        android:id="@+id/search_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_et_h2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_search_edit4"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/search_bold"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:hint="请输入足环号"
+        android:imeOptions="actionSearch"
+        android:padding="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:textColorHint="@color/et_hint_gpsg_color"
+        android:textSize="@dimen/search_et_size2"
+        app:drawableDel="@mipmap/close" />
+
+
+    <TextView
+        android:id="@+id/tv_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="总计发行足环0,已售金额0元"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp" />
+
+    <include layout="@layout/layout_rv_srl2" />
+
+</LinearLayout>

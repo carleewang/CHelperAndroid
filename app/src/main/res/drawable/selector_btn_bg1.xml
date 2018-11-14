@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 点击时的背景图 -->
+    <item android:state_pressed="true"
+        android:drawable="@mipmap/yue_btn_bg1" />
+    <!-- 获取焦点时的背景图 -->
+    <item android:state_focused="true"
+        android:drawable="@mipmap/yue_btn_bg1" />
+    <!-- 默认的背景图 -->
+    <item    android:drawable="@mipmap/yue_btn_bg1" />
+
+
+    <!--&lt;!&ndash; 点击时的背景图 &ndash;&gt;-->
+    <!--<item android:state_pressed="true"-->
+        <!--android:drawable="@drawable/btn_bg_clickon" />-->
+    <!--&lt;!&ndash; 获取焦点时的背景图 &ndash;&gt;-->
+    <!--<item android:state_focused="true"-->
+        <!--android:drawable="@drawable/btn_bg" />-->
+    <!--&lt;!&ndash; 默认的背景图 &ndash;&gt;-->
+    <!--<item android:drawable="@drawable/btn_bg" />-->
+
+</selector>

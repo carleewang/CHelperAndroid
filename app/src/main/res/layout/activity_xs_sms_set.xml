@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--发送短信-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:padding="@dimen/it_p_lr">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="发送训赛短信"
+                    android:textColor="@color/color_userinfo_tx" />
+
+                <ToggleButton
+                    android:id="@+id/tb_fsdx"
+                    android:layout_width="@dimen/tb_w"
+                    android:layout_height="@dimen/tb_h"
+                    android:layout_margin="@dimen/tb_m"
+                    android:background="@drawable/switch_btn"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_sms_xs" />
+        </LinearLayout>
+
+
+        <!--       android:visibility="gone"    -->
+
+        <LinearLayout
+
+            android:id="@+id/ll_dx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--公棚简称-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorWhite"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/it_p_lr"
+                android:paddingRight="@dimen/it_p_lr">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/org_name_gp"
+                    android:textColor="@color/color_userinfo_tx"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+                <EditText
+                    android:id="@+id/tx_org_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/org_name_hint"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_userinfo_ex"
+                    android:textSize="@dimen/userinfo_tx_size" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h1" />
+
+            <!--公棚坐标-->
+            <LinearLayout
+                android:id="@+id/ll_gpzb"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/it_p_lr">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="公棚坐标"
+                        android:textColor="@color/color_userinfo_tx" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请填写  东经:  "
+                            android:textSize="@dimen/userinfo_tx_size" />
+
+                        <EditText
+                            android:singleLine="true"
+                            android:id="@+id/et_lo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/userinfo_tx_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  北纬:  "
+                            android:textSize="@dimen/userinfo_tx_size" />
+
+                        <EditText
+                            android:singleLine="true"
+                            android:id="@+id/et_la"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/userinfo_tx_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_locate"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:clickable="true"
+                    android:padding="7dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/xsdx_dw" />
+
+
+            </LinearLayout>
+
+            <!--发送内容-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/it_p_lr">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="发送内容"
+                        android:textColor="@color/color_userinfo_tx" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_fsnr"
+                        android:layout_width="@dimen/tb_w"
+                        android:layout_height="@dimen/tb_h"
+                        android:layout_margin="@dimen/tb_m"
+                        android:background="@drawable/switch_btn"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+
+                </LinearLayout>
+
+                <com.cpigeon.cpigeonhelper.ui.MyTextView
+                    android:id="@+id/tv_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_cen_xs" />
+            </LinearLayout>
+
+
+            <!--  android:visibility="gone"-->
+            <LinearLayout
+                android:id="@+id/ll_nr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--分割线-->
+                <include layout="@layout/view_dividerline_h1" />
+
+                <!--鸽主姓名-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/org_item_h1"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/it_p_tb"
+                    android:paddingLeft="@dimen/it_p_lr"
+                    android:paddingRight="@dimen/it_p_lr"
+                    android:paddingTop="@dimen/it_p_tb">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="鸽主姓名"
+                        android:textColor="@color/color_userinfo_tx" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_gzxm"
+                        android:layout_width="@dimen/tb2_w"
+                        android:layout_height="@dimen/tb2_h"
+                        android:layout_margin="@dimen/tb_m"
+                        android:background="@drawable/switch_btn"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+
+
+                </LinearLayout>
+
+                <!--分割线-->
+                <include layout="@layout/view_dividerline_h1" />
+
+                <!--足环号码-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/org_item_h1"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/it_p_tb"
+                    android:paddingLeft="@dimen/it_p_lr"
+                    android:paddingRight="@dimen/it_p_lr"
+                    android:paddingTop="@dimen/it_p_tb">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="足环号码"
+                        android:textColor="@color/color_userinfo_tx" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_zhhm"
+                        android:layout_width="@dimen/tb2_w"
+                        android:layout_height="@dimen/tb2_h"
+                        android:layout_margin="@dimen/tb_m"
+                        android:background="@drawable/switch_btn"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+
+
+                </LinearLayout>
+
+                <!--分割线-->
+                <include layout="@layout/view_dividerline_h1" />
+
+                <!--暂排名次-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/org_item_h1"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/it_p_tb"
+                    android:paddingLeft="@dimen/it_p_lr"
+                    android:paddingRight="@dimen/it_p_lr"
+                    android:paddingTop="@dimen/it_p_tb">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="暂排名次"
+                        android:textColor="@color/color_userinfo_tx" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_zpmc"
+                        android:layout_width="@dimen/tb2_w"
+                        android:layout_height="@dimen/tb2_h"
+                        android:layout_margin="@dimen/tb_m"
+                        android:background="@drawable/switch_btn"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+
+                </LinearLayout>
+
+
+                <!--分割线-->
+                <include layout="@layout/view_dividerline_h1" />
+
+                <!--分速-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/org_item_h1"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/it_p_tb"
+                    android:paddingLeft="@dimen/it_p_lr"
+                    android:paddingRight="@dimen/it_p_lr"
+                    android:paddingTop="@dimen/it_p_tb">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="分速"
+                        android:textColor="@color/color_userinfo_tx" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_fs"
+                        android:layout_width="@dimen/tb2_w"
+                        android:layout_height="@dimen/tb2_h"
+                        android:layout_margin="@dimen/tb_m"
+                        android:background="@drawable/switch_btn"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--发送对象 -->
+            <LinearLayout
+                android:id="@+id/ll_fsdx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:padding="@dimen/it_p_lr">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="发送对象"
+                            android:textColor="@color/color_userinfo_tx" />
+
+                        <ToggleButton
+                            android:id="@+id/tb_fsdx_dx"
+                            android:layout_width="@dimen/tb_w"
+                            android:layout_height="@dimen/tb_h"
+                            android:layout_margin="@dimen/tb_m"
+                            android:background="@drawable/switch_btn"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/send_dx_xs" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_dx_dx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--分割线-->
+                    <include layout="@layout/view_dividerline_h1" />
+
+                    <!--全部发送-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/org_item_h1"
+                        android:background="@color/colorWhite"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/it_p_tb"
+                        android:paddingLeft="@dimen/it_p_lr"
+                        android:paddingRight="@dimen/it_p_lr"
+                        android:paddingTop="@dimen/it_p_tb">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="全部发送"
+                            android:textColor="@color/color_userinfo_tx" />
+
+                        <ToggleButton
+                            android:id="@+id/tb_qbfs"
+                            android:layout_width="@dimen/tb2_w"
+                            android:layout_height="@dimen/tb2_h"
+                            android:layout_margin="@dimen/tb_m"
+                            android:background="@drawable/switch_btn"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="" />
+
+
+                    </LinearLayout>
+
+                    <!--分割线-->
+                    <include layout="@layout/view_dividerline_h1" />
+
+                    <!--发送前n个-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/org_item_h1"
+                        android:background="@color/colorWhite"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/it_p_tb"
+                        android:paddingLeft="@dimen/it_p_lr"
+                        android:paddingRight="@dimen/it_p_lr"
+                        android:paddingTop="@dimen/it_p_tb">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="发送前("
+                            android:textColor="@color/color_userinfo_tx" />
+
+                        <EditText
+                            android:id="@+id/et_fsqng"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="7"
+                            android:maxLines="1"
+                            android:text="0"
+                            android:textColor="@color/color_userinfo_tx"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text=")个 注：点击数据"
+                            android:textColor="@color/color_userinfo_tx" />
+
+                        <ToggleButton
+                            android:id="@+id/tb_fsqng"
+                            android:layout_width="@dimen/tb2_w"
+                            android:layout_height="@dimen/tb2_h"
+                            android:layout_margin="@dimen/tb_m"
+                            android:background="@drawable/switch_btn"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--测试短信通道-->
+            <include layout="@layout/layout_sms_test" />
+
+
+            <!--底部提示-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/protocol_hint" />
+
+                <TextView
+                    android:id="@+id/tv_xy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="训赛短信协议"
+                    android:textColor="@color/color_theme" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="》" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

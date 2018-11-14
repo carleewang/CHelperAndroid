@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <!--比赛名称-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ac_gyt_add_play_item_h"
+            android:background="@color/color_item">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="@string/str_gyt_add_play_fly_mark" />
+
+                <TextView
+                    android:id="@+id/name_hint"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/str_gyt_add_play_fly_play_name"
+                    android:textColor="@color/color_title_tv" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_play_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/ac_gyt_add_play_lo_ml"
+                    android:background="@null"
+                    android:hint="@string/fly_play_name_hin"
+                    android:textSize="@dimen/ac_gyt_add_play_et_hint_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--司放地点-->
+        <LinearLayout
+            android:id="@+id/ll_fly_location"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ac_gyt_add_play_item_h"
+            android:layout_marginTop="@dimen/ac_gyt_add_play_item_mt"
+            android:background="@color/color_item"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/ac_gyt_add_play_occupied_ml"
+                    android:gravity="center"
+                    android:text="@string/str_gyt_add_play" />
+
+                <TextView
+                    android:id="@+id/location_hint"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/str_gyt_add_play_fly_location"
+                    android:textColor="@color/color_title_tv" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/add_play_location"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/ac_gyt_add_play_lo_ml"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:hint="@string/str_gyt_add_play_fly_hint_location" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@mipmap/ic_info_r" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--司放坐标-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ac_gyt_add_play_item_h"
+            android:layout_marginTop="@dimen/ac_gyt_add_play_item_mt"
+            android:background="@color/color_item">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/ac_gyt_add_play_occupied_ml"
+                    android:gravity="center"
+                    android:text="@string/str_gyt_add_play" />
+
+                <TextView
+                    android:id="@+id/lola_hint"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/str_gyt_add_play_fly_coordinate"
+                    android:textColor="@color/color_title_tv" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/et_lo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/ac_gyt_add_play_lo_ml"
+                        android:background="@null"
+                        android:hint="@string/str_gyt_add_play_hint_lo"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/ac_gyt_add_play_et_hint_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_la"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="@string/str_gyt_add_play_hint_la"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/ac_gyt_add_play_et_hint_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/ac_gyt_add_play_hint_mr"
+            android:layout_marginTop="@dimen/ac_gyt_add_play_hint_mt"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_gk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="@string/str_gyt_add_play"
+                    android:textSize="10sp" />
+
+                <CheckBox
+                    android:id="@+id/btn_cb"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_check_box_selector"
+                    android:button="@null"
+                    android:textColor="#717070" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="选中，则将该训放发布到中鸽网!"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/str_gyt_add_play_hint"
+                android:textColor="@color/color_tv_hint" />
+
+        </LinearLayout>
+
+
+        <!--<com.cpigeon.cpigeonhelper.ui.MyTextView-->
+        <!--android:id="@+id/hint_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="15dp"-->
+        <!--android:singleLine="false"-->
+        <!--android:text="@string/str_add_fly_hint_tv" />-->
+
+    </LinearLayout>
+
+    <!--确定-->
+    <Button
+        android:id="@+id/imtbtn_determine"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_btn_h"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/pas_btn_confirm_mb"
+        android:layout_marginLeft="@dimen/pas_btn_confirm_mlf"
+        android:layout_marginRight="@dimen/pas_btn_confirm_mlf"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_btn_bg"
+        android:scaleType="fitXY"
+        android:text="@string/btn_confirm"
+        android:textColor="@color/color_btn_tv"
+        android:textSize="@dimen/btn_tv_size" />
+
+</LinearLayout>

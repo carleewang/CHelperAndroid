@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:textColor="@color/color_262626"
+            android:id="@+id/tv_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="@dimen/tv_size_gxt"
+            tools:text="@string/string_text_create_message_order_explain" />
+
+        <include layout="@layout/view_dividerline_h1" />
+
+        <TextView
+            android:textColor="@color/color_999999"
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="短信充值条数"
+            android:textSize="@dimen/tv_size_gxt" />
+
+        <RelativeLayout
+            android:layout_marginBottom="16dp"
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <android.support.v7.widget.AppCompatTextView
+
+                android:id="@+id/tv_select1"
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_gray_true_b_withe_st_blue"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="1万条"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/tv_size_gxt" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_select2"
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_gray_true_b_withe_st_blue"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="2万条"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/tv_size_gxt"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_select3"
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_gray_true_b_withe_st_blue"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="3万条"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/tv_size_gxt" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_select4"
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/tv_select1"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_gray_true_b_withe_st_blue"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="4万条"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/tv_size_gxt" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_select5"
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_alignBaseline="@+id/ed_count"
+                android:layout_alignBottom="@+id/ed_count"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_gray_true_b_withe_st_blue"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="其他："
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/tv_size_gxt"/>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:textColor="@color/color_262626"
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_select1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="万条"
+                android:textSize="@dimen/tv_size_gxt" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/tv_size_gxt"
+                android:id="@+id/ed_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_select3"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@id/text3"
+                android:layout_toRightOf="@+id/tv_select5"
+                android:background="@drawable/background_round_white_5"
+                android:inputType="number"
+                android:maxLength="4" />
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_dividerline_h1" />
+
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="付款金额"
+            android:textSize="@dimen/tv_size_gxt" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/tv_size_gxt"
+            tools:text="¥ 850" />
+
+        <include layout="@layout/view_dividerline_h1" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/message_button">
+
+        <TextView
+            android:id="@+id/text_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="提交订单"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

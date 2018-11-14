@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <!--自定义的搜索文本框-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_et_h"
+        android:layout_margin="@dimen/search_et_m">
+
+        <LinearLayout
+            android:id="@+id/ll_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <!--   android:drawablePadding="@dimen/search_et_dra_p"-->
+            <com.cpigeon.cpigeonhelper.ui.searchview.SearchEditText
+                android:textColorHint="@color/et_hint_color"
+                android:id="@+id/search_edittext"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/search_et_h"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_search_edit"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/search"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:hint="输入足环号码查询"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textSize="@dimen/search_et_size"
+                app:drawableDel="@mipmap/close" />
+
+            <!--取消输入-->
+            <TextView
+                android:id="@+id/edit_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@null"
+                android:clickable="true"
+                android:paddingLeft="10dp"
+                android:text="取消" />
+        </LinearLayout>
+
+
+        <com.cpigeon.cpigeonhelper.ui.searchview.SearchEditText
+            android:textColorHint="@color/et_hint_color"
+            android:id="@+id/search_edittext2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_et_h"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_search_edit"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="5dp"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:hint="输入足环号码查询"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textSize="@dimen/search_et_size"
+            app:drawableDel="@mipmap/close" />
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/layout_rv_srl_bg_white" />
+
+
+    <!--确定-->
+    <Button
+        android:id="@+id/btn_determine"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_btn_h"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/pas_btn_confirm_mb"
+        android:layout_marginLeft="@dimen/pas_btn_confirm_mlf"
+        android:layout_marginRight="@dimen/pas_btn_confirm_mlf"
+        android:background="@drawable/selector_btn_bg"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:text="确定"
+        android:textColor="@color/color_btn_tv"
+        android:textSize="@dimen/btn_tv_size" />
+
+</LinearLayout>

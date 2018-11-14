@@ -1,0 +1,347 @@
+<resources>
+    <!--app名字-->
+    <string name="app_name">中鸽助手</string>
+
+
+    <!--授权-->
+    <string name="auth_hint_add_photo">请输入手机号码搜索您要授权的用户</string>
+    <string name="auth_hint_list">搜索比赛</string>
+
+
+    <!--菜单页-->
+    <string name="menu_association_information">协会信息</string>
+    <string name="menu_loft_information">公棚信息</string>
+    <string name="menu_mine">我的鸽运通</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_announcement">公告通知</string>
+    <string name="menu_journal">操作日志</string>
+    <string name="menu_helping">帮助</string>
+
+    <string name="menu_userName">用户名</string>
+    <string name="menu_userphone">电话：</string>
+    <string name="menu_userphones">15912345678</string>
+
+    <!--首页-->
+    <string name="home_hint_text">您还没有监控记录，快去添加一场比赛吧!</string>
+
+
+    <!--设置页-->
+    <string name="setting_modify_log_pas">修改登录密码</string>
+    <string name="setting_modify_play_pas">修改支付密码</string>
+    <string name="setting_edition">当前版本</string>
+    <string name="setting_appraise">应用评价</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_remove_cache">清除缓存</string>
+    <string name="setting_help">使用帮助</string>
+    <string name="setting_ullage_tool">空距计算</string>
+
+    <!--忘记密码-->
+    <string name="pas_hint">密码由6~16位英文、数字或符号组成</string>
+    <string name="pas_change_pas">输入密码</string>
+    <string name="pas_confirm_pas">再次输入密码</string>
+
+    <!--修改密码-->
+    <string name="change_pas_et_old">输入旧密码</string>
+    <string name="change_pas_et_new">输入新密码</string>
+    <string name="change_pas_et_new_confirm">再次输入新密码</string>
+
+    <!--协会信息-->
+    <string name="string_org_name">组织名称</string>
+    <string name="string_sld">二级域名</string>
+    <string name="string_contact_name">联系人</string>
+    <string name="string_contact_phone">联系电话</string>
+    <string name="string_contact_email">邮箱</string>
+    <string name="string_contact_address">详细地址</string>
+    <string name="string_contact_time_regis">注册时间</string>
+    <string name="string_contact_time_setup">建立时间</string>
+    <string name="string_contact_time_dueto">到期时间</string>
+
+
+    <!--变更名称申请-->
+    <string name="string_before_name">原名称</string>
+    <string name="string_change_name">变更名称</string>
+    <string name="string_change_name_hint">请输入新的名称</string>
+    <string name="string_change_cause">变更原因</string>
+    <string name="string_change_cause_hint">输入变更名称的原因</string>
+    <string name="string_upload_proof">上传证明</string>
+
+    <!--修改二级域名-->
+    <string name="string_before_domain_name">原域名</string>
+    <string name="string_change_domain_name">变更域名</string>
+    <string name="string_domain_name_hint">请输入新的域名</string>
+
+    <!--鸽运通主页-->
+    <string name="string_gyt_times">监控总时长</string>
+    <string name="string_gyt_numbers">监控次数</string>
+    <string name="string_gyt_open_times">开通时间</string>
+    <string name="string_gyt_due_times">到期时间</string>
+    <string name="string_acquiescence_miles">已监控里程：0公里</string>
+    <string name="string_acquiescence_total_tims">0秒</string>
+    <string name="string_acquiescence_total_num">0次</string>
+    <string name="string_acquiescence_open_duetims">0000-00-00</string>
+
+
+    <!--编辑司放地页面-->
+    <string name="str_flying_place">地点</string>
+    <string name="str_flying_longitude">经度</string>
+    <string name="str_flying_latitude">纬度</string>
+    <string name="str_flying_remark">备注</string>
+
+    <!--添加司放地页面-->
+    <string name="str_add_fly_numbering">编号</string>
+    <string name="str_add_fly_place">地点</string>
+    <string name="str_add_fly_place_hint">请填写地点（必填）</string>
+    <string name="str_add_fly_lo_hint">经度（必填）</string>
+    <string name="str_add_fly_la_hint">纬度（必填）</string>
+    <string name="str_add_fly_bz_hint">请输入备注（选填）</string>
+    <string name="str_add_fly_coordinate">坐标</string>
+    <!--<string name="str_add_fly_hint_tv">经纬度的格式为：度，分，秒。如：123.234467为123度23分44.67秒</string>-->
+    <string name="str_add_fly_hint_tv">经纬度的格式为：度，分，秒。如：136.234467为136度23分44.67秒。</string>
+
+
+    <!--鸽运通添加比赛-->
+    <string name="str_gyt_add_play_hint">*为必填项</string>
+    <string name="str_gyt_add_play_hint_lo">经度</string>
+    <string name="str_gyt_add_play_hint_la">纬度</string>
+    <string name="str_gyt_add_play_fly_mark">*</string>
+    <string name="str_gyt_add_play">  </string>
+    <string name="str_gyt_add_play_fly_coordinate">司放坐标</string>
+    <string name="str_gyt_add_play_fly_location">司放地点</string>
+    <string name="str_gyt_add_play_fly_hint_location">输入司放地点</string>
+    <string name="str_gyt_add_play_fly_play_name">比赛名称</string>
+    <string name="fly_play_name_hin">请输入比赛名称</string>
+
+    <string name="str_gyt_add_fly_coordinate">训放坐标</string>
+    <string name="str_gyt_add_fly_location">训放地点</string>
+    <string name="str_gyt_add_fly_hint_location">输入训放地点</string>
+    <string name="str_gyt_add_fly_play_name">训放名称</string>
+    <string name="fly_name_hin">请输入训放名称</string>
+
+
+    <!--我的司放地-->
+    <string-array name="flyingarea_sections">
+        <item>我的司放地</item>
+        <item>参考司放地</item>
+    </string-array>
+
+    <!--我的训放地-->
+    <string-array name="flying_section">
+        <item>我的训放地</item>
+        <item>参考训放地</item>
+    </string-array>
+
+
+    <!--续费升级-->
+    <string-array name="reup_sections">
+        <item>续费</item>
+        <item>升级</item>
+    </string-array>
+
+    <!--我的订单-->
+    <string-array name="my_order_top">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>已完成</item>
+        <item>已过期</item>
+    </string-array>
+
+    <!--鸽友交流-->
+    <string-array name="gyjl_home_top">
+        <item>留言</item>
+        <item>评论</item>
+    </string-array>
+
+    <!--会费缴纳-->
+    <string-array name="hfjl_home_top">
+        <item>已缴纳</item>
+        <item>未缴费</item>
+    </string-array>
+
+
+    <!--订单支付-->
+    <string name="str_forget_play_pas">忘记支付密码</string>
+    <string name="str_order_details">订单详情</string>
+    <string name="str_wx_play">(手续费1% , </string>
+    <string name="str_gb_play">鸽币兑换</string>
+    <string name="str_balance_play">余额支付</string>
+    <string name="str_play_mode">支付方式</string>
+    <string name="str_play_money">支付金额：</string>
+    <string name="str_play_order_content">订单类型：</string>
+    <string name="str_play_order_number">订单编号：</string>
+    <string name="str_place_order_time">下单时间：</string>
+    <string name="str_play_time">支付倒计时：</string>
+    <string name="str_play_protocol">《中鸽网支付协议》</string>
+    <string name="str_play_protocol_consent">我已阅读并同意</string>
+
+    <!--修改支付密码-->
+    <string name="str_play_mondify_hint">支付密码只能有6位数字组成</string>
+
+
+    <!--关于-->
+    <!--<string name="cpigeon_intro">中鸽网（亦称中国信鸽网或中鸽信鸽网）是专业的信鸽行业门户网站，创办于2005年6月。是目前信鸽（赛鸽）领域唯一的公益性信鸽专业门户平台，旨在为全球信鸽爱好者提供免费的信鸽资讯服务，同时为信鸽协会、赛鸽俱乐部、赛鸽公棚等信鸽企业提供形象展示、信息发布、比赛统计、比赛视频分享、信鸽交流、比赛直播等相关网络支持及服务。</string>-->
+    <!--<string name="cpigeon_intro">中鸽助手是为中鸽网公棚和协会用户提供信息发布管理和信鸽比赛监控的平台。比赛监控通过对司放鸽车定位跟踪、路线回放、发布照片及视频等，让鸽友能清晰了解整个司放过程，让信鸽比赛公开、透明、公正。</string>-->
+    <string name="cpigeon_intro">中鸽助手是为中鸽网公棚和协会用户提供信息发布、赛鸽管理和比赛监控的平台。目前提供：公棚赛鸽摄像、鸽运通（比赛监控）、训鸽通（个人训放监控）、鸽信通（短信群发）等服务和公棚、协会信息发布管理等功能，一部手机搞定所有工作，简单便捷高效，节省您的时间、提高工作效率。</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="function_introduction">功能介绍</string>
+    <string name="version_information_gs">成都市中鸽科技有限公司</string>
+    <string name="version_information_c" translatable="false">Copyright © 2006 - 2018 All rights reserved.</string>
+
+
+    <!--底部按钮-->
+    <string name="complete_play">结束比赛</string>
+    <string name="btn_add_photo">拍摄照片</string>
+    <string name="btn_upload_photo">上传图片</string>
+    <string name="btn_add_video">拍摄视频</string>
+    <string name="btn_add_auth">+ 添加授权</string>
+    <string name="btn_submit">提交</string>
+    <string name="btn_confirm">确定</string>
+    <string name="btn_out_login">退出登录</string>
+    <string name="btn_out_add">确定添加</string>
+    <string name="btn_sgt_apply_trial">申请试用</string>
+
+
+    <!--支付弹出框-->
+    <string name="format_pay_account_balance_tips">支付金额：</string>
+    <string name="format_pay_account_balance_tips_2">余额%1$s元,支付扣除%2$s元</string>
+
+    <!--协会服务-->
+    <string name="tv_ssgc_hint">开启后，其他鸽友将能够对您的赛事规程进行评论。</string>
+    <string name="tv_xhdt_hint">开启后，其他鸽友将能够对您的协会动态进行评论。</string>
+    <string name="et_hint_title_ssgc">请在此处填写规程标题</string>
+    <string name="et_hint_con_ssgc">请在此输入规程内容</string>
+
+    <string name="et_hint_title_xhdt">请在此处填写动态标题</string>
+    <string name="et_hint_con_xhdt">请在此输入动态内容</string>
+
+    <string name="string_text_contacts_number">此分组有%1$s人</string>
+
+    <string name="string_text_message_addressee_number">收信人数：%1$s</string>
+    <string name="string_text_message_history_cpigeon_hint">中鸽网提示：由于信息发送的数据量大，只能查询一年内发送的短信，请您选择月份，系统按照您选择的月份显示结果</string>
+    <string name="string_text_date_for_message_history">%1$s月短信发送记录</string>
+    <string name="message_pigeon_message_count_not_enough">你的短信不足1000条，请即时充值</string>
+    <string name="message_not_open_pigeon_message">您当前尚未开通鸽信通服务！开通成功立即赠送10000条短信,请先提交个人信息</string>
+    <string name="confirm">确定</string>
+    <string name="string_text_create_message_order_explain">鸽信通%1$s元/1万条，不限时间，发完为止。</string>
+    <string name="string_text_select_contacts_number">已经选择%1$s个联系人</string>
+
+    <string name="string_sign_info">当前签名为：【%1$s】</string>
+    <string name="prompt">提示</string>
+
+
+    <!--协会 比赛管理-->
+    <string name="play_name">比赛项目</string>
+    <string name="flay_location">司放地点</string>
+    <string name="flay_time">司放时间</string>
+
+    <string name="send_sms">开启后，可以根据自己要求对入棚短信进行自主设置，方便快捷。</string>
+    <string name="send_cen">开启后，可以根据自己要求对发送短信内容进行设置。</string>
+    <string name="org_name">协会简称</string>
+    <string name="org_name_hint">请保持在3到6个字符</string>
+    <string name="protocol_hint">点击保存视为您阅读并同意《</string>
+
+    <string name="org_name_gp">公棚简称</string>
+    <string name="org_name_gp_xmmc">项目名称</string>
+    <string name="org_name_xmmc_hint">项目名称不能超过20个汉字</string>
+    <string name="send_cen_gp">开启后，可以根据自己要求对入棚短信内容进行设置。</string>
+
+    <string name="send_sms_xs">开启后，可以根据自己要求对训赛短信进行自主设置，方便快捷。</string>
+    <string name="send_cen_xs">开启后，可以根据自己要求对训赛短信内容进行设置。</string>
+    <string name="send_dx_xs">开启后，可以根据自己要求对鸽主进行选择发送。</string>
+
+    <string name="test_sms_hint">测试短信从您的短信剩余条数里扣除，请勿重复点击“测试短信通道”</string>
+
+    <!--上笼短信-->
+    <string name="send_sms_sl">开启后，可以根据自己要求对上笼短信进行自主设置，方便快捷。</string>
+    <string name="send_cen_sl">开启后，可以根据自己要求对上笼短信内容进行设置。</string>
+    <string name="string_message_content_count">%1$s/200</string>
+
+    <!--测量小工具-->
+    <string name="str_ullage_tool_bottom">1、经纬度的格式为：度，分，秒，百分秒。如：123.234467 为123度23分44.67秒。\n2、以上的单元填写项不得为空，应以"0"补足。如5：30分，就应输入5时30分0秒。\n3、空距计算采用中国信鸽协会统一标准算法(2005-8-31公布)，由于算法、精度取舍等不同，各种软件计算结果可能存在一定误差。\n4、由于各地日出日落不一致，只计算当日归巢分速。\n</string>
+
+    <string name="str_bgsq">变更授权</string>
+
+    <!--错误提示信息-->
+    <string name="str_hint_sggp">暂无赛鸽数据</string>
+    <string name="str_hint_sldx">暂无上笼短信数据</string>
+    <string name="str_hint_xsdx">暂无训赛短信数据</string>
+    <string name="str_hint_rz">暂无日志</string>
+    <string name="str_hint_dz">暂无订单</string>
+    <string name="str_hint_czjl">暂无充值记录</string>
+    <string name="str_hint_gyt">暂无鸽运通数据</string>
+    <string name="str_hint_xgt">暂无训鸽通数据</string>
+    <string name="str_hint_sfd">暂无司放地数据</string>
+    <string name="str_hint_xfd">暂无训放地数据</string>
+    <string name="str_hint_czzd">暂无比赛数据</string>
+    <string name="str_hint_zwzh">暂无足环</string>
+
+    <string name="str_hint_gyly_ly">暂无鸽友留言</string>
+    <string name="str_hint_gyly_pl">暂无鸽友评论</string>
+    <string name="str_hint_hygl_xhhy">暂无协会会员</string>
+    <string name="str_hint_hygl_lssj">暂无历史赛绩</string>
+    <string name="str_hint_hygl_cfjl">暂无处罚记录</string>
+
+    <string name="str_hint_hygl_zhgm">暂无足环购买</string>
+    <string name="str_hint_hygl_ndjf">暂无年度缴费</string>
+    <string name="str_hint_order_invoice">暂无发票信息</string>
+    <string name="str_hint_hygl_ndpx">暂无年度评选</string>
+
+    <string name="str_ndpy_pxresult_1">最佳司放员</string>
+    <string name="str_ndpy_pxresult_2">最佳公棚</string>
+    <string name="str_ndpy_pxresult_3">最佳裁判</string>
+    <string name="str_ndpy_pxresult_4">最佳会员</string>
+
+    <string name="str_hint_gpsg_bz">备注：足环号码务必与鸽子所佩戴一致;搜索号码为精准搜索,须与您公棚赛鸽管理软件一致。</string>
+
+    <string name="str_himt_details">为保证数据上传，请在设置里开启：休眠状态下保持网络连接。监控时，请关闭其他应用程序以避免内存不足导致监控退出。</string>
+
+
+    <string name="str_line_seconds">00.00\"</string>
+
+
+    <string name="str_copyright_information_hint">天气仅供参考，中鸽助手提醒您切勿作为商业用途！</string>
+
+    <string name="string_hint_get_gb">您已经获取%1$s个鸽币，请再接再厉</string>
+    <string name="previous">Go to previous</string>
+    <string name="next">Go to next</string>
+    <string name="calendar">Calendar</string>
+
+
+    <string name="str_authorization_taking_pictures">授权拍照</string>
+    <string name="str_line_weather">赛线天气</string>
+    <string name="str_ullage">空距计算</string>
+    <string name="str_cpigeon">中鸽网</string>
+    <string name="str_at_any_time_shooting">信鸽随拍</string>
+    <string name="str_sms">鸽信通</string>
+    <string name="str_sms_set">鸽信通</string>
+    <string name="str_gyt">鸽运通</string>
+    <string name="str_book">天下鸽谱</string>
+
+
+    <string name="str_shoot_org_hint">赛事组织可填写协会，鸽舍，比赛等组织名称</string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

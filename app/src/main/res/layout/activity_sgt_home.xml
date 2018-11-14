@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.cpigeon.cpigeonhelper.ui.searchview.SearchEditText
+        android:id="@+id/search_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_et_h2"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_search_edit3"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/search_bold"
+        android:drawablePadding="16dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:hint="足环/鸽主姓名搜索"
+        android:imeOptions="actionSearch"
+        android:padding="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:textColorHint="@color/et_hint_gpsg_color"
+        android:textSize="@dimen/search_et_size2"
+        app:drawableDel="@mipmap/close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <include layout="@layout/layout_rv_srl2" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.5"
+            android:background="#d9d9d9">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_btn_z"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <!--赛鸽补拍-->
+            <LinearLayout
+                android:id="@+id/ll_sgbp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/sgt_img_wh"
+                    android:layout_height="@dimen/sgt_img_wh"
+                    android:src="@mipmap/sgt_sgbp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="赛鸽补拍"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sgt_tv_size" />
+
+            </LinearLayout>
+
+            <!--授权拍照-->
+            <LinearLayout
+                android:id="@+id/ll_sqpz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/sgt_img_wh"
+                    android:layout_height="@dimen/sgt_img_wh"
+                    android:src="@mipmap/sgt_sqpz" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="授权拍照"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sgt_tv_size" />
+
+            </LinearLayout>
+
+            <!--取消授权-->
+            <LinearLayout
+                android:id="@+id/ll_qxsq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/sgt_img_wh"
+                    android:layout_height="@dimen/sgt_img_wh"
+                    android:src="@mipmap/sgt_qxsq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="取消授权"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sgt_tv_size" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

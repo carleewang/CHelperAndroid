@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<!--    android:background="@drawable/bg_dialog_jk"-->
+    <!--监控状态-->
+    <TextView
+        android:id="@+id/monitor_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/monitor_dialog_m"
+        android:text="正在监控"
+        android:textColor="#3478F7"
+        android:textSize="@dimen/monitor_dialog_tv_size" />
+
+    <!--监控时长   android:layout_marginTop="@dimen/monitor_dialog_mt"-->
+    <TextView
+        android:id="@+id/monitor_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/monitor_dialog_m"
+        android:text="已监控：暂无数据"
+        android:textColor="#008000"
+        android:textSize="@dimen/monitor_dialog_tv_size" />
+
+    <!--司放地坐标-->
+    <TextView
+        android:id="@+id/fly_lo_la"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/monitor_dialog_m"
+        android:layout_marginTop="@dimen/monitor_dialog_mt"
+        android:text="司放地坐标：用户未设置"
+        android:textSize="@dimen/monitor_dialog_tv_size" />
+
+    <!--司放地天气-->
+    <TextView
+        android:id="@+id/fly_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/monitor_dialog_m"
+        android:layout_marginTop="@dimen/monitor_dialog_mt"
+        android:text="司放地天气：暂无数据"
+        android:textSize="@dimen/monitor_dialog_tv_size" />
+
+    <!--当前位置经纬度-->
+    <TextView
+        android:id="@+id/current_lo_la"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/monitor_dialog_m"
+        android:layout_marginTop="@dimen/monitor_dialog_mt"
+        android:text="当前坐标：暂无数据"
+        android:textSize="@dimen/monitor_dialog_tv_size" />
+
+    <!--当前天气-->
+    <TextView
+        android:id="@+id/current_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/monitor_dialog_m"
+        android:layout_marginTop="@dimen/monitor_dialog_mt"
+        android:text="当前天气：暂无数据"
+        android:textSize="@dimen/monitor_dialog_tv_size" />
+
+    <!--空距-->
+    <TextView
+        android:id="@+id/dialog_ullage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/monitor_dialog_m"
+        android:layout_marginTop="@dimen/monitor_dialog_mt"
+        android:text="空距：0 公里"
+        android:textSize="@dimen/monitor_dialog_tv_size" />
+
+    <!--里程-->
+    <TextView
+        android:id="@+id/dialog_miles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/monitor_dialog_m"
+        android:layout_marginTop="@dimen/monitor_dialog_mt"
+        android:text="里程：0 公里"
+        android:textSize="@dimen/monitor_dialog_tv_size" />
+
+    <!--速度-->
+    <TextView
+        android:id="@+id/dialog_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/monitor_dialog_m"
+        android:layout_marginTop="@dimen/monitor_dialog_mt"
+        android:text="速度：0 米/秒"
+        android:textSize="@dimen/monitor_dialog_tv_size" />
+
+    <include layout="@layout/view_dividerline_h" />
+
+    <Button
+        android:id="@+id/dialog_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:text="确定" />
+</LinearLayout>

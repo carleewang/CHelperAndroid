@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <!--    android:background="@drawable/dialog_corner_bg"-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="输入会员姓名"
+        android:textColor="@color/color_262626"
+        android:textSize="16sp" />
+
+    <EditText
+        android:layout_marginTop="18dp"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:id="@+id/et_shuru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="5dp"
+        android:textColor="@color/color_262626"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#63c5c3" />
+
+
+    <TextView
+        android:id="@+id/tv_hint_cen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="请如实填写"
+        android:textColor="@color/color_b3b3b3"
+        android:textSize="12sp" />
+
+    <!--确定按钮-->
+    <TextView
+        android:id="@+id/dialog_determine"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_corners_blue"
+        android:button="@null"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="确    定"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+</LinearLayout>

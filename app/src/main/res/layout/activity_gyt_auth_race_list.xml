@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <!--输入文本框-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:background="@color/color_ac_search_bg"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center">-->
+
+
+    <!--&lt;!&ndash;开始搜索按钮&ndash;&gt;-->
+    <!--<ImageButton-->
+    <!--android:id="@+id/imgbtn_start_search"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:background="@null"-->
+    <!--android:src="@mipmap/search" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="4"-->
+    <!--android:gravity="center">-->
+
+
+    <!--&lt;!&ndash;搜索输入比赛列表&ndash;&gt;-->
+    <!--<EditText-->
+    <!--android:id="@+id/ac_search_input"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@null"-->
+    <!--android:hint="请输入需要授权的比赛"-->
+    <!--android:src="@mipmap/search" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center">-->
+
+
+    <!--&lt;!&ndash;清除输入内容&ndash;&gt;-->
+    <!--<ImageButton-->
+    <!--android:background="@null"-->
+    <!--android:id="@+id/celel_input_content"-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:src="@mipmap/wrong" />-->
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <com.cpigeon.cpigeonhelper.ui.searchview.SearchEditText
+        android:textColorHint="@color/et_hint_color"
+        android:id="@+id/search_auth_list_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_et_h"
+        android:layout_margin="@dimen/search_et_m"
+        android:background="@drawable/bg_search_edit2"
+        android:drawableLeft="@mipmap/search"
+        android:drawablePadding="@dimen/search_et_dra_p"
+        android:gravity="center_vertical"
+        android:hint="@string/auth_hint_list"
+        android:imeOptions="actionSearch"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="@dimen/search_et_size"
+        app:drawableDel="@mipmap/close" />
+
+
+    <!--搜索结果-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="搜索结果" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_ac_au_ra_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorViewBackground">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+
+            <com.cpigeon.cpigeonhelper.ui.CustomEmptyView
+                android:id="@+id/empty_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

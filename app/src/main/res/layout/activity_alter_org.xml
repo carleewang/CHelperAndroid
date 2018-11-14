@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?><!--修改组织信息-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--原名称-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/org_item_h"
+            android:layout_marginLeft="@dimen/org_item_ml"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="@string/string_before_name"
+                android:textColor="@color/color_userinfo_tx"
+                android:textSize="@dimen/userinfo_tx_size" />
+
+
+            <TextView
+                android:id="@+id/tv_before_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/color_userinfo_ex"
+                android:textSize="@dimen/userinfo_tx_size" />
+        </LinearLayout>
+
+        <!--分割线-->
+        <include layout="@layout/view_dividerline_h1" />
+
+        <!--变更名称-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/org_item_h"
+            android:layout_marginLeft="@dimen/org_item_ml"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="@string/string_change_name"
+                android:textColor="@color/color_userinfo_tx"
+                android:textSize="@dimen/userinfo_tx_size" />
+
+            <EditText
+                android:id="@+id/et_change_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/string_change_name_hint"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/color_userinfo_ex"
+                android:textColorHint="@color/color_et_hint"
+                android:textSize="@dimen/userinfo_tx_size" />
+        </LinearLayout>
+
+        <!--分割线-->
+        <include layout="@layout/view_dividerline_h1" />
+
+
+        <!--变更原因-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/change_name_cause_item_h"
+            android:layout_marginLeft="@dimen/org_item_ml"
+            android:layout_marginTop="@dimen/change_cause_ll_mt"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="@string/string_change_cause"
+                android:textColor="@color/color_userinfo_tx"
+                android:textSize="@dimen/userinfo_tx_size" />
+
+            <EditText
+                android:id="@+id/et_change_cause"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/string_change_cause_hint"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:minHeight="@dimen/change_name_cause_item_h"
+                android:textColor="@color/color_userinfo_ex"
+                android:textColorHint="@color/color_et_hint"
+                android:textSize="@dimen/userinfo_tx_size" />
+        </LinearLayout>
+
+        <!--分割线-->
+        <include layout="@layout/view_dividerline_h1" />
+
+
+        <!--上传证明-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/change_name_cause_item_h"
+            android:layout_marginLeft="@dimen/org_item_ml"
+            android:layout_marginTop="@dimen/change_cause_ll_mt"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="@string/string_upload_proof"
+                android:textColor="@color/color_userinfo_tx"
+                android:textSize="@dimen/userinfo_tx_size" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/alter_img"
+                    android:layout_width="@dimen/change_img_wh"
+                    android:layout_height="@dimen/change_img_wh"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/addpic" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <include layout="@layout/view_dividerline_h" />
+
+    </LinearLayout>
+
+    <!--提交-->
+    <Button
+        android:id="@+id/alter_org_submit"
+        android:layout_width="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_height="@dimen/item_btn_h"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/pas_btn_confirm_mb"
+        android:layout_marginLeft="@dimen/pas_btn_confirm_mlf"
+        android:layout_marginRight="@dimen/pas_btn_confirm_mlf"
+        android:background="@drawable/selector_btn_bg"
+        android:text="@string/btn_submit"
+        android:textColor="@color/color_btn_tv"
+        android:textSize="@dimen/btn_tv_size" />
+
+
+</RelativeLayout>

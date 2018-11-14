@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <!--输入文本框-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:background="@color/color_ac_search_bg"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center">-->
+
+
+    <!--&lt;!&ndash;开始搜索按钮&ndash;&gt;-->
+    <!--<ImageButton-->
+    <!--android:id="@+id/imgbtn_start_search"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:background="@null"-->
+    <!--android:src="@mipmap/search" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="4"-->
+    <!--android:gravity="center">-->
+
+
+    <!--&lt;!&ndash;输入手机号码&ndash;&gt;-->
+    <!--<EditText-->
+    <!--android:inputType="number"-->
+    <!--android:maxLength="11"-->
+    <!--android:singleLine="true"-->
+    <!--android:maxLines="1"-->
+    <!--android:imeOptions="actionSearch"-->
+    <!--android:id="@+id/ac_add_phone"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@null"-->
+    <!--android:hint="请输入手机号码"-->
+    <!--android:src="@mipmap/search" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center">-->
+
+
+    <!--&lt;!&ndash;清除输入内容&ndash;&gt;-->
+    <!--<ImageButton-->
+    <!--android:background="@null"-->
+    <!--android:id="@+id/celel_input_content"-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:src="@mipmap/wrong" />-->
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--自定义的搜索文本框-->
+    <com.cpigeon.cpigeonhelper.ui.searchview.SearchEditText
+        android:textColorHint="@color/et_hint_color"
+        android:id="@+id/search_auth_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_et_h"
+        android:layout_margin="@dimen/search_et_m"
+        android:background="@drawable/bg_search_edit2"
+        android:drawableLeft="@mipmap/search"
+        android:drawablePadding="@dimen/search_et_dra_p"
+        android:gravity="center_vertical"
+        android:hint="@string/auth_hint_add_photo"
+        android:imeOptions="actionSearch"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="@dimen/search_et_size"
+        app:drawableDel="@mipmap/close" />
+
+    <!--搜索结果-->
+    <TextView
+        android:id="@+id/tv_jg"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="搜索结果"
+        android:visibility="gone" />
+
+
+    <!--搜索结果内容展示-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--未找到控件布局-->
+        <LinearLayout
+            android:id="@+id/ll_search_fail"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/color_ac_search_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="11"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_search_fail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="未搜索到用户：159123456789" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="可通过短信通知该用户下载“中鸽助手App”" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center">
+
+                <!--短信通知-->
+                <ImageButton
+                    android:id="@+id/imgbtn_sms_inform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@mipmap/tongzhi" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--找到控件-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ac_addauth_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </FrameLayout>
+
+
+</LinearLayout>

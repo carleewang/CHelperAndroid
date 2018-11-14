@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/gyt_monitor_img_list_m"
+    android:id="@+id/it_photo_ll"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/it_photo_img"
+        android:layout_width="@dimen/gyt_monitor_img_list_wh"
+        android:layout_height="@dimen/gyt_monitor_img_list_wh"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/it_photo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/gyt_monitor_tv_m" />
+
+</LinearLayout>

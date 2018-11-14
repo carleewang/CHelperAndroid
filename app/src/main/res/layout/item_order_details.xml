@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/it_order_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_details_item_cen_h"
+            android:gravity="center_vertical"
+            android:text="鸽运通续费一年"
+            android:textSize="@dimen/it_or_list_tv_size" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_details_item_cen_h"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下单时间："
+                android:textSize="@dimen/it_or_list_tv_size" />
+
+            <TextView
+                android:id="@+id/it_order_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0000-00-00 00:00:00"
+                android:textSize="@dimen/it_or_list_tv_size" />
+        </LinearLayout>
+
+
+        <!--订单编号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_details_item_cen_h"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单编号："
+                android:textSize="@dimen/it_or_list_tv_size" />
+
+            <TextView
+                android:id="@+id/it_order_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/order_details_item_cen_h"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textSize="@dimen/it_or_list_tv_size" />
+        </LinearLayout>
+
+        <!--支付方式，内容-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_details_item_cen_h"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/it_order_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已支付："
+                    android:textSize="@dimen/it_or_list_tv_size" />
+
+                <TextView
+                    android:id="@+id/it_order_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="698元"
+                    android:textColor="@color/color_play_hint"
+                    android:textSize="@dimen/it_or_list_tv_size" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!--支付途径-->
+                <LinearLayout
+                    android:id="@+id/it_orad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付途径："
+                        android:textSize="@dimen/it_or_list_tv_size" />
+
+                    <TextView
+                        android:id="@+id/it_order_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信支付"
+                        android:textColor="@color/color_play_way"
+                        android:textSize="@dimen/it_or_list_tv_size" />
+
+                </LinearLayout>
+
+                <!--前往支付-->
+                <ImageButton
+                    android:id="@+id/it_goto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_order_play" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!--&lt;!&ndash;订单疑问&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/it_order_doubt"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="@dimen/order_details_item_cen_h"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:clickable="true"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="对此订单有疑问"-->
+        <!--android:textColor="@color/color_play_hint" />-->
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

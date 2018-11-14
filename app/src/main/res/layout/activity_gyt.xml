@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--有比赛列表时候展示的布局-->
+        <LinearLayout
+            android:id="@+id/gyt_list_have_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--自定义的搜索文本框-->
+            <com.cpigeon.cpigeonhelper.ui.searchview.SearchEditText
+                android:id="@+id/search_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_et_h"
+                android:layout_marginBottom="@dimen/search_et_m"
+                android:layout_marginLeft="@dimen/search_et_mlr"
+                android:layout_marginRight="@dimen/search_et_mlr"
+                android:layout_marginTop="@dimen/search_et_m"
+                android:background="@drawable/bg_search_edit2"
+                android:drawableLeft="@mipmap/search"
+                android:drawablePadding="@dimen/search_et_dra_p"
+                android:gravity="center_vertical"
+                android:hint="搜索"
+                android:imeOptions="actionSearch"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColorHint="@color/et_hint_color"
+                android:textSize="@dimen/search_et_size"
+                app:drawableDel="@mipmap/close" />
+
+            <!--刷新布局-->
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/gyt_srl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--列表展示-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gyt_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+        <!--没有比赛列表时候展示的布局-->
+        <com.cpigeon.cpigeonhelper.ui.CustomEmptyView
+            android:id="@+id/gyt_list_no_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+        </com.cpigeon.cpigeonhelper.ui.CustomEmptyView>
+
+    </FrameLayout>
+
+
+    <ImageButton
+        android:id="@+id/ac_gyt_add_imgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/ac_gyt_btn_img_mb"
+        android:background="@drawable/selector_ac_gyt" />
+</LinearLayout>

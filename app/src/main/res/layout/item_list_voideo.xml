@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/it_video_list_pm"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/it_video_list_pm">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <!--标签-->
+            <TextView
+                android:id="@+id/it_video_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="司放瞬间"
+                android:textColor="@color/list_video_lable_bg" />
+
+            <!--分享-->
+            <ImageButton
+                android:scaleType="centerInside"
+                android:id="@+id/imgBtn_share"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:src="@mipmap/share" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp">
+
+            <!--时间-->
+            <TextView
+                android:id="@+id/it_video_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2017-10-26" />
+
+            <!--天气-->
+            <TextView
+                android:id="@+id/it_video_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="多云 14度  东南" />
+
+        </LinearLayout>
+
+
+        <!--视频-->
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/jcvideo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/it_video_h">
+
+        </fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard>
+
+        <!--视频-->
+        <!--<cn.jzvd.JZVideoPlayerStandard-->
+        <!--android:id="@+id/jcvideo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/it_video_h">-->
+
+        <!--</cn.jzvd.JZVideoPlayerStandard>-->
+
+        <!--<VideoView-->
+        <!--android:id="@+id/jcvideo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/it_video_h">-->
+
+        <!--</VideoView>-->
+
+        <!--坐标-->
+        <TextView
+            android:id="@+id/it_video_lola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="坐标：30.32312/104.213123"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

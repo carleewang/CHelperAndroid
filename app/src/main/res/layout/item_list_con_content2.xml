@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_z"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/org_item_h1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/it_sgt_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="2017-12-123456"
+                android:textColor="#666666"
+                android:textSize="@dimen/sgt_home_tv_cen_size" />
+
+
+            <com.cpigeon.cpigeonhelper.ui.AlwaysMarqueeTextView
+                android:id="@+id/it_sgt_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:ellipsize="marquee"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="000287"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#666666"
+                android:textSize="@dimen/sgt_home_tv_cen_size" />
+
+
+            <!--拍照-->
+            <ImageButton
+                android:padding="3dp"
+                android:id="@+id/it_sgt_r_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/sgt_list_img_h"
+                android:layout_marginLeft="@dimen/sgt_list_img_ml"
+                android:layout_marginRight="4dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@mipmap/sgt_home_img" />
+
+            <TextView
+                android:id="@+id/tv_img_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/view_dividerline_h1" />-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="16dp">
+
+        <include layout="@layout/view_dividerline_h" />
+    </LinearLayout>
+
+</LinearLayout>

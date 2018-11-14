@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="7dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/it_meal_ll"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/putong"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--套餐等级-->
+            <TextView
+                android:id="@+id/it_meal_grade"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="普通用户"
+                android:textColor="@color/color_meal_gyt_text"
+                android:textSize="@dimen/open_gyt_size_tb" />
+
+            <!--套餐提示信息-->
+            <TextView
+                android:id="@+id/it_meal_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/Gray" />
+
+        </LinearLayout>
+
+
+        <!--套餐内容-->
+        <TextView
+            android:id="@+id/it_meal_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="绑定一个普通账户，可以监控一场比赛"
+            android:textColor="@color/color_meal_gyt_text"
+            android:textSize="@dimen/open_gyt_size_c" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--套餐费用-->
+            <TextView
+                android:id="@+id/it_meal_cost"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="388元/年"
+                android:textColor="@color/color_meal_gyt_text"
+                android:textSize="@dimen/open_gyt_size_tb" />
+
+
+            <RelativeLayout
+                android:id="@+id/it_meal_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true">
+
+                <!--<ImageButton-->
+                <!--android:id="@+id/it_meal_click"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/selector_open_btn_pt"-->
+                <!--android:text="立即开通" />-->
+
+                <TextView
+                    android:id="@+id/it_meal_start_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:textColor="@color/colorWhite" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

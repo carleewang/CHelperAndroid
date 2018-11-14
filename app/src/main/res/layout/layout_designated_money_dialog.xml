@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg_color_white_box1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#10c6ae"
+        android:gravity="center"
+        android:text="奖金显示比例设置"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <CheckBox
+            android:id="@+id/cb_checkbox2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/bg_checkbox2"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/tv_checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:text="显示全额奖金"
+            android:textColor="@color/color_262626"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!--横向分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividingline_h"
+        android:background="#e6e6e6"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <CheckBox
+            android:id="@+id/cb_checkbox1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/bg_checkbox2"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/tv_checkbox1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_weight="1"
+            android:text="奖金显示比例"
+            android:textColor="@color/color_262626"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="36dp"
+            android:background="@drawable/bg_box1">
+
+            <EditText
+                android:textColor="@color/black"
+                android:textColorHint="#b3b3b3"
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="1-99"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_marginRight="3dp"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="%"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--横向分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividingline_h"
+        android:background="#e6e6e6" />
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="确定保存"
+        android:textColor="#10c6ae"
+        android:textSize="15sp" />
+
+</LinearLayout>

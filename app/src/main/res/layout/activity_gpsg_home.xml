@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="17dp"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/gpsg_btn9"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/gpsg_btn_home"
+            android:button="@null"
+            android:text="查看赛鸽"
+            android:textColor="@color/color_262626" />
+
+
+        <Button
+            android:id="@+id/gpsg_btn1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/gpsg_btn_home"
+            android:button="@null"
+            android:text="授权管理"
+            android:textColor="@color/color_262626" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/gpsg_btn2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/gpsg_btn_home"
+            android:button="@null"
+            android:text="取消授权"
+            android:textColor="@color/color_262626" />
+
+
+        <Button
+            android:id="@+id/gpsg_btn4"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/gpsg_btn_home"
+            android:button="@null"
+            android:text="入棚拍照"
+            android:textColor="@color/color_262626" />
+
+
+        <Button
+            android:id="@+id/gpsg_btn5"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/gpsg_btn_home"
+            android:button="@null"
+            android:text="日常随拍"
+            android:textColor="@color/color_262626" />
+
+        <Button
+            android:id="@+id/gpsg_btn6"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/gpsg_btn_home"
+            android:button="@null"
+            android:text="查棚收费"
+            android:textColor="@color/color_262626" />
+
+
+        <Button
+            android:id="@+id/gpsg_btn7"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/gpsg_btn_home"
+            android:button="@null"
+            android:text="比赛上笼"
+            android:textColor="@color/color_262626" />
+
+
+        <Button
+            android:id="@+id/gpsg_btn8"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/gpsg_btn_home"
+            android:button="@null"
+            android:text="获奖荣誉"
+            android:textColor="@color/color_262626" />
+
+        <Button
+            android:id="@+id/gpsg_btn3"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/gpsg_btn_home"
+            android:button="@null"
+            android:text="错误补拍"
+            android:textColor="@color/color_262626" />
+
+    </LinearLayout>
+</ScrollView>

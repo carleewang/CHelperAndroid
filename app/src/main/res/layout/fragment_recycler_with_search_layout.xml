@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <!--自定义的搜索文本框-->
+    <com.cpigeon.cpigeonhelper.ui.searchview.SearchEditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:drawableLeft="@mipmap/search_bold"
+        android:layout_height="@dimen/search_et_h2"
+        android:layout_marginTop="@dimen/search_et_m"
+        android:layout_marginBottom="@dimen/search_et_m"
+        android:layout_marginLeft="@dimen/search_et_mlr"
+        android:layout_marginRight="@dimen/search_et_mlr"
+        android:background="@drawable/bg_search_edit3"
+        android:drawablePadding="@dimen/search_et_dra_p"
+        android:gravity="center_vertical"
+        android:hint="搜索"
+        android:imeOptions="actionSearch"
+        android:textSize="@dimen/search_et_size2"
+        android:padding="5dp"
+        android:textColorHint="@color/et_hint_gpsg_color"
+        android:singleLine="true"
+        app:drawableDel="@mipmap/close" />
+
+    <include layout="@layout/fragment_recyclerview_layout"/>
+
+</LinearLayout>

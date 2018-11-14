@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--com.cpigeon.cpigeonhelper.ui.CustomEmptyView  需要-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/empty_img"
+            android:layout_width="160dp"
+            android:layout_height="160dp" />
+
+        <TextView
+            android:id="@+id/empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/color_cccccc"
+            android:textSize="@dimen/sp_14" />
+
+
+        <!--点击重试按钮-->
+        <TextView
+            android:id="@+id/btn_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_btn_empty"
+            android:button="@null"
+            android:clickable="true"
+            android:padding="6dp"
+            android:text="点击重试"
+            android:textColor="@color/color_262626"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

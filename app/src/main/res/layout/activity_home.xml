@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_banner" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--提示的布局-->
+            <LinearLayout
+                android:id="@+id/ac_home_hint_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/home_hint_text_addplay_pbottom"
+                    android:layout_marginTop="@dimen/home_hint_text_addplay_ptop"
+                    android:text="@string/home_hint_text" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_lay_home_addplay" />
+            </LinearLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/home_srl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--显示数据的布局-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/ac_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <!--底部导航栏-->
+    <LinearLayout
+        android:id="@+id/ac_home_buttonLl1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_bottom_layout_h"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/bottom"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ac_home_buttonLl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/img_home_down_up"
+                android:layout_width="@dimen/home_bottom_up_down_img_hw"
+                android:layout_height="@dimen/home_bottom_up_down_img_hw"
+                android:layout_marginBottom="@dimen/home_bottom_up_down_img_mtop"
+                android:layout_marginTop="@dimen/home_bottom_up_down_img_mbottom"
+                android:background="@drawable/arrow_down2x" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/img_home_open_into"
+            android:layout_width="@dimen/home_open_into_hw"
+            android:layout_height="@dimen/home_open_into_hw"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_lay_home_open" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/img_home_menu"
+                android:layout_width="@dimen/home_bottom_menu_order_hw"
+                android:layout_height="@dimen/home_bottom_menu_order_hw"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/img_home_order"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@mipmap/home_menu" />
+
+
+            <ImageButton
+                android:id="@+id/img_home_order"
+                android:layout_width="@dimen/home_bottom_menu_order_hw"
+                android:layout_height="@dimen/home_bottom_menu_order_hw"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@mipmap/home_order" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

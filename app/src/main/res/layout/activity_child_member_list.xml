@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.cpigeon.cpigeonhelper.ui.searchview.SearchEditText
+        android:id="@+id/search_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_et_h2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_search_edit4"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/search_bold"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:hint="请输入会员姓名"
+        android:imeOptions="actionSearch"
+        android:padding="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:textColorHint="@color/et_hint_gpsg_color"
+        android:textSize="@dimen/search_et_size2"
+        app:drawableDel="@mipmap/close" />
+
+    <!-- android:layerType="hardware"-->
+    <LinearLayout
+        android:id="@+id/ll_bar_chart1"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="205dp">
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#e1faf4"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:id="@+id/ll_select1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_select1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部地区"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/foot_admin_triangle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_select2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right">
+
+            <TextView
+                android:id="@+id/tv_select2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部协会"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/foot_admin_triangle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_rv_srl2" />
+
+</LinearLayout>

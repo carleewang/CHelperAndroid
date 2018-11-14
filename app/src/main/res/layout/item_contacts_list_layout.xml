@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/security_distance_pl"
+    android:paddingRight="@dimen/security_distance_pl"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/checkbox"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        tools:srcCompat="@drawable/ic_choosed"
+        android:visibility="gone"
+        android:layout_width="@dimen/order_img_wh"
+        android:layout_height="@dimen/order_img_wh"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tv_size_gxt"
+        android:textColor="@color/black"
+        tools:text="川南地区"/>
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:textSize="@dimen/tv_size_gxt"
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/string_text_contacts_number"
+        android:layout_below="@id/title"/>
+
+</RelativeLayout>

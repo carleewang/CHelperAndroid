@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?><!--授权列表主页-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_auth_ll_mlr"
+        android:layout_marginRight="@dimen/item_auth_ll_mlr"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <!--用户头像-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/it_img_userheads"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/geyuntong2x" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_auth_center_ll_h"
+            android:layout_marginLeft="@dimen/item_auth_center_ll_mlr"
+            android:layout_marginRight="@dimen/item_auth_center_ll_mlr"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+
+            <!--用户名-->
+            <TextView
+                android:id="@+id/it_tv_userName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="用户名"
+                android:textColor="@color/color_item_auth_name"
+                android:textSize="@dimen/item_auth_center_name_size" />
+
+            <!--电话号码-->
+            <TextView
+                android:id="@+id/it_tv_userPhone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="15912345678"
+                android:textSize="@dimen/item_auth_center_phone_size" />
+
+
+            <!--赛事内容-->
+            <TextView
+                android:id="@+id/it_auth_center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="赛事：四川123信鸽500km赛"
+                android:textSize="@dimen/item_auth_center_content_size" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center">
+            <!--取消授权-->
+            <ImageButton
+                android:id="@+id/img_cancel_auth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_auth_btn_ml"
+                android:background="@null"
+                android:src="@mipmap/cancel_auth" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_auth_bottom_tv_h"
+        android:background="#d7d3d3" />
+
+</LinearLayout>

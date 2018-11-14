@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!--会员照片-->
+        <LinearLayout
+            android:id="@+id/ll_hyzp"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/hygl_zc_it_plr"
+            android:paddingRight="@dimen/hygl_zc_it_plr">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"
+                android:text="会员照片"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_title_size" />
+
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/tv_hyzp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@mipmap/about_logo"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_hint_size" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/arrow_hyzp"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_dividerline_h3" />
+
+
+        <!--会员姓名-->
+        <LinearLayout
+            android:id="@+id/ll_hyxm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hygl_zc_it_h"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/hygl_zc_it_plr"
+            android:paddingRight="@dimen/hygl_zc_it_plr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"
+                android:text="会员姓名"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_title_size" />
+
+
+            <TextView
+                android:id="@+id/tv_hyxm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr"
+                android:text="暂无"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_hint_size" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/arrow_hyxm"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_dividerline_h3" />
+
+        <!--会员状态-->
+        <LinearLayout
+            android:id="@+id/ll_hyzt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hygl_zc_it_h"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/hygl_zc_it_plr"
+            android:paddingRight="@dimen/hygl_zc_it_plr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"
+                android:text="会员状态"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_title_size" />
+
+
+            <TextView
+                android:id="@+id/tv_hyzt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr"
+                android:text="暂无"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_hint_size" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/arrow_hyzt"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_dividerline_h3" />
+
+        <!--手机号码-->
+        <LinearLayout
+            android:id="@+id/ll_sjhm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hygl_zc_it_h"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/hygl_zc_it_plr"
+            android:paddingRight="@dimen/hygl_zc_it_plr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"
+                android:text="手机号码"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_title_size" />
+
+
+            <TextView
+                android:id="@+id/tv_sjhm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr"
+                android:text="暂无"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_hint_size" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/arrow_sjhm"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_dividerline_h3" />
+
+        <!--会员性别-->
+        <LinearLayout
+            android:id="@+id/ll_hyxb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hygl_zc_it_h"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/hygl_zc_it_plr"
+            android:paddingRight="@dimen/hygl_zc_it_plr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"
+                android:text="会员性别"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_title_size" />
+
+
+            <TextView
+                android:id="@+id/tv_hyxb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr"
+                android:text="暂无"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_hint_size" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/arrow_hyxb"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_dividerline_h3" />
+
+        <!--会员生日-->
+        <LinearLayout
+            android:id="@+id/ll_hysr"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hygl_zc_it_h"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/hygl_zc_it_plr"
+            android:paddingRight="@dimen/hygl_zc_it_plr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"
+                android:text="会员生日"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_title_size" />
+
+
+            <TextView
+                android:id="@+id/tv_hrsr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr"
+                android:text="暂无"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_hint_size" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/arrow_hysr"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+
+
+        <!--注册棚号-->
+        <LinearLayout
+            android:id="@+id/ll_zcph"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hygl_zc_it_h"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/hygl_zc_it_plr"
+            android:paddingRight="@dimen/hygl_zc_it_plr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"
+                android:text="注册棚号"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_title_size" />
+
+
+            <TextView
+                android:id="@+id/tv_zcph"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr"
+                android:text="暂无"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_hint_size" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/arrow_zcph"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_dividerline_h3" />
+
+        <!--鸽舍名称-->
+        <LinearLayout
+            android:id="@+id/ll_gsmc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hygl_zc_it_h"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/hygl_zc_it_plr"
+            android:paddingRight="@dimen/hygl_zc_it_plr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"
+                android:text="鸽舍名称"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_title_size" />
+
+
+            <TextView
+                android:id="@+id/tv_gsmc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr"
+                android:text="暂无"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_hint_size" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/arrow_gsmc"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_dividerline_h3" />
+
+        <!--鸽舍坐标-->
+        <LinearLayout
+            android:id="@+id/ll_gszb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hygl_zc_it_h"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/hygl_zc_it_plr"
+            android:paddingRight="@dimen/hygl_zc_it_plr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"
+                android:text="鸽舍坐标"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_title_size" />
+
+
+            <TextView
+                android:id="@+id/tv_gszb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr"
+                android:text="暂无"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_hint_size" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/arrow_gszb"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_dividerline_h3" />
+
+        <!--鸽舍地址-->
+        <LinearLayout
+            android:id="@+id/ll_gsdz"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hygl_zc_it_h"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/hygl_zc_it_plr"
+            android:paddingRight="@dimen/hygl_zc_it_plr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"
+                android:text="鸽舍地址"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_title_size" />
+
+
+            <TextView
+                android:id="@+id/tv_gsdz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr"
+                android:text="暂无"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_hint_size" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/arrow_gsdz"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_dividerline_h3" />
+
+        <!--参赛编号-->
+        <LinearLayout
+            android:id="@+id/ll_csbh"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hygl_zc_it_h"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/hygl_zc_it_plr"
+            android:paddingRight="@dimen/hygl_zc_it_plr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"
+                android:text="参赛编号"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_title_size" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/colorRed" />
+
+            <TextView
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr"
+                android:id="@+id/tv_csbh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="暂无"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_hint_size" />
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/arrow_csbh"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_dividerline_h3" />
+
+        <!--注册入会时间-->
+        <LinearLayout
+            android:id="@+id/ll_zcrhsj"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hygl_zc_it_h"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/hygl_zc_it_plr"
+            android:paddingRight="@dimen/hygl_zc_it_plr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"
+                android:text="注册入会时间"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_title_size" />
+
+
+            <TextView
+                android:id="@+id/tv_zcrhsj"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingEnd="@dimen/hygl_zc_it_tv_pr"
+                android:text="暂无"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/hyzc_item_hint_size" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/arrow_zcrhsj"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+    <!--&lt;!&ndash;是否扫描会员&ndash;&gt;--><!--<LinearLayout--><!--android:id="@+id/ll_sfsmhy"--><!--android:layout_width="match_parent"--><!--android:layout_height="@dimen/hygl_zc_it_h"--><!--android:background="@color/white"--><!--android:clickable="true"--><!--android:gravity="center_vertical"--><!--android:orientation="horizontal"--><!--android:paddingLeft="@dimen/hygl_zc_it_plr"--><!--android:paddingRight="@dimen/hygl_zc_it_plr">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"--><!--android:text="是否扫描会员"--><!--android:textColor="@color/color_262626"--><!--android:textSize="@dimen/hyzc_item_title_size" />-->
+
+
+    <!--<TextView--><!--android:id="@+id/tv_sfsmhy"--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_weight="1"--><!--android:gravity="right"--><!--android:paddingEnd="@dimen/hygl_zc_it_tv_pr"--><!--android:text="暂无"--><!--android:textColor="@color/color_262626"--><!--android:textSize="@dimen/hyzc_item_hint_size" />-->
+
+    <!--<android.support.v7.widget.AppCompatImageView--><!--android:layout_width="@dimen/gpsg_jt_r_wh"--><!--android:layout_height="@dimen/gpsg_jt_r_wh"--><!--android:layout_alignParentEnd="true"--><!--android:layout_centerVertical="true"--><!--android:paddingLeft="@dimen/item_tv_pr1"--><!--android:paddingRight="@dimen/item_tv_pr1"--><!--app:srcCompat="@mipmap/ic_info_r" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<include layout="@layout/view_dividerline_h3" />-->
+
+
+    <!--&lt;!&ndash;扫描设备码&ndash;&gt;--><!--<LinearLayout--><!--android:id="@+id/ll_smsbm"--><!--android:layout_width="match_parent"--><!--android:layout_height="@dimen/hygl_zc_it_h"--><!--android:background="@color/white"--><!--android:clickable="true"--><!--android:gravity="center_vertical"--><!--android:orientation="horizontal"--><!--android:paddingLeft="@dimen/hygl_zc_it_plr"--><!--android:paddingRight="@dimen/hygl_zc_it_plr">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:paddingEnd="@dimen/hygl_zc_it_tv_pr2"--><!--android:text="扫描设备码"--><!--android:textColor="@color/color_262626"--><!--android:textSize="@dimen/hyzc_item_title_size" />-->
+
+
+    <!--<TextView--><!--android:id="@+id/tv_smsbm"--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_weight="1"--><!--android:gravity="right"--><!--android:paddingEnd="@dimen/hygl_zc_it_tv_pr"--><!--android:text="暂无"--><!--android:textColor="@color/color_262626"--><!--android:textSize="@dimen/hyzc_item_hint_size" />-->
+
+    <!--<android.support.v7.widget.AppCompatImageView--><!--android:layout_width="@dimen/gpsg_jt_r_wh"--><!--android:layout_height="@dimen/gpsg_jt_r_wh"--><!--android:layout_alignParentEnd="true"--><!--android:layout_centerVertical="true"--><!--android:paddingLeft="@dimen/item_tv_pr1"--><!--android:paddingRight="@dimen/item_tv_pr1"--><!--app:srcCompat="@mipmap/ic_info_r" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<include layout="@layout/view_dividerline_h3" />-->

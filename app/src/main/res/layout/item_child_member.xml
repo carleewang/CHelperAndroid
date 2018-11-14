@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_z"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    android:gravity="center_vertical">
+
+    <!--头像-->
+    <RelativeLayout
+        android:id="@+id/rl_touxiang"
+        android:layout_width="@dimen/hygl_list_item_userTx_wh"
+        android:layout_height="@dimen/hygl_list_item_userTx_wh"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="18dp">
+
+        <ImageView
+            android:id="@+id/img_hygl_user_tx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/cpigeon_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.8"
+            android:background="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="除名"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59.5dp"
+        android:layout_toRightOf="@+id/rl_touxiang"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_hyxm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会员姓名"
+                android:textColor="#2b2b2b"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_zcph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hyxm"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/rl_touxiang"
+                android:text="棚号：这是棚号"
+                android:textColor="#b3b3b3"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_gsmc"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="11dp"
+                android:layout_toLeftOf="@+id/appCompatImageView4"
+                android:text="鸽舍名称"
+                android:textColor="#2b2b2b"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView4"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--横向分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividingline_h"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/dividingline" />
+
+</RelativeLayout>

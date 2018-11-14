@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <!--android:background="@drawable/bg_search_edit2"-->
+    <!--自定义的搜索文本框-->
+    <com.cpigeon.cpigeonhelper.ui.searchview.SearchEditText
+        android:textColorHint="@color/et_hint_color"
+        android:id="@+id/search_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_et_h"
+        android:layout_marginTop="@dimen/search_et_mt"
+        android:layout_marginRight="@dimen/search_et_mr"
+        android:layout_marginLeft="@dimen/search_et_ml"
+        android:layout_marginBottom="@dimen/search_et_mb"
+        android:background="@drawable/bg_search_edit2"
+        android:drawableLeft="@mipmap/search"
+        android:drawablePadding="@dimen/search_et_dra_p"
+        android:gravity="center_vertical"
+        android:hint="搜索"
+        android:imeOptions="actionSearch"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="@dimen/search_et_size"
+        app:drawableDel="@mipmap/close" />
+
+
+    <!--刷新数据-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/fly_area_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+
+            <com.cpigeon.cpigeonhelper.ui.CustomEmptyView
+                android:id="@+id/empty_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--标签-->
+    <TextView
+        android:id="@+id/water_life_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="请选择标签"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--标签顶部-->
+        <LinearLayout
+            android:id="@+id/ll_label"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ll_label_h"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="照片类型" />
+
+            <!--标签-->
+            <TextView
+                android:id="@+id/img_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="请选择标签" />
+
+            <ImageView
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_dividerline_h" />
+
+
+        <!--图片展示-->
+        <ImageView
+            android:id="@+id/edit_img"
+            android:layout_width="@dimen/dimens_img_hw"
+            android:layout_height="@dimen/dimens_img_hw"
+            android:layout_margin="@dimen/dimens_img_m" />
+
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/photo_edit_mapview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </com.amap.api.maps.MapView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

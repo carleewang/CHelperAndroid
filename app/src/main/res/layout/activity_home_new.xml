@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<com.cpigeon.cpigeonhelper.ui.NoScrollViewPager-->
+    <!--android:id="@+id/home_view_pager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:overScrollMode="never"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+
+    <com.cpigeon.cpigeonhelper.ui.CustomViewPager
+        android:id="@+id/home_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0f0f0" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorWhite"
+        android:gravity="center">
+
+        <!--android:background="@mipmap/hone_tab_buttom_bg"-->
+        <!--app:tl_tab_space_equal="true"
+        @dimen/gyt_monitor_tab_view_indicator_h-->
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/home_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gyt_monitor_tab_view_h"
+            android:background="@color/white"
+            android:paddingTop="7dp"
+            app:tl_indicator_height="56dp"
+            app:tl_indicator_width="@dimen/gyt_monitor_tab_view_indicator_w"
+            app:tl_textSelectColor="@color/color_sliding_tab_text_select"
+            app:tl_textUnselectColor="@color/color_sliding_tab_text_unselect" />
+
+    </LinearLayout>
+
+</LinearLayout>

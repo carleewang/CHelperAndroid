@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/it_tv_bl_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/item_center_tv_mt"
+        android:layout_marginBottom="@dimen/item_center_tv_mt"
+        android:background="@drawable/bg_ggtz"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:text="2015-07-14 17:15:21"
+        android:textColor="@color/color_999999"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_ggtz2"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+
+        <TextView
+            android:id="@+id/it_tv_bl_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/item_center_tv_mt"
+            android:text="标题"
+            android:textStyle="bold"
+            android:textColor="@color/color_262626"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginBottom="@dimen/item_center_tv_mt"
+            android:layout_marginTop="@dimen/item_center_tv_mt"
+            android:background="@drawable/shape_ggtz"
+            android:layerType="software" />
+
+
+
+        <WebView
+            android:id="@+id/it_tv_bl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_title_tv_mt"
+            android:lineSpacingExtra="4dp"
+            android:text="阿萨德回放发送到积分卡送粉世家打飞机时间送到积分卡是哦金粉世家打飞机时间是哦金粉世家打飞机时间佛奥结束的三角房间啊发送精雕机"
+            android:textColor="@color/color_262626"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!--  android:background="@color/color_item_btn"-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="8dp" />-->
+
+</LinearLayout>

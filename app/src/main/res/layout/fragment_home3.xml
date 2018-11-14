@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--轮播图-->
+            <include
+                layout="@layout/layout_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_Banner_h"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/fg_home_tv_mlr1"
+                android:layout_marginRight="@dimen/fg_home_tv_mlr1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:padding="3dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/home_horn" />
+
+
+                <!--android:ellipsize="none"-->
+                <com.cpigeon.cpigeonhelper.ui.AlwaysMarqueeTextView
+                    android:id="@+id/tv_always_marquee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:ellipsize="marquee"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_b3b3b3"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_zw"
+                android:background="#F0F0F0"
+                android:visibility="gone" />
+
+
+            <!--主要功能-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--内容1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_mc"
+                    android:background="@color/color_home_it_title_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/fg_home_tv_mlr1"
+                    android:paddingRight="@dimen/fg_home_tv_mlr1">
+
+                    <TextView
+                        android:id="@+id/home_tv1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="协会管理"
+                        android:textColor="@color/color_org"
+                        android:textSize="@dimen/fg_standard_15" />
+
+                    <TextView
+                        android:id="@+id/home_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="成都市金牛区金牛信鸽协会"
+                        android:textColor="@color/color_org_name"
+                        android:textSize="@dimen/fg_standard_14" />
+
+                </LinearLayout>
+
+                <!--内容2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_content_h"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/home_imgbtn1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_btn_ptb"
+                        android:paddingTop="@dimen/home_btn_ptb"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/rupengdx" />
+
+                    <!--分割线-->
+                    <include layout="@layout/view_dividerline_v" />
+
+                    <ImageButton
+                        android:id="@+id/home_imgbtn2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_btn_ptb"
+                        android:paddingTop="@dimen/home_btn_ptb"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/xunsaidx" />
+
+                    <!--分割线-->
+                    <include layout="@layout/view_dividerline_v" />
+
+                    <ImageButton
+                        android:id="@+id/home_imgbtn3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_btn_ptb"
+                        android:paddingTop="@dimen/home_btn_ptb"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/shanglongdx" />
+
+                </LinearLayout>
+
+                <!--内容5-->
+                <LinearLayout
+                    android:id="@+id/ll_hygl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <!--分割线-->
+                    <include layout="@layout/view_dividerline_h5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/home_content_h"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/home_imgbtn7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:paddingBottom="@dimen/home_btn_ptb"
+                            android:paddingTop="@dimen/home_btn_ptb"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/xiehuidt" />
+
+                        <!--分割线-->
+                        <include layout="@layout/view_dividerline_v" />
+
+                        <ImageButton
+                            android:id="@+id/home_imgbtn8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:paddingBottom="@dimen/home_btn_ptb"
+                            android:paddingTop="@dimen/home_btn_ptb"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/huiyuangl" />
+
+                        <!--分割线-->
+                        <include layout="@layout/view_dividerline_v" />
+
+                        <ImageButton
+                            android:id="@+id/home_imgbtn9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:paddingBottom="@dimen/home_btn_ptb"
+                            android:paddingTop="@dimen/home_btn_ptb"
+                            android:scaleType="centerInside" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--内容6-->
+                <LinearLayout
+                    android:id="@+id/ll1_lin3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <!--分割线-->
+                    <include layout="@layout/view_dividerline_h5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/home_content_h"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/home_imgbtn13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:paddingBottom="@dimen/home_btn_ptb"
+                            android:paddingTop="@dimen/home_btn_ptb"
+                            android:scaleType="centerInside" />
+
+                        <!--分割线-->
+                        <include layout="@layout/view_dividerline_v" />
+
+                        <ImageButton
+                            android:id="@+id/home_imgbtn14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:paddingBottom="@dimen/home_btn_ptb"
+                            android:paddingTop="@dimen/home_btn_ptb"
+                            android:scaleType="centerInside" />
+
+                        <!--分割线-->
+                        <include layout="@layout/view_dividerline_v" />
+
+                        <ImageButton
+                            android:id="@+id/home_imgbtn15"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:paddingBottom="@dimen/home_btn_ptb"
+                            android:paddingTop="@dimen/home_btn_ptb"
+                            android:scaleType="centerInside" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--我的服务-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--内容3-->
+                <TextView
+                    android:id="@+id/home_tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_mc"
+                    android:background="@color/color_home_it_title_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/fg_home_tv_mlr1"
+                    android:paddingRight="@dimen/fg_home_tv_mlr1"
+                    android:text="我的服务"
+                    android:textColor="@color/color_org"
+                    android:textSize="@dimen/fg_standard_15" />
+
+                <!--我的服务第一排-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_content_h"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/home_imgbtn4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_btn_ptb"
+                        android:paddingTop="@dimen/home_btn_ptb"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/saigetong" />
+
+                    <!--分割线-->
+                    <include layout="@layout/view_dividerline_v" />
+
+                    <ImageButton
+                        android:id="@+id/home_imgbtn5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_btn_ptb"
+                        android:paddingTop="@dimen/home_btn_ptb"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/gexintong" />
+
+                    <!--分割线-->
+                    <include layout="@layout/view_dividerline_v" />
+
+                    <ImageButton
+                        android:id="@+id/home_imgbtn6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_btn_ptb"
+                        android:paddingTop="@dimen/home_btn_ptb"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/geyuntong" />
+
+                </LinearLayout>
+
+
+                <!--我的服务第二排-->
+                <LinearLayout
+                    android:id="@+id/wdfw_lin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <!--分割线-->
+                    <include layout="@layout/view_dividerline_h5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/home_content_h"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/wdfw_btn4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:paddingBottom="@dimen/home_btn_ptb"
+                            android:paddingTop="@dimen/home_btn_ptb"
+                            android:scaleType="centerInside" />
+
+                        <!--分割线-->
+                        <include layout="@layout/view_dividerline_v" />
+
+                        <ImageButton
+                            android:id="@+id/wdfw_btn5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:paddingBottom="@dimen/home_btn_ptb"
+                            android:paddingTop="@dimen/home_btn_ptb"
+                            android:scaleType="centerInside" />
+
+                        <!--分割线-->
+                        <include layout="@layout/view_dividerline_v" />
+
+                        <ImageButton
+                            android:id="@+id/wdfw_btn6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:paddingBottom="@dimen/home_btn_ptb"
+                            android:paddingTop="@dimen/home_btn_ptb"
+                            android:scaleType="centerInside" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--授权-->
+            <LinearLayout
+                android:id="@+id/ll_wdfw2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!--内容3-->
+                <TextView
+                    android:id="@+id/home_tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_mc"
+                    android:background="@color/color_home_it_title_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/fg_home_tv_mlr1"
+                    android:paddingRight="@dimen/fg_home_tv_mlr1"
+                    android:text="授权管理"
+                    android:textColor="@color/color_org"
+                    android:textSize="@dimen/fg_standard_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_content_h"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/home_imgbtn10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_btn_ptb"
+                        android:paddingTop="@dimen/home_btn_ptb"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/shouquanpz" />
+
+                    <!--分割线-->
+                    <include layout="@layout/view_dividerline_v" />
+
+                    <ImageButton
+                        android:id="@+id/home_imgbtn11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_btn_ptb"
+                        android:paddingTop="@dimen/home_btn_ptb"
+                        android:scaleType="centerInside" />
+
+                    <!--分割线-->
+                    <include layout="@layout/view_dividerline_v" />
+
+                    <ImageButton
+                        android:id="@+id/home_imgbtn12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_btn_ptb"
+                        android:paddingTop="@dimen/home_btn_ptb"
+                        android:scaleType="centerInside" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--赛鸽工具-->
+            <LinearLayout
+                android:id="@+id/ll_sggj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--内容3-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_mc"
+                    android:background="@color/color_home_it_title_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/fg_home_tv_mlr1"
+                    android:paddingRight="@dimen/fg_home_tv_mlr1"
+                    android:text="赛鸽工具"
+                    android:textColor="@color/color_org"
+                    android:textSize="@dimen/fg_standard_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_content_h"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/tv_sggj_tv1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_btn_ptb"
+                        android:paddingTop="@dimen/home_btn_ptb"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/shouquanpz" />
+
+                    <!--分割线-->
+                    <include layout="@layout/view_dividerline_v" />
+
+                    <ImageButton
+                        android:id="@+id/tv_sggj_tv2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_btn_ptb"
+                        android:paddingTop="@dimen/home_btn_ptb"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/shouquanpz" />
+
+                    <!--分割线-->
+                    <include layout="@layout/view_dividerline_v" />
+
+                    <ImageButton
+                        android:id="@+id/tv_sggj_tv3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_btn_ptb"
+                        android:paddingTop="@dimen/home_btn_ptb"
+                        android:scaleType="centerInside" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:background="@color/color_home_it_title_bg" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/security_distance_pl"
+        android:paddingRight="@dimen/security_distance_pl"
+        android:id="@id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="新签名"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size_gxt"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/text1"
+            android:background="@null"
+            android:hint="签名为3-6个字符"
+            android:maxLength="6"
+            android:textSize="@dimen/tv_size_gxt" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/view_dividerline_h1"/>
+
+    <TextView
+        android:paddingLeft="@dimen/security_distance_pl"
+        android:paddingRight="@dimen/security_distance_pl"
+        android:id="@id/text2"
+        android:textSize="@dimen/tv_size_gxt"
+        android:textColor="@color/colorRed"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="身份证正反面或营业执照二选一上传即可"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acquiescenceBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="@mipmap/menu_top2x">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/menu_top_rl_margin">
+
+            <ImageButton
+                android:id="@+id/menu_close"
+                android:layout_width="@dimen/menu_top_close_size"
+                android:layout_height="@dimen/menu_top_close_size"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src="@mipmap/menu_close2x" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/menu_user_head_img"
+                android:layout_width="@dimen/image_width_headicon"
+                android:layout_height="@dimen/image_height_headicon"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/menu_top_userimg_marginleft"
+                android:layout_marginTop="@dimen/menu_top_userimg_margintop"
+                android:src="@mipmap/head" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/menu_user_head_img"
+                android:layout_marginLeft="@dimen/menu_top_img_ll_marginleft"
+                android:layout_toRightOf="@+id/menu_user_head_img"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/menu_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_userName"
+                    android:textColor="@color/menu_text_top_color" />
+
+
+                <TextView
+                    android:id="@+id/menu_userphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/menu_top_phone_user_margintop"
+                    android:text="@string/menu_userphones"
+                    android:textColor="@color/menu_text_top_color" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/menu_content_marginTop"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <!--协会，公棚信息-->
+        <LinearLayout
+            android:id="@+id/ac_menu_information"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/menu_center_img_size"
+                android:layout_height="@dimen/menu_center_img_size"
+                android:src="@mipmap/menu_xiehui2x" />
+
+            <TextView
+                android:id="@+id/menu_information"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/menu_img_text_wide"
+                android:gravity="center"
+                android:text="@string/menu_association_information"
+                android:textColor="@color/menu_text_color"
+                android:textSize="@dimen/menu_text_size" />
+
+        </LinearLayout>
+
+        <!--我的鸽运通-->
+        <LinearLayout
+            android:id="@+id/ac_menu_mine"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+
+                android:layout_width="@dimen/menu_center_img_size"
+                android:layout_height="@dimen/menu_center_img_size"
+                android:src="@mipmap/geyuntong2x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/menu_img_text_wide"
+                android:gravity="center"
+                android:text="@string/menu_mine"
+                android:textColor="@color/menu_text_color"
+                android:textSize="@dimen/menu_text_size" />
+
+        </LinearLayout>
+
+        <!--设置-->
+        <LinearLayout
+            android:id="@+id/ac_menu_setting"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/menu_center_img_size"
+                android:layout_height="@dimen/menu_center_img_size"
+                android:src="@mipmap/setup2x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/menu_img_text_wide"
+                android:gravity="center"
+                android:text="@string/menu_setting"
+                android:textColor="@color/menu_text_color"
+                android:textSize="@dimen/menu_text_size" />
+
+        </LinearLayout>
+
+        <!--公告通知-->
+        <LinearLayout
+            android:id="@+id/ac_menu_announcement"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/menu_center_img_size"
+                android:layout_height="@dimen/menu_center_img_size"
+                android:src="@mipmap/inform2x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/menu_img_text_wide"
+                android:gravity="center"
+                android:text="@string/menu_announcement"
+                android:textColor="@color/menu_text_color"
+                android:textSize="@dimen/menu_text_size" />
+
+        </LinearLayout>
+
+        <!--操作日志-->
+        <LinearLayout
+            android:id="@+id/ac_menu_logbook"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/menu_center_img_size"
+                android:layout_height="@dimen/menu_center_img_size"
+                android:src="@mipmap/history2x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/menu_img_text_wide"
+                android:gravity="center"
+                android:text="@string/menu_journal"
+                android:textColor="@color/menu_text_color"
+                android:textSize="@dimen/menu_text_size" />
+
+        </LinearLayout>
+
+        <!--帮助-->
+        <LinearLayout
+            android:id="@+id/ac_menu_helping"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/menu_center_img_size"
+                android:layout_height="@dimen/menu_center_img_size"
+                android:src="@mipmap/help2x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/menu_img_text_wide"
+                android:gravity="center"
+                android:text="@string/menu_helping"
+                android:textColor="@color/menu_text_color"
+                android:textSize="@dimen/menu_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@mipmap/menu_bottom2x" />
+
+
+</LinearLayout>

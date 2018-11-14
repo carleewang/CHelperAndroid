@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <!--    android:background="@drawable/dialog_corner_bg"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="足环号码"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="格式：2010-01-0000001"
+            android:textColor="@color/color_b3b3b3"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_blue2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/ullage_tool_lola_item_p">
+
+            <EditText
+                android:id="@+id/ll1_et1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialog_foot_h"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="false"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@color/color_262626"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/ic_info_blak_r" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ullage_tool_lola_cen_img_mlr"
+            android:layout_marginRight="@dimen/ullage_tool_lola_cen_img_mlr"
+            android:layout_weight="1"
+            android:background="@drawable/background_blue2"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/ullage_tool_lola_item_p">
+
+            <EditText
+                android:id="@+id/ll1_et2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialog_foot_h"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="2"
+                android:textColor="@color/color_262626"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_blue2"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/ullage_tool_lola_item_p">
+
+            <EditText
+                android:id="@+id/ll1_et3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialog_foot_h"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="7"
+                android:textColor="@color/color_262626"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_z2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="20dp"
+            android:text="至"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_blue2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/ullage_tool_lola_item_p">
+
+
+                <EditText
+                    android:id="@+id/ll2_et1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dialog_foot_h"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColor="@color/color_262626"
+                    android:textSize="12sp" />
+
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/ic_info_blak_r" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ullage_tool_lola_cen_img_mlr"
+                android:layout_marginRight="@dimen/ullage_tool_lola_cen_img_mlr"
+                android:layout_weight="1"
+                android:background="@drawable/background_blue2"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/ullage_tool_lola_item_p">
+
+                <EditText
+                    android:id="@+id/ll2_et2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dialog_foot_h"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLength="2"
+                    android:textColor="@color/color_262626"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_blue2"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/ullage_tool_lola_item_p">
+
+                <EditText
+                    android:id="@+id/ll2_et3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dialog_foot_h"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLength="7"
+                    android:textColor="@color/color_262626"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--确定按钮-->
+    <TextView
+        android:id="@+id/dialog_determine"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_corners_blue"
+        android:button="@null"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="确    定"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+</LinearLayout>

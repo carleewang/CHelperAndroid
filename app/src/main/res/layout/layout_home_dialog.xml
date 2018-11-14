@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:text="温馨提示"
+        android:layout_height="wrap_content" />
+
+
+    <com.cpigeon.cpigeonhelper.ui.MyTextView
+        android:id="@+id/dialog_dizhen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <com.cpigeon.cpigeonhelper.ui.MyTextView
+        android:id="@+id/dialog_cibao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <!--确定按钮-->
+    <Button
+        android:id="@+id/dialog_determine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:text="确定" />
+</LinearLayout>

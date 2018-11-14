@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <!--<TextView-->
+            <!---->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="赛事标题"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="@dimen/add_ssgc_tv_size" />-->
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="@string/et_hint_title_ssgc"
+                android:maxLines="1"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/add_ssgc_tv_size" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_dividerline_h" />
+
+        <EditText
+            android:id="@+id/et_centent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="@string/et_hint_con_ssgc"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/add_ssgc_tv_size" />
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <!--<GridView-->
+            <!--android:id="@+id/gridview"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:numColumns="6" />-->
+
+            <LinearLayout
+                android:id="@+id/img_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+
+            <ImageButton
+                android:id="@+id/imgbtn_add"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/addpic" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <!--动态来源   android:visibility="gone"-->
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@color/white"
+        android:id="@+id/dtly_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动态来源"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/add_ssgc_tv_size" />
+
+        <EditText
+            android:id="@+id/et_dtly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="原创/转载(转载需填写来处,逗号隔开)"
+            android:maxLines="1"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/add_ssgc_et_size" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="评论"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/add_ssgc_tv_size" />
+
+
+            <!--  android:track="@drawable/switch_track"-->
+            <!--<Switch-->
+            <!--android:id="@+id/btn_switch"-->
+            <!--style="@style/MyToolBarTheme"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="@null" />-->
+
+            <ToggleButton
+                android:id="@+id/tb_pl"
+                android:layout_width="@dimen/tb_w"
+                android:layout_height="@dimen/tb_h"
+                android:layout_margin="@dimen/tb_m"
+                android:background="@drawable/switch_btn"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pl_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:maxLines="1"
+            android:paddingBottom="10dp"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/add_ssgc_tv_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

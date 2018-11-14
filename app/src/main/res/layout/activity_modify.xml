@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--输入密码-->
+        <!--           android:background="@drawable/ac_imp_border"
+           android:layout_height="@dimen/pas_hl_h"
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pas_hl1_mt"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingLeft="@dimen/pas_hl_mlf"
+            android:paddingRight="@dimen/pas_hl_mlf"
+            android:paddingTop="16dp">
+
+            <EditText
+                android:id="@+id/et_old"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/change_pas_et_old"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/pas_et_pl"
+                android:singleLine="true"
+                android:textColorHint="@color/reg_ColorHint"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageButton
+                android:id="@+id/modify_pas_PasHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/log_hint_img_pr"
+                android:background="@null"
+                android:src="@mipmap/hide2x" />
+
+        </LinearLayout>
+
+
+        <!--再次输入密码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pas_hl1_mt"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingLeft="@dimen/pas_hl_mlf"
+            android:paddingRight="@dimen/pas_hl_mlf"
+            android:paddingTop="16dp">
+
+            <EditText
+                android:id="@+id/et_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/change_pas_et_new"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/pas_et_pl"
+                android:singleLine="true"
+                android:textColorHint="@color/reg_ColorHint"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+
+        <!--再次输入密码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pas_hl1_mt"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingLeft="@dimen/pas_hl_mlf"
+            android:paddingRight="@dimen/pas_hl_mlf"
+            android:paddingTop="16dp">
+
+            <EditText
+                android:id="@+id/et_new_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/change_pas_et_new_confirm"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/pas_et_pl"
+                android:singleLine="true"
+                android:textColorHint="@color/reg_ColorHint"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+
+        <include layout="@layout/view_commonality_pas_hint" />
+
+
+        <!--确定-->
+        <Button
+            android:id="@+id/ac_modify_determine"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="@dimen/item_btn_h"
+            android:layout_marginBottom="@dimen/pas_btn_confirm_mb"
+            android:layout_marginLeft="@dimen/pas_btn_confirm_mlf"
+            android:layout_marginRight="@dimen/pas_btn_confirm_mlf"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/selector_btn_bg"
+            android:text="@string/btn_confirm"
+            android:textColor="@color/color_btn_tv"
+            android:textSize="@dimen/btn_tv_size" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

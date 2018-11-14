@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--发送短信-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:padding="@dimen/it_p_lr">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="发送上笼短信"
+                    android:textColor="@color/color_userinfo_tx" />
+
+                <ToggleButton
+                    android:id="@+id/tb_fsdx"
+                    android:layout_width="@dimen/tb_w"
+                    android:layout_height="@dimen/tb_h"
+                    android:layout_margin="@dimen/tb_m"
+                    android:background="@drawable/switch_btn"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_sms_sl" />
+        </LinearLayout>
+
+
+        <!---->
+        <LinearLayout
+            android:id="@+id/ll_dx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!--项目名称-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorWhite"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/it_p_lr"
+                android:paddingRight="@dimen/it_p_lr">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="@string/org_name_gp_xmmc"
+                    android:textColor="@color/color_userinfo_tx"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+                <EditText
+                    android:id="@+id/tx_org_sl_xmmc"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/org_name_xmmc_hint"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_userinfo_ex"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+            </LinearLayout>
+
+            <!--公棚简称-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/org_item_h"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorWhite"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/it_p_lr"
+                android:paddingRight="@dimen/it_p_lr">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="@string/org_name_gp"
+                    android:textColor="@color/color_userinfo_tx"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+                <EditText
+                    android:id="@+id/tx_org_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/org_name_hint"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_userinfo_ex"
+                    android:textSize="@dimen/userinfo_tx_size" />
+            </LinearLayout>
+
+            <!--发送内容-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/it_p_lr">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="发送内容"
+                        android:textColor="@color/color_userinfo_tx" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_fsnr"
+                        android:layout_width="@dimen/tb_w"
+                        android:layout_height="@dimen/tb_h"
+                        android:layout_margin="@dimen/tb_m"
+                        android:background="@drawable/switch_btn"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+
+
+                </LinearLayout>
+
+                <com.cpigeon.cpigeonhelper.ui.MyTextView
+                    android:id="@+id/tv_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_cen_sl" />
+            </LinearLayout>
+
+
+            <!-- android:visibility="gone"-->
+            <LinearLayout
+                android:id="@+id/ll_nr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--分割线-->
+                <include layout="@layout/view_dividerline_h1" />
+
+                <!--鸽主姓名-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/org_item_h1"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/it_p_tb"
+                    android:paddingLeft="@dimen/it_p_lr"
+                    android:paddingRight="@dimen/it_p_lr"
+                    android:paddingTop="@dimen/it_p_tb">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="鸽主姓名"
+                        android:textColor="@color/color_userinfo_tx" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_gzxm"
+                        android:layout_width="@dimen/tb2_w"
+                        android:layout_height="@dimen/tb2_h"
+                        android:layout_margin="@dimen/tb_m"
+                        android:background="@drawable/switch_btn"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+
+
+                </LinearLayout>
+
+                <!--分割线-->
+                <include layout="@layout/view_dividerline_h1" />
+
+                <!--插组指定-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/org_item_h1"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/it_p_tb"
+                    android:paddingLeft="@dimen/it_p_lr"
+                    android:paddingRight="@dimen/it_p_lr"
+                    android:paddingTop="@dimen/it_p_tb">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="插组指定"
+                        android:textColor="@color/color_userinfo_tx" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_czzd"
+                        android:layout_width="@dimen/tb2_w"
+                        android:layout_height="@dimen/tb2_h"
+                        android:layout_margin="@dimen/tb_m"
+                        android:background="@drawable/switch_btn"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--测试短信通道-->
+            <include layout="@layout/layout_sms_test" />
+
+            <!--底部提示-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/protocol_hint" />
+
+                <TextView
+                    android:id="@+id/tv_xy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="上笼短信协议"
+                    android:textColor="@color/color_theme" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="》" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/ll_z"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/shoot_photo"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@mipmap/ic_shoot_photo" />
+
+    <ImageView
+        android:id="@+id/shoot_video"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="64dp"
+        android:src="@mipmap/ic_shoot_video" />
+
+</LinearLayout>

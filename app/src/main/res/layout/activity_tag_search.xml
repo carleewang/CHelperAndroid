@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!--输入文本框-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:paddingLeft="@dimen/gpsg_bj_plr"
+            android:paddingRight="@dimen/gpsg_bj_plr">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_search_edit3"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center">
+
+                    <!--搜索输入比赛列表-->
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/ac_search_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:background="@null"
+                        android:hint="请输入精确足环号码进行搜索"
+                        android:imeOptions="actionSearch"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:src="@mipmap/search"
+                        android:textColorHint="@color/color_262626"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <!--开始搜索按钮-->
+                    <ImageButton
+                        android:id="@+id/imgbtn_start_search"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:src="@mipmap/search_bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--搜索结果-->
+        <LinearLayout
+            android:id="@+id/ll_search_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gpsg_bg_yy"
+                android:background="#f5f5f5" />
+
+            <!--足环提示-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/color_ffffff"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="42dp"
+                android:paddingRight="42dp"
+                android:paddingTop="5dp">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/gpsg_sg_foot_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_gpsg_foot_hint"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:singleLine="true"
+                    android:text="2017-12-12340"
+                    android:textColor="#fffefe"
+                    android:textSize="40sp" />
+
+            </LinearLayout>
+
+            <!--鸽主名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="@dimen/gpsg_bj_plr"
+                android:paddingRight="@dimen/gpsg_bj_plr"
+                android:paddingTop="20dp">
+
+
+                <!--鸽主-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="鸽主："
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/gpsg_tv_size" />
+
+                    <TextView
+                        android:id="@+id/gpsg_tv_ser_gz"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+
+                <!--羽色-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="羽色："
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/gpsg_tv_size" />
+
+                    <TextView
+                        android:id="@+id/gpsg_tv_ser_ys"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+
+                <!--地区-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地区："
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/gpsg_tv_size" />
+
+                    <TextView
+                        android:id="@+id/gpsg_tv_ser_dq"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--虚线-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@mipmap/gpsg_xs" />
+
+
+            <!--查看详情-->
+            <LinearLayout
+                android:id="@+id/ll_btn_ckxq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:clickable="true"
+                android:gravity="right|center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/gpsg_bj_plr"
+                android:paddingRight="@dimen/gpsg_bj_plr"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:text="查看详情" />
+
+                <ImageView
+                    android:layout_width="@dimen/gpsg_jt_r_wh"
+                    android:layout_height="@dimen/gpsg_jt_r_wh"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_info_r" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--备注-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/gpsg_bj_plr"
+            android:paddingRight="@dimen/gpsg_bj_plr"
+            android:paddingTop="10dp"
+            android:text="@string/str_hint_gpsg_bz"
+            android:textColor="#e55252" />
+
+
+        <!--点击拍照    已拍照显示-->
+        <LinearLayout
+            android:id="@+id/ll_djpz_z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gpsg_bg_yy"
+                android:background="#f5f5f5" />
+
+            <!--点击拍照-->
+            <LinearLayout
+                android:id="@+id/ll_btn_pz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:layout_width="@dimen/gpsg_img_pz"
+                    android:layout_height="@dimen/gpsg_img_pz"
+                    android:background="@null"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/gpsg_pz_sear" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="14dp"
+                    android:text="进入拍照"
+                    android:textColor="@color/color_262626" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/img_btn_ypz"
+                android:layout_width="@dimen/gpsg_img_pz"
+                android:layout_height="@dimen/gpsg_img_pz"
+                android:background="@null"
+                android:button="@null"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:src="@mipmap/gpsg_ypz"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <!--错误补拍-->
+        <LinearLayout
+            android:id="@+id/ll_cwbp_z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gpsg_bg_yy"
+                android:background="#f5f5f5" />
+
+
+            <!--biao标签1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/gpsg_bj_plr"
+                android:paddingRight="@dimen/gpsg_bj_plr">
+
+                <TextView
+                    android:id="@+id/tv_gpsg_tag1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gpsg_cwbp_tag1"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/gpsg_tv_tag_ptb"
+                    android:paddingTop="@dimen/gpsg_tv_tag_ptb"
+                    android:text="入棚拍照"
+                    android:textColor="@color/color_262626" />
+
+                <TextView
+                    android:id="@+id/tv_gpsg_tag2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gpsg_cwbp_tag1"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/gpsg_tv_tag_ptb"
+                    android:paddingTop="@dimen/gpsg_tv_tag_ptb"
+                    android:text="日常随拍"
+                    android:textColor="@color/color_262626" />
+
+                <TextView
+                    android:id="@+id/tv_gpsg_tag3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gpsg_cwbp_tag1"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/gpsg_tv_tag_ptb"
+                    android:paddingTop="@dimen/gpsg_tv_tag_ptb"
+                    android:text="查棚收费"
+                    android:textColor="@color/color_262626" />
+
+            </LinearLayout>
+
+
+            <!--标签2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/gpsg_bj_plr"
+                android:paddingRight="@dimen/gpsg_bj_plr">
+
+                <TextView
+                    android:id="@+id/tv_gpsg_tag4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gpsg_cwbp_tag1"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/gpsg_tv_tag_ptb"
+                    android:paddingTop="@dimen/gpsg_tv_tag_ptb"
+                    android:text="比赛上笼"
+                    android:textColor="@color/color_262626" />
+
+                <TextView
+                    android:id="@+id/tv_gpsg_tag5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gpsg_cwbp_tag1"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/gpsg_tv_tag_ptb"
+                    android:paddingTop="@dimen/gpsg_tv_tag_ptb"
+                    android:text="获奖荣誉"
+                    android:textColor="@color/color_262626" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gpsg_bg_yy"
+                android:background="#f5f5f5" />
+
+
+            <!--补拍原因-->
+            <LinearLayout
+                android:id="@+id/ll_btn_bpyy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/gpsg_bj_plr"
+                android:paddingRight="@dimen/gpsg_bj_plr">
+
+
+                <!--补拍原因-->
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="left"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="选择错误补拍原因"
+                    android:textColor="@color/color_262626" />
+
+                <TextView
+                    android:id="@+id/tv_gpst_bpyy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right" />
+
+                <ImageView
+                    android:layout_width="@dimen/gpsg_jt_r_wh"
+                    android:layout_height="@dimen/gpsg_jt_r_wh"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_info_r" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gpsg_bg_yy"
+                android:background="#f5f5f5" />
+
+            <!--补拍-->
+            <TextView
+                android:id="@+id/tv_btn_bp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingLeft="@dimen/gpsg_bj_plr"
+                android:paddingRight="@dimen/gpsg_bj_plr"
+                android:paddingTop="15dp"
+                android:text="点击进入页面完成补拍"
+                android:textColor="#3dbcc4"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

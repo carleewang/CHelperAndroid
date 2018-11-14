@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--比赛项目-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/org_item_h"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/org_item_ml">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/play_name"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/userinfo_tx_size" />
+
+            <TextView
+                android:id="@+id/tv_play_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/userinfo_tx_size" />
+        </LinearLayout>
+
+        <!--分割线-->
+        <include layout="@layout/view_dividerline_h1" />
+
+
+        <!--司放地点-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/org_item_h"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/org_item_ml">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/flay_location"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/userinfo_tx_size" />
+
+            <TextView
+                android:id="@+id/tv_paly_flay_location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/userinfo_tx_size" />
+        </LinearLayout>
+
+        <!--分割线-->
+        <include layout="@layout/view_dividerline_h1" />
+
+
+        <!--司放时间-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/org_item_h"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/org_item_ml">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/flay_time"
+                android:textColor="@color/color_userinfo_tx"
+                android:textSize="@dimen/userinfo_tx_size" />
+
+            <TextView
+                android:id="@+id/tv_flay_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/userinfo_tx_size" />
+        </LinearLayout>
+
+        <!--&lt;!&ndash;分割线&ndash;&gt;-->
+        <!--<include layout="@layout/view_dividerline_h1" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_state"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_del_h"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/color_f0f0f0"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_del_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/gc_del_h"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/item_del_t_mt"
+            android:src="@mipmap/ic_del" />
+
+        <TextView
+            android:id="@+id/tv_del_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/item_del_b_m"
+            android:text="申请删除比赛"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/item_del_tv_size" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

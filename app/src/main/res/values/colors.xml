@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3DBCC4</color>
+    <color name="colorPrimaryDark">#3DBCC4</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_text_cancel">#4D4D4D</color>
+
+    <!--layout  acquiescenceBg默认布局背景-->
+    <color name="acquiescenceBg">#ffffff</color>
+    <!--layout   activity_base_toolbar背景-->
+    <color name="colorViewBackground">#F6F6F6</color>
+    <!--layout  layout_empty-->
+    <color name="colorText">#414141</color>
+    <!--layout  view_password_input-->
+    <color name="gray_btn">#EBEBEB</color>
+    <!--layout   view_actionsheet-->
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#FF4081</color>
+    <!--layout  activity_login-->
+    <color name="login_ColorHint">#ffffff</color>
+    <!--layout activity_login_btn-->
+    <color name="log_btn_bg">#FFF</color>
+    <!--layout activity_home_bg-->
+    <color name="home_bg">#ede4e4</color>
+
+    <!--layout activity_registration-->
+    <color name="reg_ColorHint">#cfcdcd</color>
+
+    <!--styles   MyToolBarTheme-->
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="color_00000000">#00000000</color>
+    <color name="color_000000">#000000</color>
+
+    <color name="color_ebebeb">#ebebeb</color>
+
+
+    <!--styles  com.cpigeon.cpigeonhelper.ui.button.CircularProgressButton-->
+    <color name="cpb_grey">#ffdedede</color>
+
+    <!--drawable  selector_item_pressed-->
+    <color name="gray_bg">#f0eff5</color>
+    <!--drawable  log_bg_fillet-->
+    <color name="colorHint">#d1d1d6</color>
+    <!--drawable   bg_actionsheet_cancel-->
+    <color name="bgColor_alert_button_press">#EAEAEA</color>
+    <!--drawable  点击登录背景显示 -->
+    <color name="log_pressed">#69CCD0</color>
+    <color name="log_focused">#82e0e4</color>
+
+    <!--actionsheet模式的取消按钮背景颜色     drawable    bgalertview_alert -->
+    <color name="bgColor_actionsheet_cancel_nor">#ffffff</color>
+
+
+    <!--com.cpigeon.cpigeonhelper.ui.SaActionSheetDialog-->
+    <color name="bgColor_divier">#d7d7db</color>
+
+    <!--主题颜色-->
+    <color name="color_theme">#3DBCC4</color>
+
+    <!--状态栏颜色-->
+    <color name="color_statusBar">#3DBCC4</color>
+
+    <!--分割线-->
+    <color name="dividingline">#ebebeb</color>
+
+
+    <!--菜单页-->
+    <color name="menu_text_color">#000000</color>
+    <color name="menu_text_top_color">#FFFFFF</color>
+
+    <!--操作日志-->
+    <color name="colorDarkGrey">#9C9C9C</color>
+
+    <!--设置-->
+    <color name="setting_textColor">#696464</color>
+    <color name="iten_bgColor">#ffffff</color>
+
+    <!--用户信息-->
+    <color name="color_userinfo_tx">#262626</color>
+    <color name="color_userinfo_ex">#999999</color>
+
+    <!--文本提示框-->
+    <color name="color_et_hint">#c4bebe</color>
+
+    <!--鸽运通-->
+    <!--鸽运通主页背景-->
+    <color name="color_gyt_bg">#cfcccc</color>
+    <color name="color_center_text">#ffffff</color>
+    <color name="gyt_center2_ll_text_color_top">#8e8a8a</color>
+    <color name="gyt_center2_ll_text_color_bt">#000000</color>
+
+
+    <!--变更域名，名称的页面背景-->
+    <color name="color_change_org">#d7d0d0</color>
+
+    <!--公告通知-->
+    <color name="color_bulletin_time">#3DBCC4</color>
+    <color name="color_item_btn">#d2dcdc</color>
+
+    <!--授权主页item-->
+    <color name="color_item_auth_name">#000</color>
+
+    <!--添加授权界面-->
+    <color name="color_ac_add_auth_bg">#ded9d9</color>
+    <color name="color_ac_search_bg">#ffffff</color>
+
+
+    <!--司放地页面-->
+    <!--导航条文本选择的颜色-->
+    <color name="color_sliding_tab_text_select">#3DBCC4</color>
+    <color name="color_sliding_tab_text_unselect">#000000</color>
+    <color name="color_sliding_tab_underline">#3DBCC4</color>
+
+    <!--司放地主页-->
+    <color name="color_location_name_tv">#3DBCC4</color>
+    <color name="color_flying_area_bg">#ffffff</color>
+    <color name="color_flying_item_bg">#ffffff</color>
+
+
+    <!--添加司放地地点item点击背景变色-->
+    <color name="color_item_se_pl_bg">#d6d6d6</color>
+
+    <!--鸽运通添加比赛-->
+    <color name="color_title_tv">#000000</color>
+    <color name="color_item">#ffffff</color>
+    <color name="color_tv_hint">#ec6b6b</color>
+
+    <!--鸽运通列表状态颜色-->
+    <color name="color_gytlist_not_at_the">#1a73a7</color>
+    <color name="color_gytlist_under_way">#35cf8f</color>
+    <color name="color_gytlist_end">#a39f9f</color>
+
+    <!--鸽车监控-->
+    <color name="dialog_view_red">#ff0000</color>
+
+
+    <!--第三方照相机-->
+    <color name="Black4">#121415</color>
+    <color name="Black5">#242125</color>
+    <color name="Black6">#313641</color>
+    <color name="White">#ffffff</color>
+    <color name="title_bg">#fafafa</color>
+    <color name="Transparent">#00000000</color>
+    <color name="short_video_red">#ff4747</color>
+    <color name="Gray">#eeeeee</color>
+
+
+    <!--视频列表页面-->
+    <color name="list_video_lola_bg">#ff0000</color>
+    <color name="list_video_lable_bg">#000000</color>
+
+
+    <!--续费升级页面-->
+    <color name="color_re_up_name">#000000</color>
+    <color name="color_re_up_time">#3DBCC4</color>
+
+
+    <!--开通鸽运通页面-->
+    <color name="color_meal_gyt_text">#ffffff</color>
+    <color name="color_hint">#3e69c7</color>
+    <color name="color_hint_money">#ff0000</color>
+
+
+    <!--订单列表-->
+    <color name="colorRed">#d50000</color>
+    <color name="colorBule">#0081ef</color>
+    <color name="colorGary">#7f7f7f</color>
+    <color name="color_play_way">#1cd79c</color>
+    <color name="color_play_hint">#3976c6</color>
+
+
+    <!--关于我们-->
+    <color name="colorLayoutSplitLineGray">#e6e6e6</color>
+
+    <!--底部按钮-->
+    <color name="color_btn_tv">#ffffff</color>
+
+
+    <!--新鸽运通主页-->
+    <color name="color_org">#298d8d</color>
+    <color name="color_org_name">#51aca9</color>
+
+    <!--训鸽通开通续费按钮背景-->
+    <color name="xgt_btn_bg">#6ec8c9</color>
+
+
+    <color name="colorLayoutGray">#dcdada</color>
+    <color name="colorBlue">#52b3e7</color>
+    <color name="color_dialog_tv_bg">#6c6a6a</color>
+    <color name="message_button">#ebf3fb</color>
+
+    <color name="colorButton_primary_focus">#1989fc</color>
+    <color name="colorButton_primary_disable">#d7dde1</color>
+    <color name="colorButton_primary_normal">#3e9cfc</color>
+
+    <color name="edit_bg">#EFEFF4</color>
+    <color name="darker_gray">#9b9b9b</color>
+    <color name="side_bar_text">#4A4A4A</color>
+
+    <color name="colorButton_Default_disable">#d7dde1</color>
+    <color name="colorButton_Default_normal">#fa2626</color>
+    <color name="colorButton_Default_focus">#ff5f5f</color>
+
+    <color name="textColor_gray_dark">#5e5e5e</color>
+
+    <color name="tv_bg_color">#121212</color>
+
+    <color name="color_default_bg">#F9F9F9</color>
+
+    <!--验证码背景-->
+    <color name="color_yzm_bg">#8c8a8a</color>
+
+    <color name="color_gray">#262626</color>
+    <color name="color_gray1">#999999</color>
+
+    <color name="color_sgt_search">#010101</color>
+    <color name="color_sgt_search2">#000000</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_71d0cc">#71d0cc</color>
+    <color name="color_b3b3b3">#b3b3b3</color>
+    <color name="color_262626">#262626</color>
+    <color name="color_010101">#010101</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_424242">#424242</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_444444">#444444</color>
+    <color name="color_ff0909">#ff0909</color>
+    <color name="color_00aa0c">#00aa0c</color>
+    <color name="color_cpigeonapp_theme">#0fa6ec</color>
+    <color name="color_ff0000">#ff0000</color>
+
+    <color name="color_eb2a2a">#eb2a2a</color>
+    <color name="color_383838">#383838</color>
+    <color name="color_ccc">#ccc</color>
+    <color name="color_gyt_item_bg">#f6f6f6</color>
+
+    <!--文本输入框颜色-->
+    <color name="et_hint_color">#ccc</color>
+    <color name="et_hint_gpsg_color">#4d4d4d</color>
+
+
+    <!--赛鸽通信息-->
+    <color name="color_sgt_red">#FF3A3A</color>
+    <color name="color_sgt_gray">#E2E2E2</color>
+    <color name="color_sgt_purple">#C74EFF</color>
+    <color name="color_sgt_blue">#30A0FF</color>
+    <color name="color_sgt_cyan">#50E8E6</color>
+    <color name="color_sgt_green">#52E274</color>
+    <color name="color_sgt_blak">#000000</color>
+
+    <color name="text_selected">#888</color>
+
+    <color name="colorwhite">#ffffff</color>
+    <color name="colorDialogUpdata">#317fc9</color>
+
+    <color name="color_srqck1">#03812f</color>
+    <color name="color_srqck2">#a60000</color>
+    <color name="color_c2c2c2">#c2c2c2</color>
+    <color name="color_1482c0">#1482c0</color>
+    <color name="color_61c0f6">#61c0f6</color>
+
+    <color name="bg_line_weather_l">#3DBCC4</color>
+
+    <color name="bg_line_weather2">#e8e8e8</color>
+
+    <color name="bg_line_weather3_tv">#969696</color>
+    <color name="color_line_weather3_et_hint">#c2c2c2</color>
+    <color name="color_line_weather3_et">#000000</color>
+    
+    <color name="color_home_it_title_bg">#e4f2fe</color>
+
+
+    <color name="sign_color">#ff3600</color>
+
+    <color name="home_tv_c1">#010101</color>
+
+    <color name="member_list_member_count">#3dbcc4</color>
+    <color name="member_list_normal_count">#ea2c4b</color>
+    <color name="member_list_ban_count">#e9573f</color>
+    <color name="member_list_expel_count">#999999</color>
+
+
+</resources>

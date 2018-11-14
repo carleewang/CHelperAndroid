@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--daohangtia-->
+    <FrameLayout
+        android:id="@+id/ff_tag_z"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gyt_monitor_tab_h">
+
+        <!--背景占位-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/color_theme" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/common_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gyt_monitor_tab_view_h"
+            android:layout_marginLeft="@dimen/gyt_monitor_tab_view_mlf"
+            android:layout_marginRight="@dimen/gyt_monitor_tab_view_mlf"
+            android:background="@drawable/bg_gyt_head"
+            android:paddingBottom="4dp"
+            android:paddingLeft="@dimen/gyt_monitor_tab_view_plr"
+            android:paddingRight="@dimen/gyt_monitor_tab_view_plr"
+            android:paddingTop="4dp"
+            app:tl_indicator_color="@color/color_sliding_tab_underline"
+            app:tl_indicator_corner_radius="@dimen/gyt_monitor_tab_view_indicator_corner_radius"
+            app:tl_indicator_height="@dimen/gyt_monitor_tab_view_indicator_h"
+            app:tl_indicator_width="@dimen/gyt_monitor_tab_view_indicator_w"
+            app:tl_tab_space_equal="true"
+            app:tl_textSelectColor="@color/color_sliding_tab_text_select"
+            app:tl_textUnselectColor="@color/color_sliding_tab_text_unselect" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cpigeon.cpigeonhelper.ui.CustomViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        <!--提示监控比赛-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/prompt_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!--start_monitor_hint  开始监控-->
+                <!--continue_monitor_hint  继续监控-->
+
+                <ImageView
+                    android:id="@+id/prompt_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gyt_monitor_prompt_img_mb"
+                    android:layout_marginTop="@dimen/gyt_monitor_prompt_pt"
+                    android:src="@mipmap/start_monitor_hint" />
+
+                <TextView
+                    android:id="@+id/prompt_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginRight="65dp"
+                    android:background="@drawable/bg_btn_monitor"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:src="@mipmap/start_monitor"
+                    android:text="开始监控"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/prompt_btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginRight="65dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/bg_btn_monitor"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:src="@mipmap/start_monitor"
+                    android:text="授权监控"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <com.cpigeon.cpigeonhelper.ui.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="55dp"
+                    android:text="@string/str_himt_details" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_help"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="left"-->
+                    <!--android:paddingBottom="10dp"-->
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:text="如何设置"-->
+                    <!--android:textColor="@color/colorRed" />-->
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/tv_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true"
+                        android:gravity="right"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text=">> 鸽车监控使用注意事项"
+                        android:textColor="@color/colorRed" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

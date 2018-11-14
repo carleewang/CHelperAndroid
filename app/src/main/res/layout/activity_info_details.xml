@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#ebebeb"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--基本信息-->
+        <LinearLayout
+            android:id="@+id/ll_jbxx"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/it_geren_mt"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/fg_home_tv_ptb1"
+            android:paddingLeft="@dimen/fg_home_tv_plr"
+            android:paddingRight="@dimen/fg_home_tv_plr"
+            android:paddingTop="@dimen/fg_home_tv_ptb1"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/info_img_wh"
+                android:layout_height="@dimen/info_img_wh"
+                android:layout_marginEnd="@dimen/info_img_pr"
+                android:src="@mipmap/info_orginfo" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="基本信息"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/item_tv_size1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/info_r_mlr"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+        </LinearLayout>
+
+        <!--比赛直播平台-->
+        <LinearLayout
+            android:id="@+id/ll_bszbpt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/it_geren_mt"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/fg_home_tv_ptb1"
+            android:paddingLeft="@dimen/fg_home_tv_plr"
+            android:paddingRight="@dimen/fg_home_tv_plr"
+            android:paddingTop="@dimen/fg_home_tv_ptb1"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/info_img_wh"
+                android:layout_height="@dimen/info_img_wh"
+                android:layout_marginEnd="@dimen/info_img_pr"
+                android:src="@mipmap/info_my_bszbpt" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="比赛直播平台"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/item_tv_size1" />
+
+                <TextView
+                    android:id="@+id/tv_bszbpt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_gray1"
+                    android:textSize="@dimen/item_tv_size2" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/info_r_mlr"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+        </LinearLayout>
+
+        <!--我的余额-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--我的余额-->
+            <LinearLayout
+                android:id="@+id/ll_wdye"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/it_geren_mt"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/fg_home_tv_ptb1"
+                android:paddingLeft="@dimen/fg_home_tv_plr"
+                android:paddingRight="@dimen/fg_home_tv_plr"
+                android:paddingTop="@dimen/fg_home_tv_ptb1">
+
+                <ImageView
+                    android:layout_width="@dimen/info_img_wh"
+                    android:layout_height="@dimen/info_img_wh"
+                    android:layout_marginEnd="@dimen/info_img_pr"
+                    android:src="@mipmap/info_my_balance" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="我的余额"
+                        android:textColor="@color/color_gray"
+                        android:textSize="@dimen/item_tv_size1" />
+
+                    <TextView
+                        android:id="@+id/tv_wdye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前余额为0"
+                        android:textColor="@color/color_gray1"
+                        android:textSize="@dimen/item_tv_size2" />
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="@dimen/gpsg_jt_r_wh"
+                    android:layout_height="@dimen/gpsg_jt_r_wh"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/info_r_mlr"
+                    android:paddingLeft="@dimen/item_tv_pr1"
+                    android:paddingRight="@dimen/item_tv_pr1"
+                    app:srcCompat="@mipmap/ic_info_r" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/fg_home_tv_plr"
+                android:paddingRight="@dimen/fg_home_tv_plr">
+
+                <include layout="@layout/view_dividerline_h" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--我的订单-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--我的订单-->
+            <LinearLayout
+                android:id="@+id/ll_wddd"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/fg_home_tv_ptb1"
+                android:paddingLeft="@dimen/fg_home_tv_plr"
+                android:paddingRight="@dimen/fg_home_tv_plr"
+                android:paddingTop="@dimen/fg_home_tv_ptb1">
+
+                <ImageView
+                    android:layout_width="@dimen/info_img_wh"
+                    android:layout_height="@dimen/info_img_wh"
+                    android:layout_marginEnd="@dimen/info_img_pr"
+                    android:src="@mipmap/info_my_order" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="我的订单"
+                        android:textColor="@color/color_gray"
+                        android:textSize="@dimen/item_tv_size1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="@dimen/gpsg_jt_r_wh"
+                    android:layout_height="@dimen/gpsg_jt_r_wh"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/info_r_mlr"
+                    android:paddingLeft="@dimen/item_tv_pr1"
+                    android:paddingRight="@dimen/item_tv_pr1"
+                    app:srcCompat="@mipmap/ic_info_r" />
+
+
+            </LinearLayout>
+
+            <!--分割线-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/fg_home_tv_plr"
+                android:paddingRight="@dimen/fg_home_tv_plr">
+
+                <include layout="@layout/view_dividerline_h" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--我的鸽币-->
+        <LinearLayout
+            android:id="@+id/ll_wdgb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_h"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/fg_home_tv_ptb1"
+            android:paddingLeft="@dimen/fg_home_tv_plr"
+            android:paddingRight="@dimen/fg_home_tv_plr"
+            android:paddingTop="@dimen/fg_home_tv_ptb1">
+
+            <ImageView
+                android:layout_width="@dimen/info_img_wh"
+                android:layout_height="@dimen/info_img_wh"
+                android:layout_marginEnd="@dimen/info_img_pr"
+                android:src="@mipmap/info_my_gebi" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="我的鸽币"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/item_tv_size1" />
+
+                <TextView
+                    android:id="@+id/tv_wdgb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前鸽币为0"
+                    android:textColor="@color/color_gray1"
+                    android:textSize="@dimen/item_tv_size2" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView4"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/info_r_mlr"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+        </LinearLayout>
+
+        <!--账号安全-->
+        <LinearLayout
+            android:id="@+id/ll_zhaq"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/it_geren_mt"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/fg_home_tv_ptb1"
+            android:paddingLeft="@dimen/fg_home_tv_plr"
+            android:paddingRight="@dimen/fg_home_tv_plr"
+            android:paddingTop="@dimen/fg_home_tv_ptb1">
+
+            <ImageView
+                android:layout_width="@dimen/info_img_wh"
+                android:layout_height="@dimen/info_img_wh"
+                android:layout_marginEnd="@dimen/info_img_pr"
+                android:src="@mipmap/info_anquan" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="账号安全"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/item_tv_size1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="修改登录、支付密码"
+                    android:textColor="@color/color_gray1"
+                    android:textSize="@dimen/item_tv_size2" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView5"
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/info_r_mlr"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+        </LinearLayout>
+
+        <!--使用帮助-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_help"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/it_geren_mt"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/fg_home_tv_ptb1"
+            android:paddingLeft="@dimen/fg_home_tv_plr"
+            android:paddingRight="@dimen/fg_home_tv_plr"
+            android:paddingTop="@dimen/fg_home_tv_ptb1">
+
+            <ImageView
+                android:layout_width="@dimen/info_img_wh"
+                android:layout_height="@dimen/info_img_wh"
+                android:layout_marginEnd="@dimen/info_img_pr"
+                android:src="@mipmap/info_fenxiang" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="使用帮助"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/item_tv_size1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_gray1"
+                    android:textSize="@dimen/item_tv_size2" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/info_r_mlr"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+        </LinearLayout>
+
+        <!--关于我们-->
+        <LinearLayout
+            android:id="@+id/ll_gywm"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/it_geren_mt"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/fg_home_tv_ptb1"
+            android:paddingLeft="@dimen/fg_home_tv_plr"
+            android:paddingRight="@dimen/fg_home_tv_plr"
+            android:paddingTop="@dimen/fg_home_tv_ptb1">
+
+            <ImageView
+                android:layout_width="@dimen/info_img_wh"
+                android:layout_height="@dimen/info_img_wh"
+                android:layout_marginEnd="@dimen/info_img_pr"
+                android:src="@mipmap/info_women" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="关于我们"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/item_tv_size1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/info_r_mlr"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+        </LinearLayout>
+
+        <!--把中鸽助手分享给朋友-->
+        <LinearLayout
+            android:id="@+id/ll_fxpy"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/it_geren_mt"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/fg_home_tv_ptb1"
+            android:paddingLeft="@dimen/fg_home_tv_plr"
+            android:paddingRight="@dimen/fg_home_tv_plr"
+            android:paddingTop="@dimen/fg_home_tv_ptb1">
+
+            <ImageView
+                android:layout_width="@dimen/info_img_wh"
+                android:layout_height="@dimen/info_img_wh"
+                android:layout_marginEnd="@dimen/info_img_pr"
+                android:src="@mipmap/info_fenxiang" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="分享中鸽助手"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/item_tv_size1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邀请得鸽币"
+                    android:textColor="@color/color_gray1"
+                    android:textSize="@dimen/item_tv_size2" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/gpsg_jt_r_wh"
+                android:layout_height="@dimen/gpsg_jt_r_wh"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/info_r_mlr"
+                android:paddingLeft="@dimen/item_tv_pr1"
+                android:paddingRight="@dimen/item_tv_pr1"
+                app:srcCompat="@mipmap/ic_info_r" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

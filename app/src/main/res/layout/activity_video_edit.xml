@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--视频水印-->
+    <!--水印-->
+    <include layout="@layout/layout_water" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--标签顶部-->
+        <LinearLayout
+            android:layout_marginLeft="@dimen/fg_home_tv_mlr1"
+            android:layout_marginRight="@dimen/fg_home_tv_mlr1"
+            android:id="@+id/ll_label"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ll_label_h"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="视频类型" />
+
+            <!--标签-->
+            <TextView
+                android:id="@+id/video_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="请选择标签" />
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_info_r" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_dividerline_h" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--视频展示-->
+            <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+                android:id="@+id/edit_video"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_margin="@dimen/dimens_img_m"
+                android:visibility="gone" />
+
+            <!--添加视频按钮-->
+            <ImageView
+                android:id="@+id/btn_add_video"
+                android:layout_width="@dimen/dimens_img_hw"
+                android:layout_height="@dimen/dimens_img_hw"
+                android:layout_marginTop="@dimen/dimens_img_m"
+                android:layout_marginBottom="@dimen/dimens_img_m"
+                android:layout_marginLeft="@dimen/fg_home_tv_mlr1"
+                android:layout_marginRight="@dimen/fg_home_tv_mlr1"
+                android:src="@mipmap/add_video_img" />
+        </RelativeLayout>
+
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/video_edit_mapview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </com.amap.api.maps.MapView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingLeft="@dimen/security_distance_pl"
+            android:paddingRight="@dimen/security_distance_pl">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="导入手机联系人"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_size_gxt" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/security_distance_pl"
+                android:paddingRight="@dimen/security_distance_pl"
+                android:rotation="0"
+                app:srcCompat="@mipmap/ic_info_r" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_dividerline_h1" />
+
+        <RelativeLayout
+            android:id="@id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingLeft="@dimen/security_distance_pl"
+            android:paddingRight="@dimen/security_distance_pl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="我的群组"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_size_gxt" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/order_img_wh"
+                android:layout_height="@dimen/order_img_wh"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@mipmap/ic_add_group" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

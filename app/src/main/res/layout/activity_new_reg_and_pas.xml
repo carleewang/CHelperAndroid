@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--输入密码-->
+        <LinearLayout
+            android:id="@+id/ac_newRegAndPas_ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ac_ll1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="@dimen/pas_hl1_mt"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="@dimen/setting_rl_mlift"
+                android:paddingRight="@dimen/setting_rl_mright2"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="输入密码"
+                    android:textColor="@color/color_262626" />
+
+                <EditText
+                    android:id="@+id/ac_newRegAndPas_et_pas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/sp_14" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <include layout="@layout/view_dividerline_h" />
+
+        <!--再次确定-->
+        <LinearLayout
+            android:id="@+id/ac_newRegAndPas_ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="@dimen/setting_rl_mlift"
+                android:paddingRight="@dimen/setting_rl_mright2"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="再次确定"
+                    android:textColor="@color/color_262626" />
+
+                <EditText
+                    android:id="@+id/ac_newRegAndPas_et_againPas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/sp_14" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_yqm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="14dp"
+                android:paddingLeft="@dimen/pas_hl_mlf"
+                android:paddingRight="@dimen/pas_hl_mlf"
+                android:paddingTop="14dp"
+                android:text="填写邀请码，您和对方都可以获得相应的鸽币奖励"
+                android:textColor="@color/colorRed" />
+
+            <!--邀请码-->
+            <LinearLayout
+                android:id="@+id/ac_newRegAndPas_ll3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="@dimen/pas_hl_mlf"
+                    android:paddingRight="@dimen/pas_hl_mlf"
+                    android:paddingTop="16dp">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="邀请码"
+                        android:textColor="#121212" />
+
+                    <EditText
+                        android:id="@+id/et_yqm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textColorHint="@color/reg_ColorHint"
+                        android:textSize="@dimen/sp_14" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

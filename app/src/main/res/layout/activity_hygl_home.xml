@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/hygl_home_top" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wdhy_ll_item_h"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/wdhy_ll_item_mlr"
+            android:paddingStart="@dimen/wdhy_ll_item_mlr"
+            android:paddingTop="@dimen/wdhy_ll_item_t">
+
+            <!--会员注册-->
+            <LinearLayout
+                android:id="@+id/ll_hyzc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/wdhy_ll_item_d_me"
+                android:layout_weight="1"
+                android:background="@drawable/bg_wdhy_item"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/wdhy_ll_item_p">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会员注册"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/wdhy_item_title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/wdhy_ll_item_d_tv_cen_mtb"
+                    android:layout_marginTop="@dimen/wdhy_ll_item_d_tv_cen_mtb"
+                    android:text="会员信息录入更齐全"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/wdhy_item_cen_size" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/wdhy_ll_item_img_p"
+                    android:src="@mipmap/hygl_home_hyzc" />
+
+            </LinearLayout>
+
+            <!--会费缴纳-->
+            <LinearLayout
+                android:id="@+id/ll_hfjl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_wdhy_item"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/wdhy_ll_item_p">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会费缴纳"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/wdhy_item_title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/wdhy_ll_item_d_tv_cen_mtb"
+                    android:layout_marginTop="@dimen/wdhy_ll_item_d_tv_cen_mtb"
+                    android:text="一键查看缴纳记录"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/wdhy_item_cen_size" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/wdhy_ll_item_img_p"
+                    android:src="@mipmap/hygl_home_hfjl" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wdhy_ll_item_h"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/wdhy_ll_item_mlr"
+            android:paddingStart="@dimen/wdhy_ll_item_mlr"
+            android:paddingTop="@dimen/wdhy_ll_item_t">
+
+            <!--会员管理-->
+            <LinearLayout
+                android:id="@+id/ll_hygl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/wdhy_ll_item_d_me"
+                android:layout_weight="1"
+                android:background="@drawable/bg_wdhy_item"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/wdhy_ll_item_p">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会员管理"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/wdhy_item_title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/wdhy_ll_item_d_tv_cen_mtb"
+                    android:layout_marginTop="@dimen/wdhy_ll_item_d_tv_cen_mtb"
+                    android:text="工作更轻松、有效"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/wdhy_item_cen_size" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/wdhy_ll_item_img_p"
+                    android:src="@mipmap/hygl_home_hygl" />
+
+            </LinearLayout>
+
+            <!--会员评选-->
+            <LinearLayout
+                android:id="@+id/ll_xtxf"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_wdhy_item"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/wdhy_ll_item_p">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="系统续费"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/wdhy_item_title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_xtxf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/wdhy_ll_item_d_tv_cen_mtb"
+                    android:layout_marginTop="@dimen/wdhy_ll_item_d_tv_cen_mtb"
+                    android:gravity="center"
+                    android:text="到期时间：0000-00-00"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/wdhy_item_cen_size" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/wdhy_ll_item_img_p"
+                    android:src="@mipmap/hygl_home_xtxf" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wdhy_ll_item_h"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/wdhy_ll_item_mlr"
+            android:paddingStart="@dimen/wdhy_ll_item_mlr"
+            android:paddingTop="@dimen/wdhy_ll_item_t">
+
+            <!--足环管理-->
+            <LinearLayout
+                android:id="@+id/ll_zhgl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/wdhy_ll_item_d_me"
+                android:layout_weight="1"
+                android:background="@drawable/bg_wdhy_item"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/wdhy_ll_item_p">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="足环管理"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/wdhy_item_title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/wdhy_ll_item_d_tv_cen_mtb"
+                    android:layout_marginTop="@dimen/wdhy_ll_item_d_tv_cen_mtb"
+                    android:text="高效、快捷的管理方式"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/wdhy_item_cen_size" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/wdhy_ll_item_img_p"
+                    android:src="@mipmap/hygl_home_zhgl" />
+
+            </LinearLayout>
+
+            <!--特比环管理-->
+            <LinearLayout
+                android:id="@+id/ll_tbhgl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_wdhy_item"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/wdhy_ll_item_p">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="特比环管理"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/wdhy_item_title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_tbhgl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/wdhy_ll_item_d_tv_cen_mtb"
+                    android:layout_marginTop="@dimen/wdhy_ll_item_d_tv_cen_mtb"
+                    android:gravity="center"
+                    android:text="高效、快捷的管理方式"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/wdhy_item_cen_size" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/wdhy_ll_item_img_p"
+                    android:src="@mipmap/hygl_home_tbhgl" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cpigeon.cpigeonhelper">
+
+
+    <permission
+        android:name="android.permission.STATUS_BAR_SERVICE"
+        android:protectionLevel="signature" />
+
+    <!--upu一直运行权限-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.DEVICE_POWER"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 白名单对话框权限 -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <!--使用系统dialog-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--访问相册，照相机-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--读写内存卡权限-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--地图SDK（包含其搜索功能）需要的基础权限-->
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--Gps定位权限-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--录像-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!--用于申请获取蓝牙信息进行室内定位-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 调用硬件相机权限 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <!--分享    用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 读联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 写联系人权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!--8.0安装-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <!-- 拨号权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 读短信权限 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!--  android:theme="@style/ToolbarTheme"    -->
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/cpigeon_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:roundIcon="@mipmap/cpigeon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemess"
+        tools:replace="android:icon">
+
+        <!--hl   地图API 的key-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="986f6c2abed5bfb255d43c1ec8e70837" />
+
+        <!--地图持续定位服务-->
+        <service
+            android:name="com.amap.api.location.APSService"
+            android:enabled="true"
+            android:priority="1000" />
+
+
+        <!--分享-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59f9201cf43e482285000010" />
+
+        <!--<meta-data-->
+        <!--android:name="CpigeonHelper"-->
+        <!--android:value="d36502f759cca4b35774b8552b3bc09e">-->
+
+        <!--</meta-data>-->
+
+        <!--7.0以上权限设置-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.cpigeon.cpigeonhelper.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
+
+
+        <!--<provider-->
+        <!--android:name=".update.BuglyFileProvider"-->
+        <!--android:authorities="com.cpigeon.cpigeonhelper.provider"-->
+        <!--android:exported="false"-->
+        <!--android:grantUriPermissions="true"-->
+        <!--tools:replace="name,authorities,exported,grantUriPermissions">-->
+        <!--<meta-data-->
+        <!--android:name="android.support.FILE_PROVIDER_PATHS"-->
+        <!--android:resource="@xml/provider_paths"-->
+        <!--tools:replace="name,resource" />-->
+        <!--</provider>-->
+
+
+        <!--热更新-->
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+
+
+        <!--闪图-->
+        <!--<activity android:name=".modular.home.view.HomeActivity">-->
+        <activity
+            android:name=".modular.guide.view.SplashActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--引导页-->
+        <activity
+            android:name=".modular.guide.view.WelcomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--单点登录服务-->
+        <service
+            android:name=".service.SingleLoginService"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--初始化bugly-->
+        <service
+            android:name=".service.InitializeService"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--登录-->
+        <activity
+            android:name=".modular.usercenter.view.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--第一个注册页-->
+        <activity
+            android:name=".modular.usercenter.view.RegistrationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--第二个注册页-->
+        <activity
+            android:name=".modular.usercenter.view.RegistrationNewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--第一个忘记密码-->
+        <activity
+            android:name=".modular.usercenter.view.ForgetPasActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--第二个忘记密码-->
+        <activity
+            android:name=".modular.usercenter.view.ForgetPasNewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--首页-->
+        <activity
+            android:name=".modular.home.view.activity.HomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--支付-->
+        <activity
+            android:name=".modular.order.view.activity.BalanceReChargeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--菜单-->
+        <activity
+            android:name=".modular.home.view.activity.MenuActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--操作日志-->
+        <activity
+            android:name=".modular.menu.view.activity.LogbookActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--设置-->
+        <activity
+            android:name=".modular.menu.view.activity.SettingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--&lt;!&ndash;修改登录密码&ndash;&gt;-->
+        <!--<activity-->
+        <!--android:name=".modular.usercenter.view.ModifyLogPasActivity"-->
+        <!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustPan|stateHidden" />-->
+        <!--组织信息详情页-->
+        <activity
+            android:name=".modular.orginfo.view.activity.OrgInforActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--修改用户信息-->
+        <activity
+            android:name=".modular.orginfo.view.activity.UserInforActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--修改组织信息-->
+        <activity
+            android:name=".modular.orginfo.view.activity.AlterOrgActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--鸽运通主页-->
+        <activity
+            android:name=".modular.geyuntong.view.activity.GYTHomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--修改二级域名页面-->
+        <activity
+            android:name=".modular.orginfo.view.activity.AlterDomainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--公告通知-->
+        <activity
+            android:name=".modular.menu.view.activity.BulletinActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--授权主页-->
+        <activity
+            android:name=".modular.authorise.view.activity.AuthoriseHomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--添加授权界面-->
+        <activity
+            android:name=".modular.authorise.view.activity.AddAuthActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--添加监控页面授权授权界面-->
+        <activity
+            android:name=".modular.authorise.view.activity.AddNewAuthActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--需要接受授权的鸽运通比赛列表-->
+        <activity
+            android:name=".modular.authorise.view.activity.GYTAuthRaceListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--司放地主页-->
+        <activity
+            android:name=".modular.flyarea.view.activity.FlyingAreaActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--添加司放地页面-->
+        <activity
+            android:name=".modular.flyarea.view.activity.AddFlyingAreaActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--编辑司放地页面-->
+        <activity
+            android:name=".modular.flyarea.view.activity.EditFlyingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--添加司放地选择地点界面-->
+        <activity
+            android:name=".modular.flyarea.view.activity.SelectPlaceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--鸽运通页面   android:windowSoftInputMode="adjustPan"控件不被输入框弹起-->
+        <activity
+            android:name=".modular.geyuntong.view.activity.GYTListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--鸽运通 添加比赛页面-->
+        <activity
+            android:name=".modular.geyuntong.view.activity.AddGytPlayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--选择司放地页面-->
+        <activity
+            android:name=".modular.flyarea.view.activity.SelectFlyingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--编辑鸽运通列表-->
+        <activity
+            android:name=".modular.geyuntong.view.activity.EditGytListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--编辑鸽运通item比赛-->
+        <activity
+            android:name=".modular.geyuntong.view.activity.UpdateGYTActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--鸽车监控页面-->
+        <activity
+            android:name=".modular.geyuntong.view.activity.PigeonMonitorActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--第三方照相机页面-->
+        <activity
+            android:name=".camera.activity.CameraActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--图片详情的-->
+        <activity
+            android:name=".camera.activity.SpaceImageDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--图片编辑的Activity-->
+        <activity
+            android:name=".modular.geyuntong.view.activity.PhotoEditActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--视频录制页面 android:screenOrientation="portrait" 纵向  landscape  横向-->
+        <activity
+            android:name=".video.RecordedActivity3"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--足环管理 上笼验鸽 android:screenOrientation="portrait" 纵向  landscape  横向-->
+        <activity
+            android:name=".video.RecordedFootShootActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--赛鸽通视频拍照页面-->
+        <activity
+            android:name=".video.RecordedSGTActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+
+        <!--&lt;!&ndash;小工具随拍页面&ndash;&gt;-->
+        <!--<activity-->
+            <!--android:name=".video.ShootAnytimeActivity"-->
+            <!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:windowSoftInputMode="adjustPan|stateHidden" />-->
+
+        <!--视频编辑上传页面-->
+        <activity
+            android:name=".modular.geyuntong.view.activity.VideoEditActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--开通鸽运通页面-->
+        <activity
+            android:name=".modular.order.view.activity.OpenGytActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--续费升级页面-->
+        <activity
+            android:name=".modular.order.view.activity.RenewalUpgradeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--订单支付页面-->
+        <activity
+            android:name=".modular.order.view.activity.OrderPlayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--发票 列表-->
+        <activity
+            android:name=".modular.order.view.activity.InvoiceListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--发票设置-->
+        <activity
+            android:name=".modular.order.view.activity.InvoiceSetActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--修改支付密码-->
+        <activity
+            android:name=".modular.usercenter.view.ModifyPlayPasActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--忘记支付密码短信验证页面-->
+        <activity
+            android:name=".modular.usercenter.view.PlaySMSvalidationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--&lt;!&ndash;订单详情页面&ndash;&gt;-->
+        <!--<activity-->
+        <!--android:name=".modular.order.view.activity.OrderDetailsActivity"-->
+        <!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustPan|stateHidden" />-->
+        <!--网页视图-->
+        <activity
+            android:name=".commonstandard.view.activity.WebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--关于我们-->
+        <activity
+            android:name=".modular.menu.view.activity.AboutActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--签到-->
+        <activity
+            android:name=".modular.menu.view.activity.SignActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--纯网页链接展示-->
+        <activity
+            android:name=".commonstandard.view.activity.WebViewNewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--新的首页-->
+        <activity
+            android:name=".modular.home.view.activity.HomeNewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.TransparentStatusBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--新的首页     android:screenOrientation="portrait"-->
+        <activity
+            android:name=".modular.home.view.activity.HomeNewActivity2"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--赛格通主页-->
+        <activity
+            android:name=".modular.saigetong.view.activity2.SGTHomeActivity3"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--赛鸽通标签搜索上传-->
+        <activity
+            android:name=".modular.saigetong.view.activity2.GpsgTagSearchActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--赛格通搜索页-->
+        <!--<activity android:name=".modular.saigetong.view.activity.SGTSearchActivity" />-->
+        <activity
+            android:name=".modular.saigetong.view.activity.SGTSearchActivity2"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--赛鸽通详情页-->
+        <activity
+            android:name=".modular.saigetong.view.activity.SGTDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--赛格通图片上传-->
+        <activity
+            android:name=".modular.saigetong.view.activity.SGTImgUploadActivity2"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--赛鸽通图片详情页-->
+        <activity
+            android:name=".modular.saigetong.view.activity.SGImgDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--赛鸽通选择足环-->
+        <activity
+            android:name=".modular.saigetong.view.activity.SelectZhActivity2"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--赛鸽通查看选择的足环号码-->
+        <activity
+            android:name=".modular.saigetong.view.activity.CheckSelectActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--赛鸽通信息页-->
+        <activity
+            android:name=".modular.saigetong.view.activity.SGTInfoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--赛鸽通申请试用-->
+        <activity
+            android:name=".modular.saigetong.view.activity.SGTApplyTrialActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--申请训鸽通试用页面-->
+        <activity
+            android:name=".modular.geyuntong.view.activity.xgtactivity.ApplyProbationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--拍摄身份证-->
+        <activity
+            android:name=".idcard.IdCardCameraActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--开通续费训鸽通服务-->
+        <activity
+            android:name=".modular.order.view.activity.OpenXGTServiceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--协会 赛事规程-->
+        <activity
+            android:name=".modular.myserver.xh.serverxh.vew.actvity.GameGcActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--赛事规程添加-->
+        <activity
+            android:name=".modular.myserver.xh.serverxh.vew.actvity.AddGameGcActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--赛事规程详情-->
+        <activity
+            android:name=".modular.myserver.xh.serverxh.vew.actvity.DetailsGameGcActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--赛事规程修改-->
+        <activity
+            android:name=".modular.myserver.xh.serverxh.vew.actvity.ReviseGameGcActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--比赛管理-->
+        <activity
+            android:name=".modular.myserver.xh.serverxh.vew.actvity.PlayAdminActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--比赛管理列表详情-->
+        <activity
+            android:name=".modular.myserver.xh.serverxh.vew.actvity.DetailsPlayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--发送短信设置-->
+        <activity
+            android:name=".modular.myserver.xh.serverxh.vew.actvity.PlaySmsSetActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--协会动态，赛事规程删除-->
+        <activity
+            android:name=".modular.myserver.xh.serverxh.vew.actvity.DtGcDelActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--信息详情页面-->
+        <activity
+            android:name=".modular.orginfo.view.activity.InfoDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--账户安全-->
+        <activity
+            android:name=".modular.orginfo.view.activity.AccSecurityActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--我的余额-->
+        <activity
+            android:name=".modular.orginfo.view.activity.MyBalanceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--我的鸽币-->
+        <activity
+            android:name=".modular.orginfo.view.activity.MyGeBiActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--我的订单-->
+        <activity
+            android:name=".modular.order.view.activity.MyOrderActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--鸽币获取   鸽币兑换-->
+        <activity
+            android:name=".modular.orginfo.view.activity.GebiAcquireActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--充值明细-->
+        <activity
+            android:name=".modular.order.view.activity.RechargeDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--公棚-->
+        <!--入棚短信设置-->
+        <activity
+            android:name=".modular.myserver.gp.servergp.view.actvity.RpSmsSetActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--训赛短信-->
+        <activity
+            android:name=".modular.myserver.gp.servergp.view.actvity.XsSmsListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--训赛短信详情-->
+        <activity
+            android:name=".modular.myserver.gp.servergp.view.actvity.XsSmsDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--训赛短信设置-->
+        <activity
+            android:name=".modular.myserver.gp.servergp.view.actvity.XsSmsSetActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--训赛短信位置选择-->
+        <activity
+            android:name=".modular.myserver.gp.servergp.view.actvity.XsSmsLocateSelectActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--上笼短信-->
+        <activity
+            android:name=".modular.myserver.gp.servergp.view.actvity.SlSmsListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--上笼短信设置-->
+        <activity
+            android:name=".modular.myserver.gp.servergp.view.actvity.SlSmsSetActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--插组指定列表-->
+        <activity
+            android:name=".modular.myserver.gp.servergp.view.actvity.DesignatedListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--插组指定设置  修改版-->
+        <activity
+            android:name=".modular.myserver.gp.servergp.view.actvity.DesignatedDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--插组指定设置-->
+        <activity
+            android:name=".modular.myserver.gp.servergp.view.actvity.DesignatedSetActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--空距测量小工具-->
+        <activity
+            android:name=".modular.home.view.activity.UllageToolActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--空距测量详情-->
+        <activity
+            android:name=".modular.home.view.activity.UllageToolDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--微信回调页面-->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".message.base.FragmentParentActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ToolbarTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".message.ui.BaseWebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ToolbarTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".message.ui.userAgreement.UserAgreementActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ToolbarTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".message.ui.selectPhoneNumber.SelectPhoneActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ToolbarTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--我的会员主页-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.WdhyHomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员列表-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.HyglListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会费缴纳-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hfjl.HfjlHomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员注册-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hyzc.HyzcHomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员信息-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.HyInfoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员 个人信息-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.HyPersonalInfoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员 历史赛绩列表-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.HistoryLeagueListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员 历史赛绩 添加-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.HistoryLeagueAddActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员 足环购买记录列表-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.FootBuyListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员 足环购买记录添加-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.FootBuyAddActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员 年度评选列表-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.YearSelectionListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员 年度评选添加-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.YearSelectionAddActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员 年度缴费选列表-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.YearPayCostListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员 年度缴费选添加-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.YearPayCostAddActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--会员 处罚记录列表-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.PenalizeRecordListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员 添加处罚记录-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.PenalizeRecordAddActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--会员  身份信息-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.hygl.IdInfoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--公棚赛鸽新首页-->
+        <activity
+            android:name=".modular.saigetong.view.activity2.GpsgHomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--鸽友交流-->
+        <activity
+            android:name=".modular.myserver.xh.gyjl.view.activity.GyjlHomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--双服务保活-->
+        <service
+            android:name=".service.DetailsService2"
+            android:enabled="true"
+            android:priority="999"
+            android:process=":DetailsService2">
+            <intent-filter android:priority="999">
+                <action android:name="com.cpigeon.cpigeonhelper.myservice2" />
+            </intent-filter>
+        </service>
+
+
+        <!--定位Service-->
+        <service
+            android:name=".service.DetailsService1"
+            android:enabled="true"
+            android:priority="1000">
+            <intent-filter android:priority="1000">
+                <action android:name="com.cpigeon.cpigeonhelper.myservice1" />
+            </intent-filter>
+        </service>
+
+        <!--长连接服务-->
+        <service
+            android:name=".mina.CoreService"
+            android:enabled="true"
+            android:priority="998">
+            <intent-filter android:priority="1000">
+                <action android:name="com.cpigeon.cpigeonhelper.mina.CoreService" />
+            </intent-filter>
+        </service>
+
+        <!--qq完整版：-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105989530" />
+            </intent-filter>
+
+        </activity>
+
+        <!--微信分享-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--鸽运通导航-->
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".playvideo.VideoPlayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--赛线天气-->
+        <activity
+            android:name=".modular.lineweather.view.activity.LineWeatherActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--选择公棚-->
+        <activity
+            android:name=".modular.lineweather.view.activity.SelectShedActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--SelectAssociationActivity-->
+        <!--选择协会-->
+        <activity
+            android:name=".modular.lineweather.view.activity.SelectAssociationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--选择司放地-->
+        <activity
+            android:name=".modular.lineweather.view.activity.SelectFlyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--一周天气-->
+        <activity
+            android:name=".modular.lineweather.view.activity.AWeekWeatherActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--足环管理  首页-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.foot_admin.view.activity.FootAdminHomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--足环管理  详情-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.foot_admin.view.activity.FootAdminDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--足环管理  上传-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.foot_admin.view.activity.FootAdminUploadActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--足环管理  录入-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.foot_admin.view.activity.FootEntryActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--足环管理  搜索-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.foot_admin.view.activity.SearchFootAdminActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--特比环管理主页-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.tubby_ring_admin.view.activity.TubbyRingAdminHomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--特比环管理  足环搜索-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.tubby_ring_admin.view.activity.SearchAgentTakePlaceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--特比环管理  代售点列表-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.tubby_ring_admin.view.activity.AgentTakePlaceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--特比环管理  代售点添加-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.tubby_ring_admin.view.activity.AddAgentTakePlaceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--特比环管理  录入-->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.tubby_ring_admin.view.activity.TubbyRingEntryActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--下级协会 足环管理  -->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.child_association.ChildFoodAdminListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--下级协会 足环足环录入  -->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.child_association.ChildFootEntryActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--下级协会 会员信息列表  -->
+        <activity
+            android:name=".modular.myserver.xh.wdhy.view.activity.child_association.ChildMemberListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+
+        <activity android:name=".modular.smalltools.shootvideo.ShootVideoSettingActivity"/>
+
+        <!--随行拍视频拍照页面-->
+        <activity
+            android:name=".modular.smalltools.shootvideo.AtAnyTimeShootingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+    </application>
+
+</manifest>

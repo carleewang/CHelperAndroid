@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+
+            <!--地点-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ac_edit_flying_item_h"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/str_flying_place"
+                    android:textColor="@color/color_userinfo_tx"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+                <EditText
+                    android:id="@+id/et_flying_place"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="fdsfafas"
+                    android:textColor="@color/color_userinfo_ex"
+                    android:textColorHint="@color/color_et_hint"
+                    android:textSize="@dimen/userinfo_tx_size" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h1" />
+
+            <!--经度-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ac_edit_flying_item_h"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/str_flying_longitude"
+                    android:textColor="@color/color_userinfo_tx"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+                <EditText
+                    android:id="@+id/et_flying_longitude"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:inputType="number|numberDecimal"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="fdsfafas"
+                    android:textColor="@color/color_userinfo_ex"
+                    android:textColorHint="@color/color_et_hint"
+                    android:textSize="@dimen/userinfo_tx_size" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h1" />
+
+            <!--纬度-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ac_edit_flying_item_h"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:inputType="number|numberDecimal"
+                    android:text="@string/str_flying_latitude"
+                    android:textColor="@color/color_userinfo_tx"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+                <EditText
+                    android:id="@+id/et_flying_latitude"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="fdsfafas"
+                    android:textColor="@color/color_userinfo_ex"
+                    android:textColorHint="@color/color_et_hint"
+                    android:textSize="@dimen/userinfo_tx_size" />
+            </LinearLayout>
+
+            <!--分割线-->
+            <include layout="@layout/view_dividerline_h1" />
+
+            <!--备注-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ac_edit_flying_item_remark_h"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/ac_tv_flying_remark_mt"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:text="@string/str_flying_remark"
+                    android:textColor="@color/color_userinfo_tx"
+                    android:textSize="@dimen/userinfo_tx_size" />
+
+                <EditText
+                    android:id="@+id/et_flying_remark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ac_tv_flying_remark_mt"
+                    android:layout_weight="7"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入备注"
+                    android:maxLines="3"
+                    android:textColor="@color/color_userinfo_ex"
+                    android:textColorHint="@color/color_et_hint"
+                    android:textSize="@dimen/userinfo_tx_size" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <com.cpigeon.cpigeonhelper.ui.MyTextView
+            android:id="@+id/hint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:singleLine="false"
+            android:text="@string/str_add_fly_hint_tv" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_theme" />
+
+        <!--点击删除-->
+        <Button
+            android:id="@+id/et_flying_del"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ac_edit_flying_bottom_h"
+            android:background="@null"
+            android:text="删除"
+            android:textColor="@color/color_theme" />
+
+    </LinearLayout>
+
+</RelativeLayout>

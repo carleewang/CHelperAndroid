@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:id="@+id/ll_itemZ"
+    android:clickable="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:background="@color/color_f0f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/img_pxresult"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tv_pxresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年度就死机"
+        android:textColor="@color/color_262626"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000-00-00"
+        android:textColor="@color/color_b3b3b3"
+        android:textSize="12sp" />
+
+
+    <!--评语-->
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_pxcomment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评语：解放路上京东发窘睡大觉"
+        android:textColor="@color/color_b3b3b3"
+        android:textSize="12sp" />
+
+
+</LinearLayout>
