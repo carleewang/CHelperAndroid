@@ -11,34 +11,35 @@ android {
     compileSdkVersion 26
     buildToolsVersion '25.0.3'
 
-    signingConfigs {
-        //签名设置
-        release {
-            keyAlias RELEASE_KEY_ALIAS
-            keyPassword RELEASE_KEY_PASSWORD
-            storeFile file(RELEASE_STORE_FILE)
-            storePassword RELEASE_STORE_PASSWORD
-        }
-
-        //签名设置
-        debug {
-            keyAlias RELEASE_KEY_ALIAS
-            keyPassword RELEASE_KEY_PASSWORD
-            storeFile file(RELEASE_STORE_FILE)
-            storePassword RELEASE_STORE_PASSWORD
-        }
-    }
+//    signingConfigs {
+//        //签名设置
+//        release {
+//            keyAlias RELEASE_KEY_ALIAS
+//            keyPassword RELEASE_KEY_PASSWORD
+//            storeFile file(RELEASE_STORE_FILE)
+//            storePassword RELEASE_STORE_PASSWORD
+//        }
+//
+//        //签名设置
+//        debug {
+//            keyAlias RELEASE_KEY_ALIAS
+//            keyPassword RELEASE_KEY_PASSWORD
+//            storeFile file(RELEASE_STORE_FILE)
+//            storePassword RELEASE_STORE_PASSWORD
+//        }
+//    }
 
     defaultConfig {
         applicationId "com.cpigeon.cpigeonhelper"
         minSdkVersion 17
         targetSdkVersion 26
-        versionCode getCustomVersionCode()
-        versionName getCustomVersionName()
+//        versionCode getCustomVersionCode()
+        versionCode 201901240
+        versionName "2.0.2"
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-        signingConfig signingConfigs.release //默认签名配置
+//        signingConfig signingConfigs.release //默认签名配置
 
         multiDexEnabled true
 
@@ -52,7 +53,7 @@ android {
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             def oldFile = output.outputFile
-            def newName = '';
+            def newName = 'test.apk';
             if (variant.buildType.name.equals('release')) {
 //                println(variant.productFlavors[0].name)
                 //def releaseApkName = 'app-release-v' + getCustomVersionName() + '-' + variant.productFlavors[0].name + '-' + getCustomVersionCode() + '.apk'
